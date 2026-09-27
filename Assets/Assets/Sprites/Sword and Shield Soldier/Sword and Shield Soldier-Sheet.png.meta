@@ -1,0 +1,2227 @@
+fileFormatVersion: 2
+guid: 9333157e7d7796043951f88c9dce1506
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5156001615864014919
+    second: Sword and Shield Soldier-Sheet_0
+  - first:
+      213: 8957054475594749364
+    second: Sword and Shield Soldier-Sheet_1
+  - first:
+      213: 7491131215882453507
+    second: Sword and Shield Soldier-Sheet_2
+  - first:
+      213: 5989400238244283837
+    second: Sword and Shield Soldier-Sheet_3
+  - first:
+      213: -1179475849562591336
+    second: Sword and Shield Soldier-Sheet_4
+  - first:
+      213: 601710485415163024
+    second: Sword and Shield Soldier-Sheet_5
+  - first:
+      213: -3068471373249386711
+    second: Sword and Shield Soldier-Sheet_6
+  - first:
+      213: -5341734297429524692
+    second: Sword and Shield Soldier-Sheet_7
+  - first:
+      213: -5390053878583405457
+    second: Sword and Shield Soldier-Sheet_8
+  - first:
+      213: 7412924480803754675
+    second: Sword and Shield Soldier-Sheet_9
+  - first:
+      213: -7338537142670348231
+    second: Sword and Shield Soldier-Sheet_10
+  - first:
+      213: -3087401018681140676
+    second: Sword and Shield Soldier-Sheet_11
+  - first:
+      213: -6202681832923778060
+    second: Sword and Shield Soldier-Sheet_12
+  - first:
+      213: -2951885443384302937
+    second: Sword and Shield Soldier-Sheet_13
+  - first:
+      213: 2198229796164728074
+    second: Sword and Shield Soldier-Sheet_14
+  - first:
+      213: -7743740626792926093
+    second: Sword and Shield Soldier-Sheet_15
+  - first:
+      213: -142674482545559236
+    second: Sword and Shield Soldier-Sheet_16
+  - first:
+      213: -8164866679976115024
+    second: Sword and Shield Soldier-Sheet_17
+  - first:
+      213: -7440176207199475605
+    second: Sword and Shield Soldier-Sheet_18
+  - first:
+      213: -8753590552574118464
+    second: Sword and Shield Soldier-Sheet_19
+  - first:
+      213: -5091590608571727741
+    second: Sword and Shield Soldier-Sheet_20
+  - first:
+      213: 4523677216389268711
+    second: Sword and Shield Soldier-Sheet_21
+  - first:
+      213: -6643964537708299715
+    second: Sword and Shield Soldier-Sheet_22
+  - first:
+      213: -2266942293670804904
+    second: Sword and Shield Soldier-Sheet_23
+  - first:
+      213: 4822212495952193361
+    second: Sword and Shield Soldier-Sheet_24
+  - first:
+      213: 7603576665924620865
+    second: Sword and Shield Soldier-Sheet_25
+  - first:
+      213: -1420772560120096491
+    second: Sword and Shield Soldier-Sheet_26
+  - first:
+      213: -549800078360941765
+    second: Sword and Shield Soldier-Sheet_27
+  - first:
+      213: -1126327686881425657
+    second: Sword and Shield Soldier-Sheet_28
+  - first:
+      213: -5111603375993881108
+    second: Sword and Shield Soldier-Sheet_29
+  - first:
+      213: -1798477232272216636
+    second: Sword and Shield Soldier-Sheet_30
+  - first:
+      213: -4677914511963456598
+    second: Sword and Shield Soldier-Sheet_31
+  - first:
+      213: 6090716343551218682
+    second: Sword and Shield Soldier-Sheet_32
+  - first:
+      213: -6389337024017903300
+    second: Sword and Shield Soldier-Sheet_33
+  - first:
+      213: 7959185329672556870
+    second: Sword and Shield Soldier-Sheet_34
+  - first:
+      213: 7539483260308907532
+    second: Sword and Shield Soldier-Sheet_35
+  - first:
+      213: -2720685054429066936
+    second: Sword and Shield Soldier-Sheet_36
+  - first:
+      213: 1299823390831203450
+    second: Sword and Shield Soldier-Sheet_37
+  - first:
+      213: 2896014778224876636
+    second: Sword and Shield Soldier-Sheet_38
+  - first:
+      213: 927505069999777628
+    second: Sword and Shield Soldier-Sheet_39
+  - first:
+      213: -1356544346114145563
+    second: Sword and Shield Soldier-Sheet_40
+  - first:
+      213: -8907219593026388736
+    second: Sword and Shield Soldier-Sheet_41
+  - first:
+      213: 8034641245018468744
+    second: Sword and Shield Soldier-Sheet_42
+  - first:
+      213: -5457841885485986203
+    second: Sword and Shield Soldier-Sheet_43
+  - first:
+      213: 1428492565156122075
+    second: Sword and Shield Soldier-Sheet_44
+  - first:
+      213: 2163247125756631557
+    second: Sword and Shield Soldier-Sheet_45
+  - first:
+      213: 3623224389359577017
+    second: Sword and Shield Soldier-Sheet_46
+  - first:
+      213: 9024766339914385625
+    second: Sword and Shield Soldier-Sheet_47
+  - first:
+      213: -1172891535614437466
+    second: Sword and Shield Soldier-Sheet_48
+  - first:
+      213: -1872884663153968622
+    second: Sword and Shield Soldier-Sheet_49
+  - first:
+      213: -2263187966843510454
+    second: Sword and Shield Soldier-Sheet_50
+  - first:
+      213: 749538334850925448
+    second: Sword and Shield Soldier-Sheet_51
+  - first:
+      213: -5862960539654434394
+    second: Sword and Shield Soldier-Sheet_52
+  - first:
+      213: -6644830112324364019
+    second: Sword and Shield Soldier-Sheet_53
+  - first:
+      213: 8099688201077188703
+    second: Sword and Shield Soldier-Sheet_54
+  - first:
+      213: 8714189043376541102
+    second: Sword and Shield Soldier-Sheet_55
+  - first:
+      213: -6141411234577531711
+    second: Sword and Shield Soldier-Sheet_56
+  - first:
+      213: -1934237126310104506
+    second: Sword and Shield Soldier-Sheet_57
+  - first:
+      213: 8262054813103771280
+    second: Sword and Shield Soldier-Sheet_58
+  - first:
+      213: 1137917628592801716
+    second: Sword and Shield Soldier-Sheet_59
+  - first:
+      213: 4570295551258750753
+    second: Sword and Shield Soldier-Sheet_60
+  - first:
+      213: 435239760194254271
+    second: Sword and Shield Soldier-Sheet_61
+  - first:
+      213: 7976924973378620069
+    second: Sword and Shield Soldier-Sheet_62
+  - first:
+      213: 4797187946857375980
+    second: Sword and Shield Soldier-Sheet_63
+  - first:
+      213: -1072773614291254861
+    second: Sword and Shield Soldier-Sheet_64
+  - first:
+      213: 2903882424561027183
+    second: Sword and Shield Soldier-Sheet_65
+  - first:
+      213: 1100444086073007835
+    second: Sword and Shield Soldier-Sheet_66
+  - first:
+      213: -1276959929665467579
+    second: Sword and Shield Soldier-Sheet_67
+  - first:
+      213: 7008580306780272495
+    second: Sword and Shield Soldier-Sheet_68
+  - first:
+      213: 4885574086095706040
+    second: Sword and Shield Soldier-Sheet_69
+  - first:
+      213: -1855469026144062157
+    second: Sword and Shield Soldier-Sheet_70
+  - first:
+      213: 7570702876455388581
+    second: Sword and Shield Soldier-Sheet_71
+  - first:
+      213: 247459676592000763
+    second: Sword and Shield Soldier-Sheet_72
+  - first:
+      213: -9065597239852774963
+    second: Sword and Shield Soldier-Sheet_73
+  - first:
+      213: 405419830400917649
+    second: Sword and Shield Soldier-Sheet_74
+  - first:
+      213: 7591420771416841432
+    second: Sword and Shield Soldier-Sheet_75
+  - first:
+      213: -3287810795707398651
+    second: Sword and Shield Soldier-Sheet_76
+  - first:
+      213: 5583049153245501694
+    second: Sword and Shield Soldier-Sheet_77
+  - first:
+      213: -530230746386862824
+    second: Sword and Shield Soldier-Sheet_78
+  - first:
+      213: -4799724058484284626
+    second: Sword and Shield Soldier-Sheet_79
+  - first:
+      213: 7653808695522734203
+    second: Sword and Shield Soldier-Sheet_80
+  - first:
+      213: 7013710850707555524
+    second: Sword and Shield Soldier-Sheet_81
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 901
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7d51919d33278b0800000000000000
+      internalID: -5156001615864014919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 901
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5d5abc699dd4c70800000000000000
+      internalID: 8957054475594749364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 901
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3028380b628d5f760800000000000000
+      internalID: 7491131215882453507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 901
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5c03298cf9e1350800000000000000
+      internalID: 5989400238244283837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 901
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f6ba5c6f8a1afe0800000000000000
+      internalID: -1179475849562591336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 901
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0947ccc9f74b95800800000000000000
+      internalID: 601710485415163024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 901
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 927e3022b899a65d0800000000000000
+      internalID: -3068471373249386711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 901
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f313d45f85ed5b0800000000000000
+      internalID: -5341734297429524692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 901
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f64d1de1e8ea235b0800000000000000
+      internalID: -5390053878583405457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 901
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2da193a8fffd660800000000000000
+      internalID: 7412924480803754675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 901
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930bf189957482a90800000000000000
+      internalID: -7338537142670348231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 901
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ad45a91295725d0800000000000000
+      internalID: -3087401018681140676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 801
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f33fc57cb5abe9a0800000000000000
+      internalID: -6202681832923778060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 801
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2ae6934dbc807d0800000000000000
+      internalID: -2951885443384302937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 701
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05f3175a5ea18e10800000000000000
+      internalID: 2198229796164728074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 701
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3743f339de4b88490800000000000000
+      internalID: -7743740626792926093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 701
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c39fb55605e150ef0800000000000000
+      internalID: -142674482545559236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 701
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b4c99d830190be80800000000000000
+      internalID: -8164866679976115024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 701
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b68ef87c82f2fb890800000000000000
+      internalID: -7440176207199475605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 701
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5ba9c55cff48680800000000000000
+      internalID: -8753590552574118464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 601
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3800e5261590759b0800000000000000
+      internalID: -5091590608571727741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 601
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e40969f57457ce30800000000000000
+      internalID: 4523677216389268711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 601
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3aba954475ebc3a0800000000000000
+      internalID: -6643964537708299715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 601
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8524173aef33a80e0800000000000000
+      internalID: -2266942293670804904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 601
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1572ea447b0fbe240800000000000000
+      internalID: 4822212495952193361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 601
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 142d2e231b4558960800000000000000
+      internalID: 7603576665924620865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 601
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5195b6752e6684ce0800000000000000
+      internalID: -1420772560120096491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 601
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b60dfddb7be58f0800000000000000
+      internalID: -549800078360941765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 501
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 707ceb2bfea7e50f0800000000000000
+      internalID: -1126327686881425657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 501
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced723ddfcfef09b0800000000000000
+      internalID: -5111603375993881108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 501
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd69c96c768a07e0800000000000000
+      internalID: -1798477232272216636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 501
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aabf5c83985b41fb0800000000000000
+      internalID: -4677914511963456598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 501
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af359059e32968450800000000000000
+      internalID: 6090716343551218682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 501
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c31592d24d38457a0800000000000000
+      internalID: -6389337024017903300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 401
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64112a443e4b47e60800000000000000
+      internalID: 7959185329672556870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 401
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0667b05410a1a860800000000000000
+      internalID: 7539483260308907532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 401
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8498a099b5f2e3ad0800000000000000
+      internalID: -2720685054429066936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 401
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a74dc39bc76e90210800000000000000
+      internalID: 1299823390831203450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 401
+        width: 56
+        height: 58
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5c1068d816b03820800000000000000
+      internalID: 2896014778224876636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 401
+        width: 56
+        height: 58
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57e5b072f82fdc00800000000000000
+      internalID: 927505069999777628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 401
+        width: 56
+        height: 58
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e24dcfba169c2de0800000000000000
+      internalID: -1356544346114145563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 401
+        width: 52
+        height: 58
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d334df8f2336480800000000000000
+      internalID: -8907219593026388736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 401
+        width: 33
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881370b94a7c08f60800000000000000
+      internalID: 8034641245018468744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 301
+        width: 29
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e0c57d8b9d144b0800000000000000
+      internalID: -5457841885485986203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 301
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bddca666b6603d310800000000000000
+      internalID: 1428492565156122075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 301
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50adb1cacc5650e10800000000000000
+      internalID: 2163247125756631557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 301
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b72f4da267484230800000000000000
+      internalID: 3623224389359577017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 301
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d8cf7fbb296e3d70800000000000000
+      internalID: 9024766339914385625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 301
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a793a3dc5d09bfe0800000000000000
+      internalID: -1172891535614437466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 301
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21a3e63625d2206e0800000000000000
+      internalID: -1872884663153968622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 301
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a41aa58f88a8790e0800000000000000
+      internalID: -2263187966843510454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 201
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883c352f425e66a00800000000000000
+      internalID: 749538334850925448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 201
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a1d3c5d37492aea0800000000000000
+      internalID: -5862960539654434394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 201
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d09561af732d8c3a0800000000000000
+      internalID: -6644830112324364019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 201
+        width: 50
+        height: 58
+      alignment: 9
+      pivot: {x: 0.26, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f58e0a0418fd76070800000000000000
+      internalID: 8099688201077188703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 201
+        width: 54
+        height: 58
+      alignment: 9
+      pivot: {x: 0.24, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead4f04e3c40fe870800000000000000
+      internalID: 8714189043376541102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 201
+        width: 54
+        height: 58
+      alignment: 9
+      pivot: {x: 0.24, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ccb96f450355caa0800000000000000
+      internalID: -6141411234577531711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 201
+        width: 54
+        height: 58
+      alignment: 9
+      pivot: {x: 0.24, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642f9e6e4953825e0800000000000000
+      internalID: -1934237126310104506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 201
+        width: 52
+        height: 58
+      alignment: 9
+      pivot: {x: 0.26, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09e4bd90417b8a270800000000000000
+      internalID: 8262054813103771280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 201
+        width: 51
+        height: 58
+      alignment: 9
+      pivot: {x: 0.28, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7cde3ed02bacf00800000000000000
+      internalID: 1137917628592801716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 201
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f6353e693fc6f30800000000000000
+      internalID: 4570295551258750753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 201
+        width: 61
+        height: 58
+      alignment: 9
+      pivot: {x: 0.62, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb5318281484a0600800000000000000
+      internalID: 435239760194254271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 201
+        width: 60
+        height: 58
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aacc2eeffab3be60800000000000000
+      internalID: 7976924973378620069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 201
+        width: 47
+        height: 58
+      alignment: 9
+      pivot: {x: 0.62, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce828356509039240800000000000000
+      internalID: 4797187946857375980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 201
+        width: 33
+        height: 58
+      alignment: 9
+      pivot: {x: 0.54, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b102c3e41ebc11f0800000000000000
+      internalID: -1072773614291254861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 101
+        width: 29
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68c5710ea9ac4820800000000000000
+      internalID: 2903882424561027183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 101
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bde9f8dd010954f00800000000000000
+      internalID: 1100444086073007835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 101
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54bc1e7a5b3574ee0800000000000000
+      internalID: -1276959929665467579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 101
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f67bf6de7aa734160800000000000000
+      internalID: 7008580306780272495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 101
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b796951fbb0dc340800000000000000
+      internalID: 4885574086095706040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 101
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33571fc50cc0046e0800000000000000
+      internalID: -1855469026144062157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 101
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a5c623a72a801960800000000000000
+      internalID: 7570702876455388581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfecf77c3472f6300800000000000000
+      internalID: 247459676592000763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1
+        width: 33
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc940d98757803280800000000000000
+      internalID: -9065597239852774963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 0
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19022ff003750a500800000000000000
+      internalID: 405419830400917649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 0
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc92d478f42a5960800000000000000
+      internalID: 7591420771416841432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 0
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5068a2930895f52d0800000000000000
+      internalID: -3287810795707398651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 0
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef85eb6ef99fa7d40800000000000000
+      internalID: 5583049153245501694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 0
+        width: 33
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81dee9802fd34a8f0800000000000000
+      internalID: -530230746386862824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 0
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e23e52a1664f36db0800000000000000
+      internalID: -4799724058484284626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword and Shield Soldier-Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 0
+        width: 33
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b70bd6bf47ac73a60800000000000000
+      internalID: 7653808695522734203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 217868f6229db914398928096d0857c4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sword and Shield Soldier-Sheet_0: -5156001615864014919
+      Sword and Shield Soldier-Sheet_1: 8957054475594749364
+      Sword and Shield Soldier-Sheet_10: -7338537142670348231
+      Sword and Shield Soldier-Sheet_11: -3087401018681140676
+      Sword and Shield Soldier-Sheet_12: -6202681832923778060
+      Sword and Shield Soldier-Sheet_13: -2951885443384302937
+      Sword and Shield Soldier-Sheet_14: 2198229796164728074
+      Sword and Shield Soldier-Sheet_15: -7743740626792926093
+      Sword and Shield Soldier-Sheet_16: -142674482545559236
+      Sword and Shield Soldier-Sheet_17: -8164866679976115024
+      Sword and Shield Soldier-Sheet_18: -7440176207199475605
+      Sword and Shield Soldier-Sheet_19: -8753590552574118464
+      Sword and Shield Soldier-Sheet_2: 7491131215882453507
+      Sword and Shield Soldier-Sheet_20: -5091590608571727741
+      Sword and Shield Soldier-Sheet_21: 4523677216389268711
+      Sword and Shield Soldier-Sheet_22: -6643964537708299715
+      Sword and Shield Soldier-Sheet_23: -2266942293670804904
+      Sword and Shield Soldier-Sheet_24: 4822212495952193361
+      Sword and Shield Soldier-Sheet_25: 7603576665924620865
+      Sword and Shield Soldier-Sheet_26: -1420772560120096491
+      Sword and Shield Soldier-Sheet_27: -549800078360941765
+      Sword and Shield Soldier-Sheet_28: -1126327686881425657
+      Sword and Shield Soldier-Sheet_29: -5111603375993881108
+      Sword and Shield Soldier-Sheet_3: 5989400238244283837
+      Sword and Shield Soldier-Sheet_30: -1798477232272216636
+      Sword and Shield Soldier-Sheet_31: -4677914511963456598
+      Sword and Shield Soldier-Sheet_32: 6090716343551218682
+      Sword and Shield Soldier-Sheet_33: -6389337024017903300
+      Sword and Shield Soldier-Sheet_34: 7959185329672556870
+      Sword and Shield Soldier-Sheet_35: 7539483260308907532
+      Sword and Shield Soldier-Sheet_36: -2720685054429066936
+      Sword and Shield Soldier-Sheet_37: 1299823390831203450
+      Sword and Shield Soldier-Sheet_38: 2896014778224876636
+      Sword and Shield Soldier-Sheet_39: 927505069999777628
+      Sword and Shield Soldier-Sheet_4: -1179475849562591336
+      Sword and Shield Soldier-Sheet_40: -1356544346114145563
+      Sword and Shield Soldier-Sheet_41: -8907219593026388736
+      Sword and Shield Soldier-Sheet_42: 8034641245018468744
+      Sword and Shield Soldier-Sheet_43: -5457841885485986203
+      Sword and Shield Soldier-Sheet_44: 1428492565156122075
+      Sword and Shield Soldier-Sheet_45: 2163247125756631557
+      Sword and Shield Soldier-Sheet_46: 3623224389359577017
+      Sword and Shield Soldier-Sheet_47: 9024766339914385625
+      Sword and Shield Soldier-Sheet_48: -1172891535614437466
+      Sword and Shield Soldier-Sheet_49: -1872884663153968622
+      Sword and Shield Soldier-Sheet_5: 601710485415163024
+      Sword and Shield Soldier-Sheet_50: -2263187966843510454
+      Sword and Shield Soldier-Sheet_51: 749538334850925448
+      Sword and Shield Soldier-Sheet_52: -5862960539654434394
+      Sword and Shield Soldier-Sheet_53: -6644830112324364019
+      Sword and Shield Soldier-Sheet_54: 8099688201077188703
+      Sword and Shield Soldier-Sheet_55: 8714189043376541102
+      Sword and Shield Soldier-Sheet_56: -6141411234577531711
+      Sword and Shield Soldier-Sheet_57: -1934237126310104506
+      Sword and Shield Soldier-Sheet_58: 8262054813103771280
+      Sword and Shield Soldier-Sheet_59: 1137917628592801716
+      Sword and Shield Soldier-Sheet_6: -3068471373249386711
+      Sword and Shield Soldier-Sheet_60: 4570295551258750753
+      Sword and Shield Soldier-Sheet_61: 435239760194254271
+      Sword and Shield Soldier-Sheet_62: 7976924973378620069
+      Sword and Shield Soldier-Sheet_63: 4797187946857375980
+      Sword and Shield Soldier-Sheet_64: -1072773614291254861
+      Sword and Shield Soldier-Sheet_65: 2903882424561027183
+      Sword and Shield Soldier-Sheet_66: 1100444086073007835
+      Sword and Shield Soldier-Sheet_67: -1276959929665467579
+      Sword and Shield Soldier-Sheet_68: 7008580306780272495
+      Sword and Shield Soldier-Sheet_69: 4885574086095706040
+      Sword and Shield Soldier-Sheet_7: -5341734297429524692
+      Sword and Shield Soldier-Sheet_70: -1855469026144062157
+      Sword and Shield Soldier-Sheet_71: 7570702876455388581
+      Sword and Shield Soldier-Sheet_72: 247459676592000763
+      Sword and Shield Soldier-Sheet_73: -9065597239852774963
+      Sword and Shield Soldier-Sheet_74: 405419830400917649
+      Sword and Shield Soldier-Sheet_75: 7591420771416841432
+      Sword and Shield Soldier-Sheet_76: -3287810795707398651
+      Sword and Shield Soldier-Sheet_77: 5583049153245501694
+      Sword and Shield Soldier-Sheet_78: -530230746386862824
+      Sword and Shield Soldier-Sheet_79: -4799724058484284626
+      Sword and Shield Soldier-Sheet_8: -5390053878583405457
+      Sword and Shield Soldier-Sheet_80: 7653808695522734203
+      Sword and Shield Soldier-Sheet_81: 7013710850707555524
+      Sword and Shield Soldier-Sheet_9: 7412924480803754675
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
