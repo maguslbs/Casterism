@@ -95,6 +95,7 @@ public class Player : MonoBehaviour
 
         animationController.Play("Attack");
         BossEvents.BossHit(cardData);
+        SkeletonSoldierEvents.SkSoldierHit(cardData);
 
         yield return new WaitForSeconds(.5f);
 

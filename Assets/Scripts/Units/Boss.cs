@@ -9,6 +9,7 @@ public class Boss : MonoBehaviour
     private Vector3 originalPosition;
 
     [SerializeField] private GameObject bossSprite;
+    [SerializeField] private string turnDisplayName = "Boss";
 
     private void Awake()
     {
@@ -19,6 +20,7 @@ public class Boss : MonoBehaviour
     private void Start()
     {
         originalPosition = bossSprite.transform.position;
+        TurnSystem.Instance.SetCurrentEnemy(turnDisplayName);
     }
 
     private void OnEnable()

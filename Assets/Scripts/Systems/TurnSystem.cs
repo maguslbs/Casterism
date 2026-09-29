@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TurnSystem : Singleton<TurnSystem>
 {
-    private enum TurnState{PlayerTurn, BossTurn}
+    private enum TurnState{PlayerTurn, EnemyTurn}
     private TurnState currentTurn = TurnState.PlayerTurn;
 
     [SerializeField] private int maxActionsPerTurn = 1;
@@ -12,11 +12,12 @@ public class TurnSystem : Singleton<TurnSystem>
     [SerializeField] private int reshuffleCost = 3;
     [SerializeField] private TextMeshProUGUI remainingActionsText;
     [SerializeField] private int turnWaitTime = 3;
-    [SerializeField] private float bossDelayTime = 2f;
+    [SerializeField] private float enemyDelayTime = 2f;
 
     [SerializeField] private TextMeshProUGUI displayTurnState;
 
     private int actionsRemaining;
+    private string currentEnemyName = "Name";
 
     private void Start()
     {
@@ -30,6 +31,7 @@ public class TurnSystem : Singleton<TurnSystem>
         PlayerEvents.OnReshuffleRequested += ReshuffleRequested;
         PlayerEvents.OnCardPlayed += CardPlayed;
         BossEvents.OnBossDeath += ClearTurnDisplay;
+        SkeletonSoldierEvents.OnSkSoldierDeath += ClearTurnDisplay;
         PlayerEvents.OnPlayerDeath += ClearTurnDisplay;
     }
 
@@ -39,6 +41,7 @@ public class TurnSystem : Singleton<TurnSystem>
         PlayerEvents.OnReshuffleRequested -= ReshuffleRequested;
         PlayerEvents.OnCardPlayed -= CardPlayed;
         BossEvents.OnBossDeath -= ClearTurnDisplay;
+        SkeletonSoldierEvents.OnSkSoldierDeath -= ClearTurnDisplay;
         PlayerEvents.OnPlayerDeath -= ClearTurnDisplay;
     }
 
@@ -56,18 +59,23 @@ public class TurnSystem : Singleton<TurnSystem>
         StartCoroutine(WaitBetweenTurns());
     }
 
-    private IEnumerator StartBossTurn()
+    private IEnumerator StartEnemyTurn()
     {
-        currentTurn = TurnState.BossTurn;
-        yield return new WaitForSeconds(bossDelayTime);
-        BossTurn();
+        currentTurn = TurnState.EnemyTurn;
+        yield return new WaitForSeconds(enemyDelayTime);
+        EnemeyTurn();
     }
 
-    private IEnumerator EndBossTurn()
+    private IEnumerator EndEnemyTurn()
     {
-        TurnEvents.BossTurnEnd();
-        yield return new WaitForSeconds(bossDelayTime);
+        TurnEvents.EnemyTurnEnd();
+        yield return new WaitForSeconds(enemyDelayTime);
         StartCoroutine(WaitBetweenTurns());
+    }
+
+    public void SetCurrentEnemy(string enemyName)
+    {
+        currentEnemyName = enemyName;
     }
 
     private void ClearTurnDisplay()
@@ -92,8 +100,8 @@ public class TurnSystem : Singleton<TurnSystem>
             }
             else
             {
-                displayTurnState.text = "Boss's Turn";
-                StartCoroutine(StartBossTurn());
+                displayTurnState.text = currentEnemyName + "'s Turn";
+                StartCoroutine(StartEnemyTurn());
             }
         }
 
@@ -130,10 +138,10 @@ public class TurnSystem : Singleton<TurnSystem>
         }
     }
 
-    private void BossTurn()
+    private void EnemeyTurn()
     {
-        TurnEvents.BossTurnStart();
-        StartCoroutine(EndBossTurn());
+        TurnEvents.EnemyTurnStart();
+        StartCoroutine(EndEnemyTurn());
     }
 
     private void UpdateActionsUI()
