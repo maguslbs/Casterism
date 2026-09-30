@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 075164fb58b90a6498a967b8099b4795
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221146
+  packageName: Pixel FX - Fire
+  packageVersion: 1.0
+  assetPath: Assets/Pixel FX - Fire/Controllers/Fire_Incendiary_Controller.controller
+  uploadId: 496934

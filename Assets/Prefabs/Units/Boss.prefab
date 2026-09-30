@@ -46,8 +46,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68567dfe4e309784da774d75c729552c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Boss
-  attackDamage: 20
+  attacks:
+  - animationName: Attack1
+    damage: 20
+    weight: 1
+    recoveryTime: 1
+  - animationName: Attack2
+    damage: 25
+    weight: 1
+    recoveryTime: 1
+  maxRepeat: 2
   bossSprite: {fileID: 8622214408287149719}
+  turnDisplayName: Demon Wizard
 --- !u!114 &4678391946553401086
 MonoBehaviour:
   m_ObjectHideFlags: 0

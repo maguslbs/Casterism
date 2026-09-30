@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 20f4427c125c43d4e9bc451325e899be
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221146
+  packageName: Pixel FX - Fire
+  packageVersion: 1.0
+  assetPath: Assets/Pixel FX - Fire/Controllers/Fire_Bomb_Controller.controller
+  uploadId: 496934

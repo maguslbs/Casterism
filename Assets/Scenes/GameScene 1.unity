@@ -1254,6 +1254,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1150386745 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3805296089480788685, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
+  m_PrefabInstance: {fileID: 4076981168500334131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1152202326
 GameObject:
   m_ObjectHideFlags: 0
@@ -2289,13 +2294,73 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss
       objectReference: {fileID: 0}
-    - target: {fileID: 6658996061354073273, guid: 779ebff4083449b498a273b9c838006d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7194227472483999187, guid: 779ebff4083449b498a273b9c838006d, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080634614488266687, guid: 779ebff4083449b498a273b9c838006d, type: 3}
+      propertyPath: castDelay
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080634614488266687, guid: 779ebff4083449b498a273b9c838006d, type: 3}
+      propertyPath: meteorPrefab
+      value: 
+      objectReference: {fileID: 2878532324393371571, guid: 5d4d0a049285d604584bacc50ca2f522, type: 3}
+    - target: {fileID: 9080634614488266687, guid: 779ebff4083449b498a273b9c838006d, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1150386745}
+    - target: {fileID: 9080634614488266687, guid: 779ebff4083449b498a273b9c838006d, type: 3}
+      propertyPath: impactDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080634614488266687, guid: 779ebff4083449b498a273b9c838006d, type: 3}
+      propertyPath: impactVFXPrefab
+      value: 
+      objectReference: {fileID: 5244354155945194624, guid: 787f330a9f561a049aab472cef8618dc, type: 3}
+    - target: {fileID: 9080634614488266687, guid: 779ebff4083449b498a273b9c838006d, type: 3}
+      propertyPath: turnDisplayName
+      value: Demon Warlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080634614488266687, guid: 779ebff4083449b498a273b9c838006d, type: 3}
+      propertyPath: attacks.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080634614488266687, guid: 779ebff4083449b498a273b9c838006d, type: 3}
+      propertyPath: meteorFallDuration
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080634614488266687, guid: 779ebff4083449b498a273b9c838006d, type: 3}
+      propertyPath: meteorSpawnOffset.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080634614488266687, guid: 779ebff4083449b498a273b9c838006d, type: 3}
+      propertyPath: attacks.Array.data[2].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080634614488266687, guid: 779ebff4083449b498a273b9c838006d, type: 3}
+      propertyPath: attacks.Array.data[0].weight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080634614488266687, guid: 779ebff4083449b498a273b9c838006d, type: 3}
+      propertyPath: attacks.Array.data[1].weight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080634614488266687, guid: 779ebff4083449b498a273b9c838006d, type: 3}
+      propertyPath: attacks.Array.data[2].damage
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080634614488266687, guid: 779ebff4083449b498a273b9c838006d, type: 3}
+      propertyPath: attacks.Array.data[2].weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080634614488266687, guid: 779ebff4083449b498a273b9c838006d, type: 3}
+      propertyPath: attacks.Array.data[2].recoveryTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080634614488266687, guid: 779ebff4083449b498a273b9c838006d, type: 3}
+      propertyPath: attacks.Array.data[2].animationName
+      value: CastMeteor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2312,7 +2377,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1565167115986415521, guid: 960305362fd57df45b3443063fbad287, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4766047120309101735, guid: 960305362fd57df45b3443063fbad287, type: 3}
       propertyPath: m_Camera
@@ -2321,6 +2386,10 @@ PrefabInstance:
     - target: {fileID: 7002593771494455817, guid: 960305362fd57df45b3443063fbad287, type: 3}
       propertyPath: m_Name
       value: SkeletonSoldier
+      objectReference: {fileID: 0}
+    - target: {fileID: 7002593771494455817, guid: 960305362fd57df45b3443063fbad287, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7606728712727995175, guid: 960305362fd57df45b3443063fbad287, type: 3}
       propertyPath: m_LocalPosition.x
