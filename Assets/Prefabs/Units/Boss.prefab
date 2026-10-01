@@ -48,16 +48,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Boss
   attacks:
   - animationName: Attack1
+    type: 0
     damage: 20
-    weight: 1
+    weight: 2
     recoveryTime: 1
   - animationName: Attack2
+    type: 0
     damage: 25
+    weight: 2
+    recoveryTime: 1
+  - animationName: CastMeteor
+    type: 1
+    damage: 50
     weight: 1
     recoveryTime: 1
   maxRepeat: 2
   bossSprite: {fileID: 8622214408287149719}
-  turnDisplayName: Demon Wizard
+  turnDisplayName: Demon Warlock
+  playerTarget: {fileID: 0}
+  meteorPrefab: {fileID: 2878532324393371571, guid: 5d4d0a049285d604584bacc50ca2f522, type: 3}
+  impactVFXPrefab: {fileID: 5244354155945194624, guid: 787f330a9f561a049aab472cef8618dc, type: 3}
+  meteorSpawnOffset: {x: 8, y: 8, z: 0}
+  meteorFallDuration: 1.5
+  castDelay: 1
+  impactDuration: 1
 --- !u!114 &4678391946553401086
 MonoBehaviour:
   m_ObjectHideFlags: 0

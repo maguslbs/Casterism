@@ -10,16 +10,25 @@ public class Player : MonoBehaviour
 
     private Health health;
 
+    [Header("Curse")]                                               
+    [SerializeField] private GameObject curseVFXPrefab;             
+    [SerializeField] private Vector3 curseVFXOffset = Vector3.zero; 
+    private GameObject activeCurseVFX;
+
     private void OnEnable()
     {
         PlayerEvents.OnCardPlayed += HandleCardPlayed;
         PlayerEvents.OnPlayerHit += PlayerHit;
+        PlayerEvents.OnPlayerCursed += HandleCursed;
+        PlayerEvents.OnCurseRemoved += HandleCurseRemoved;
     }
 
     private void OnDisable()
     {
         PlayerEvents.OnCardPlayed -= HandleCardPlayed;
         PlayerEvents.OnPlayerHit -= PlayerHit;
+        PlayerEvents.OnPlayerCursed -= HandleCursed;
+        PlayerEvents.OnCurseRemoved -= HandleCurseRemoved;
     }
 
     private void Awake()
@@ -43,6 +52,34 @@ public class Player : MonoBehaviour
         if (!health.IsAlive())
         {
             Die();
+        }
+    }
+
+    private void HandleCursed(int amount)
+    {
+        animationController.Play("Hurt");
+        health.ReduceMaxHealth(amount);
+
+        if (curseVFXPrefab != null && activeCurseVFX == null)
+        {
+            activeCurseVFX = Instantiate(curseVFXPrefab, playerSprite.transform);
+            activeCurseVFX.transform.localPosition = curseVFXOffset;
+        }
+
+        if (!health.IsAlive())
+        {
+            Die();
+        }
+    }
+
+    private void HandleCurseRemoved()   
+    {
+        health.RestoreMaxHealth();
+
+        if (activeCurseVFX != null)
+        {
+            Destroy(activeCurseVFX);
+            activeCurseVFX = null;
         }
     }
 
@@ -95,7 +132,9 @@ public class Player : MonoBehaviour
 
         animationController.Play("Attack");
         BossEvents.BossHit(cardData);
-        SkeletonSoldierEvents.SkSoldierHit(cardData);
+        FallenSoldierEvents.FlSoldierHit(cardData);
+        GoblinEvents.GoblinHit(cardData);
+        SkeletonKingEvents.SkeletonKingHit(cardData);
 
         yield return new WaitForSeconds(.5f);
 

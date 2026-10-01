@@ -16,6 +16,7 @@ public class Health : MonoBehaviour
     }
 
     private int currentHealth;
+    private int maxHealthReduction = 0; //taking notes how many hp taken by curse
 
     private void Start()
     {
@@ -44,6 +45,33 @@ public class Health : MonoBehaviour
             currentHealth = totalHealth;
         }
 
+        UpdateHealthUI();
+    }
+
+    public void ReduceMaxHealth(int amount) //Upon cursed by skeleton king
+    {
+        if (amount <= 0) return;
+
+        int oldTotal = totalHealth;                         
+        totalHealth = Mathf.Max(1, totalHealth - amount);
+        maxHealthReduction += oldTotal - totalHealth;       
+
+        currentHealth = Mathf.Clamp(currentHealth - amount, 1, totalHealth);
+        UpdateHealthUI();
+    }
+
+    public void RestoreMaxHealth() //upon cursed cleansed to restore hp
+    {
+        if (maxHealthReduction <= 0) return;
+
+        totalHealth += maxHealthReduction;
+
+        if (IsAlive())
+        {
+            currentHealth = Mathf.Min(currentHealth + maxHealthReduction, totalHealth);
+        }
+
+        maxHealthReduction = 0;
         UpdateHealthUI();
     }
 

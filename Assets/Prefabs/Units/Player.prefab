@@ -179,6 +179,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   playerSprite: {fileID: 1435467110954999326}
+  curseVFXPrefab: {fileID: 1303016060835765936, guid: 8349112caf1020f459e1b03b6d6299af, type: 3}
+  curseVFXOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &4082332766151848142
 MonoBehaviour:
   m_ObjectHideFlags: 0

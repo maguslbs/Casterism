@@ -15,6 +15,8 @@ public static class PlayerEvents
     public static event Action OnPlayerHealed;
 
     public static event Action OnAttackComplete;
+    public static event Action<int> OnPlayerCursed;
+    public static event Action OnCurseRemoved;
 
     public static void CardPlayed(CardData cardData)
     {
@@ -49,5 +51,15 @@ public static class PlayerEvents
     public static void AttackComplete()
     {
         OnAttackComplete?.Invoke();
+    }
+
+    public static void PlayerCursed(int amount) //upon cursed by skeleton king
+    {
+        OnPlayerCursed?.Invoke(amount);
+    }
+
+    public static void CurseRemoved()
+    {
+        OnCurseRemoved?.Invoke();
     }
 }

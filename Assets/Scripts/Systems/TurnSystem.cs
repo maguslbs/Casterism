@@ -31,7 +31,7 @@ public class TurnSystem : Singleton<TurnSystem>
         PlayerEvents.OnReshuffleRequested += ReshuffleRequested;
         PlayerEvents.OnCardPlayed += CardPlayed;
         BossEvents.OnBossDeath += ClearTurnDisplay;
-        SkeletonSoldierEvents.OnSkSoldierDeath += ClearTurnDisplay;
+        FallenSoldierEvents.OnFlSoldierDeath += ClearTurnDisplay;
         PlayerEvents.OnPlayerDeath += ClearTurnDisplay;
     }
 
@@ -41,7 +41,7 @@ public class TurnSystem : Singleton<TurnSystem>
         PlayerEvents.OnReshuffleRequested -= ReshuffleRequested;
         PlayerEvents.OnCardPlayed -= CardPlayed;
         BossEvents.OnBossDeath -= ClearTurnDisplay;
-        SkeletonSoldierEvents.OnSkSoldierDeath -= ClearTurnDisplay;
+        FallenSoldierEvents.OnFlSoldierDeath -= ClearTurnDisplay;
         PlayerEvents.OnPlayerDeath -= ClearTurnDisplay;
     }
 

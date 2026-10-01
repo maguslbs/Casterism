@@ -13,14 +13,18 @@ public class GameManager : Singleton<GameManager>
     private void OnEnable()
     {
         BossEvents.OnBossDeath += PlayerWin;
-        SkeletonSoldierEvents.OnSkSoldierDeath += PlayerWin;
+        FallenSoldierEvents.OnFlSoldierDeath += PlayerWin;
+        GoblinEvents.OnGoblinDeath += PlayerWin;
+        SkeletonKingEvents.OnSkeletonKingDeath += PlayerWin;
         PlayerEvents.OnPlayerDeath += PlayerLose;
     }
 
     private void OnDisable()
     {
         BossEvents.OnBossDeath -= PlayerWin;
-        SkeletonSoldierEvents.OnSkSoldierDeath -= PlayerWin;
+        FallenSoldierEvents.OnFlSoldierDeath -= PlayerWin;
+        GoblinEvents.OnGoblinDeath -= PlayerWin;
+        SkeletonKingEvents.OnSkeletonKingDeath -= PlayerWin;
         PlayerEvents.OnPlayerDeath -= PlayerLose;
     }
 

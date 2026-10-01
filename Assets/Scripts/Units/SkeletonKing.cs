@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class SkeletonSoldier : MonoBehaviour
+public class SkeletonKing : MonoBehaviour
 {
     [SerializeField] private EnemyAttack[] attacks; //new variable for creating randomized attack
     [SerializeField] private int maxRepeat = 2;
@@ -11,30 +11,38 @@ public class SkeletonSoldier : MonoBehaviour
     private Animator animationController;
     private Vector3 originalPosition;
 
-    [SerializeField] private GameObject skSoldierSprite;
-    [SerializeField] private string turnDisplayName = "Skeleton Soldier";
+    [SerializeField] private GameObject skeletonKingSprite;
+    [SerializeField] private string turnDisplayName = "Skeleton King";
+
+    [Header("Curse")]
+    [SerializeField] private string castAnimationName = "Cast";
+    [SerializeField] private int curseAmount = 30;
+    [SerializeField] private float castDelay = .5f;
+    [SerializeField] private float curseRecoveryTime = .5f;
+
+    private bool hasCursed = false;
 
     private void Awake()
     {
         health = GetComponent<Health>();
-        animationController = skSoldierSprite.GetComponent<Animator>();
+        animationController = skeletonKingSprite.GetComponent<Animator>();
     }
 
     private void Start()
     {
-        originalPosition = skSoldierSprite.transform.position;
+        originalPosition = skeletonKingSprite.transform.position;
         TurnSystem.Instance.SetCurrentEnemy(turnDisplayName);
     }
 
     private void OnEnable()
     {
-        SkeletonSoldierEvents.OnSkSoldierHit += HandleSkSoldierHit;
+        SkeletonKingEvents.OnSkeletonKingHit += HandleSkeletonKingHit;
         TurnEvents.OnBossTurnStart += Attack;
     }
 
     private void OnDisable()
     {
-        SkeletonSoldierEvents.OnSkSoldierHit -= HandleSkSoldierHit;
+        SkeletonKingEvents.OnSkeletonKingHit -= HandleSkeletonKingHit;
         TurnEvents.OnBossTurnStart -= Attack;
     }
 
@@ -63,11 +71,18 @@ public class SkeletonSoldier : MonoBehaviour
 
     private void Attack()
     {
-        if (!health.IsAlive()) return;                        
+        if (!health.IsAlive()) return;
 
-        if (attacks == null || attacks.Length == 0)           
+        if (attacks == null || attacks.Length == 0)
         {
-            Debug.LogWarning("SkeletonSoldier has no list of attacks", this);
+            Debug.LogWarning("Skeleton King has no list of attacks", this);
+            return;
+        }
+
+        if (!hasCursed)
+        {
+            hasCursed = true;
+            StartCoroutine(CastCurse());
             return;
         }
 
@@ -77,10 +92,10 @@ public class SkeletonSoldier : MonoBehaviour
         repeatCount = (chosen == lastAttack) ? repeatCount + 1 : 1; //can't repeat the same attack pattern twice
         lastAttack = chosen;
 
-        StartCoroutine(SkSoldierAttackAnimation(chosen));
+        StartCoroutine(SkeletonKingAttackAnimation(chosen));
     }
 
-    private void HandleSkSoldierHit(CardData carddata) //SkSoldier damaged
+    private void HandleSkeletonKingHit(CardData carddata) //Skeleton King damaged
     {
         if (!health.IsAlive()) return;
 
@@ -97,20 +112,26 @@ public class SkeletonSoldier : MonoBehaviour
     private void Die()
     {
         animationController.Play("Death");
-        SkeletonSoldierEvents.SkSoldierDeath();
+
+        if (hasCursed)                      
+        {                                   
+            PlayerEvents.CurseRemoved();    
+        }
+
+        SkeletonKingEvents.SkeletonKingDeath();
     }
 
-    private IEnumerator SkSoldierAttackAnimation(EnemyAttack attack)
+    private IEnumerator SkeletonKingAttackAnimation(EnemyAttack attack)
     {
         animationController.Play("Walk");
-        Vector3 targetPosition = originalPosition + new Vector3(-4f, 0, 0);
+        Vector3 targetPosition = originalPosition + new Vector3(-3f, 0, 0);
 
         float duration = .5f;
         float timeElapsed = 0f;
 
         while (timeElapsed < duration)
         {
-            skSoldierSprite.transform.position = Vector3.Lerp(originalPosition, targetPosition, timeElapsed / duration);
+            skeletonKingSprite.transform.position = Vector3.Lerp(originalPosition, targetPosition, timeElapsed / duration);
             timeElapsed += Time.deltaTime;
 
             yield return null;
@@ -125,14 +146,25 @@ public class SkeletonSoldier : MonoBehaviour
 
         while (timeElapsed < duration)
         {
-            skSoldierSprite.transform.position = Vector3.Lerp(targetPosition, originalPosition, timeElapsed / duration);
+            skeletonKingSprite.transform.position = Vector3.Lerp(targetPosition, originalPosition, timeElapsed / duration);
             timeElapsed += Time.deltaTime;
 
             yield return null;
         }
 
-        skSoldierSprite.transform.position = originalPosition;
+        skeletonKingSprite.transform.position = originalPosition;
 
         yield return null;
+    }
+
+    private IEnumerator CastCurse()
+    {
+        animationController.Play(castAnimationName);
+        yield return new WaitForSeconds(castDelay);
+
+        PlayerEvents.PlayerCursed(curseAmount);
+
+        yield return new WaitForSeconds(curseRecoveryTime);
+        animationController.Play("Idle");
     }
 }

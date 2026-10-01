@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7002593771494455817
+--- !u!1 &1195016737412096830
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,113 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7606728712727995175}
-  - component: {fileID: 6411831300082144764}
-  - component: {fileID: 8387420602226998441}
+  - component: {fileID: 446033362745717218}
+  - component: {fileID: 5524856977509513054}
+  - component: {fileID: 2953998229686722593}
+  - component: {fileID: 467358932108608494}
   m_Layer: 0
-  m_Name: SkeletonSoldier
+  m_Name: SkeletonKingSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7606728712727995175
+--- !u!4 &446033362745717218
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7002593771494455817}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.45, y: -0.26, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3720133574379691567}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6411831300082144764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7002593771494455817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be9a492264c05264c9a402367b83169f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkeletonSoldier
-  attacks:
-  - animationName: Attack1
-    damage: 15
-    weight: 1
-    recoveryTime: 1
-  - animationName: Attack2
-    damage: 25
-    weight: 1
-    recoveryTime: 1
-  skSoldierSprite: {fileID: 7657272371829993319}
-  turnDisplayName: Skeleton Soldier
---- !u!114 &8387420602226998441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7002593771494455817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2df74f5c094cdcc4db2accf476b47e4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Health
-  healthText: {fileID: 1896014718730154081}
-  healthSlider: {fileID: 4660441460332356222}
-  totalHealth: 10
---- !u!1 &7657272371829993319
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3720133574379691567}
-  - component: {fileID: 5993275832066475080}
-  - component: {fileID: 2654899775273020757}
-  - component: {fileID: 3733828417211963615}
-  m_Layer: 0
-  m_Name: SkSoldierSprite
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3720133574379691567
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7657272371829993319}
+  m_GameObject: {fileID: 1195016737412096830}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 8, y: 8, z: 8}
+  m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 8751364709197153801}
-  m_Father: {fileID: 7606728712727995175}
+  - {fileID: 5171146495157373777}
+  m_Father: {fileID: 1675653463710938612}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5993275832066475080
+--- !u!212 &5524856977509513054
 SpriteRenderer:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7657272371829993319}
+  m_GameObject: {fileID: 1195016737412096830}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -156,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: -2
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -5156001615864014919, guid: 9333157e7d7796043951f88c9dce1506, type: 3}
+  m_Sprite: {fileID: 815424164945274260, guid: 77cf2b5d777d6944c8923db096af6da3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -167,17 +95,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!95 &2654899775273020757
+--- !u!95 &2953998229686722593
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7657272371829993319}
+  m_GameObject: {fileID: 1195016737412096830}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ef56094434db76447a752f4f1722c910, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1e7f7eada63c58348ade00bb84fd3b49, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -189,13 +117,13 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3733828417211963615
+--- !u!114 &467358932108608494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7657272371829993319}
+  m_GameObject: {fileID: 1195016737412096830}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 819c3d48b3adff947b4c77a74b294382, type: 3}
@@ -203,28 +131,104 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Flash
   flashColor: {r: 1, g: 0, b: 0, a: 1}
   flashDuration: 0.2
---- !u!1001 &847734613749685303
+--- !u!1 &1375646497090213728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1675653463710938612}
+  - component: {fileID: 6457859883902567677}
+  - component: {fileID: 465224848250323367}
+  m_Layer: 0
+  m_Name: SkeletonKing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1675653463710938612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375646497090213728}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.45, y: 0.39, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 446033362745717218}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6457859883902567677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375646497090213728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0487bfef31d5ab44f95c10400a7bd973, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkeletonKing
+  attacks:
+  - animationName: Attack1
+    type: 0
+    damage: 20
+    weight: 2
+    recoveryTime: 1
+  - animationName: Attack2
+    type: 0
+    damage: 20
+    weight: 2
+    recoveryTime: 1
+  - animationName: Attack3
+    type: 0
+    damage: 30
+    weight: 1
+    recoveryTime: 1.7
+  maxRepeat: 2
+  skeletonKingSprite: {fileID: 1195016737412096830}
+  turnDisplayName: Skeleton King
+  castAnimationName: CastCurse
+  curseAmount: 30
+  castDelay: 0.5
+  curseRecoveryTime: 0.5
+--- !u!114 &465224848250323367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375646497090213728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df74f5c094cdcc4db2accf476b47e4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  healthText: {fileID: 2665975774923210041}
+  healthSlider: {fileID: 9087625575800401702}
+  totalHealth: 30
+--- !u!1001 &3851509668745630063
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 3720133574379691567}
+    m_TransformParent: {fileID: 446033362745717218}
     m_Modifications:
     - target: {fileID: 359465581483762433, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2196442773939581846, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2196442773939581846, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5435551125598551625, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
-      propertyPath: m_Value
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8264340568021948990, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
@@ -261,15 +265,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8264340568021948990, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.01
+      value: -0.0062499996
       objectReference: {fileID: 0}
     - target: {fileID: 8264340568021948990, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.01
+      value: 0.0062499996
       objectReference: {fileID: 0}
     - target: {fileID: 8264340568021948990, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.01
+      value: 0.0062499996
       objectReference: {fileID: 0}
     - target: {fileID: 8264340568021948990, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
       propertyPath: m_LocalPosition.x
@@ -293,19 +297,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8264340568021948990, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8264340568021948990, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8264340568021948990, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 8264340568021948990, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.34000003
+      value: 0.27
       objectReference: {fileID: 0}
     - target: {fileID: 8264340568021948990, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -325,17 +329,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8852965996125019528, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
       propertyPath: m_Name
-      value: SkSoldierHealthUI
+      value: SkeletonKingHealthUI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
---- !u!114 &1896014718730154081 stripped
+--- !u!114 &2665975774923210041 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1264453166268214358, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
-  m_PrefabInstance: {fileID: 847734613749685303}
+  m_PrefabInstance: {fileID: 3851509668745630063}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -343,10 +347,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
---- !u!114 &4660441460332356222 stripped
+--- !u!224 &5171146495157373777 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8264340568021948990, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
+  m_PrefabInstance: {fileID: 3851509668745630063}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9087625575800401702 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5435551125598551625, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
-  m_PrefabInstance: {fileID: 847734613749685303}
+  m_PrefabInstance: {fileID: 3851509668745630063}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -354,8 +363,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
---- !u!224 &8751364709197153801 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8264340568021948990, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
-  m_PrefabInstance: {fileID: 847734613749685303}
-  m_PrefabAsset: {fileID: 0}
