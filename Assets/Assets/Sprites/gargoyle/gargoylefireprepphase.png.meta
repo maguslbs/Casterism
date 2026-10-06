@@ -111,7 +111,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -142,12 +142,12 @@ TextureImporter:
       name: gargoylefireprepphase_0
       rect:
         serializedVersion: 2
-        x: 306
-        y: 29
-        width: 244
-        height: 116
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.31}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -164,12 +164,12 @@ TextureImporter:
       name: gargoylefireprepphase_1
       rect:
         serializedVersion: 2
-        x: 1106
-        y: 29
-        width: 244
-        height: 116
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 800
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.31}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -186,12 +186,12 @@ TextureImporter:
       name: gargoylefireprepphase_2
       rect:
         serializedVersion: 2
-        x: 1910
-        y: 29
-        width: 241
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1600
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.31}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -208,12 +208,12 @@ TextureImporter:
       name: gargoylefireprepphase_3
       rect:
         serializedVersion: 2
-        x: 2714
-        y: 33
-        width: 237
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2400
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.31}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -230,12 +230,12 @@ TextureImporter:
       name: gargoylefireprepphase_4
       rect:
         serializedVersion: 2
-        x: 3514
-        y: 31
-        width: 233
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3200
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.31}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -252,12 +252,12 @@ TextureImporter:
       name: gargoylefireprepphase_5
       rect:
         serializedVersion: 2
-        x: 4314
-        y: 29
-        width: 233
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4000
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.31}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -274,12 +274,12 @@ TextureImporter:
       name: gargoylefireprepphase_6
       rect:
         serializedVersion: 2
-        x: 5114
-        y: 29
-        width: 233
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4800
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.31}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -296,12 +296,12 @@ TextureImporter:
       name: gargoylefireprepphase_7
       rect:
         serializedVersion: 2
-        x: 5914
-        y: 29
-        width: 233
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5600
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.31}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -318,12 +318,12 @@ TextureImporter:
       name: gargoylefireprepphase_8
       rect:
         serializedVersion: 2
-        x: 6714
-        y: 29
-        width: 233
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6400
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.31}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -340,12 +340,12 @@ TextureImporter:
       name: gargoylefireprepphase_9
       rect:
         serializedVersion: 2
-        x: 7514
-        y: 29
-        width: 233
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 7200
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.31}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -362,12 +362,12 @@ TextureImporter:
       name: gargoylefireprepphase_10
       rect:
         serializedVersion: 2
-        x: 8314
-        y: 29
-        width: 233
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 8000
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.31}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -384,12 +384,12 @@ TextureImporter:
       name: gargoylefireprepphase_11
       rect:
         serializedVersion: 2
-        x: 9114
-        y: 29
-        width: 233
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 8800
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.31}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -406,12 +406,12 @@ TextureImporter:
       name: gargoylefireprepphase_12
       rect:
         serializedVersion: 2
-        x: 9914
-        y: 29
-        width: 233
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 9600
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.31}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -428,12 +428,12 @@ TextureImporter:
       name: gargoylefireprepphase_13
       rect:
         serializedVersion: 2
-        x: 10709
-        y: 29
-        width: 238
-        height: 116
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 10400
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.31}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -450,7 +450,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4b791635c4ffa944d987f6b9db5b80db
     internalID: 0
     vertices: []
     indices: 
@@ -458,7 +458,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":14.0,"y":1.0},"gridSpriteSize":{"x":800.0,"y":320.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       gargoylefireprepphase_0: -4916276269330059874
       gargoylefireprepphase_1: -6702275165391330815

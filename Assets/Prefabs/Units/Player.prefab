@@ -181,6 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player
   playerSprite: {fileID: 1435467110954999326}
   attackStopDistance: 2
+  moveSpeed: 8
   enemyAttackPoint: {fileID: 573146343018465699}
   curseVFXPrefab: {fileID: 1303016060835765936, guid: 8349112caf1020f459e1b03b6d6299af, type: 3}
   curseVFXOffset: {x: 0, y: 0, z: 0}

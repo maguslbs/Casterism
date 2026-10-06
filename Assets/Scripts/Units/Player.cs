@@ -5,6 +5,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private GameObject playerSprite;
     [SerializeField] private float attackStopDistance = 1.5f;   // BARU
+    [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private Transform enemyAttackPoint;
     private Vector3 originalPosition;
     private Animator animationController;
@@ -139,44 +140,42 @@ public class Player : MonoBehaviour
         PlayerEvents.PlayerHealed();
     }
 
-    private IEnumerator PlayerAttackAnimation(CardData cardData, Enemy target)   // UBAH
+    private IEnumerator MoveSprite(Vector3 from, Vector3 to)
+    {
+        float distance = Vector3.Distance(from, to);
+        float duration = distance / Mathf.Max(moveSpeed, 0.01f);
+        float timeElapsed = 0f;
+
+        while (timeElapsed < duration)
+        {
+            playerSprite.transform.position = Vector3.Lerp(from, to, timeElapsed / duration);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        playerSprite.transform.position = to;
+    }
+
+    private IEnumerator PlayerAttackAnimation(CardData cardData, Enemy target)
     {
         animationController.Play("Run");
 
         Vector3 attackPosition = target.GetAttackPosition(attackStopDistance);
         Vector3 targetPosition = new Vector3(attackPosition.x, attackPosition.y, originalPosition.z);
 
-        float duration = .5f;
-        float timeElapsed = 0f;
-
-        while (timeElapsed < duration)
-        {
-            playerSprite.transform.position = Vector3.Lerp(originalPosition, targetPosition, timeElapsed / duration);
-            timeElapsed += Time.deltaTime;
-
-            yield return null;
-        }
+        yield return MoveSprite(originalPosition, targetPosition);
 
         animationController.Play("Attack");
 
-        if (target != null && target.IsAlive())   // UBAH: hanya target yang kena
+        if (target != null && target.IsAlive())
         {
             target.TakeHit(cardData);
         }
 
         yield return new WaitForSeconds(.5f);
 
-        timeElapsed = 0f;
+        yield return MoveSprite(targetPosition, originalPosition);
 
-        while (timeElapsed < duration)
-        {
-            playerSprite.transform.position = Vector3.Lerp(targetPosition, originalPosition, timeElapsed / duration);
-            timeElapsed += Time.deltaTime;
-
-            yield return null;
-        }
-
-        playerSprite.transform.position = originalPosition;   // UBAH
         PlayerEvents.AttackComplete();
     }
 }

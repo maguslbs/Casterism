@@ -126,7 +126,7 @@ MonoBehaviour:
   maxRepeat: 2
   moveAnimationName: Walk
   meleeDistance: 4
-  moveDuration: 1
+  moveDuration: 0.8
   meleeOffset: {x: 0, y: 0, z: 0}
   attackPoint: {fileID: 963870137060599735}
   indicatorPoint: {fileID: 1766860064603080980}

@@ -29,6 +29,7 @@ public class GameManager : Singleton<GameManager>
     public void PlayerWin()
     {
         isGameActive = false;
+        GameEvents.GameOver();
         winLoseDisplay.text = "VICTORY ACHIEVED";
         StartCoroutine(RestartGame());
     }
@@ -36,6 +37,7 @@ public class GameManager : Singleton<GameManager>
     private void PlayerLose()
     {
         isGameActive = false;
+        GameEvents.GameOver();
         winLoseDisplay.text = "YOU DEATH";
         StartCoroutine(RestartGame());
     }

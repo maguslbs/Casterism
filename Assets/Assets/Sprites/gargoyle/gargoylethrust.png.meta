@@ -132,7 +132,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -163,12 +163,12 @@ TextureImporter:
       name: gargoylethrust_0
       rect:
         serializedVersion: 2
-        x: 306
-        y: 29
-        width: 244
-        height: 116
+        x: 0
+        y: 0
+        width: 800
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -185,12 +185,12 @@ TextureImporter:
       name: gargoylethrust_1
       rect:
         serializedVersion: 2
-        x: 1106
-        y: 29
-        width: 244
-        height: 116
+        x: 800
+        y: 0
+        width: 800
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -207,12 +207,12 @@ TextureImporter:
       name: gargoylethrust_2
       rect:
         serializedVersion: 2
-        x: 1910
-        y: 29
-        width: 241
-        height: 114
+        x: 1600
+        y: 0
+        width: 800
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -229,12 +229,12 @@ TextureImporter:
       name: gargoylethrust_3
       rect:
         serializedVersion: 2
-        x: 2714
-        y: 33
-        width: 237
-        height: 109
+        x: 2400
+        y: 0
+        width: 800
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -251,12 +251,12 @@ TextureImporter:
       name: gargoylethrust_4
       rect:
         serializedVersion: 2
-        x: 3514
-        y: 31
-        width: 233
-        height: 113
+        x: 3200
+        y: 0
+        width: 800
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -273,12 +273,12 @@ TextureImporter:
       name: gargoylethrust_5
       rect:
         serializedVersion: 2
-        x: 4314
-        y: 29
-        width: 233
-        height: 115
+        x: 4000
+        y: 0
+        width: 800
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -295,12 +295,12 @@ TextureImporter:
       name: gargoylethrust_6
       rect:
         serializedVersion: 2
-        x: 5114
-        y: 29
-        width: 233
-        height: 115
+        x: 4800
+        y: 0
+        width: 800
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -317,12 +317,12 @@ TextureImporter:
       name: gargoylethrust_7
       rect:
         serializedVersion: 2
-        x: 5914
-        y: 29
-        width: 233
-        height: 115
+        x: 5600
+        y: 0
+        width: 800
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -339,12 +339,12 @@ TextureImporter:
       name: gargoylethrust_8
       rect:
         serializedVersion: 2
-        x: 6714
-        y: 29
-        width: 233
-        height: 115
+        x: 6400
+        y: 0
+        width: 800
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -361,12 +361,12 @@ TextureImporter:
       name: gargoylethrust_9
       rect:
         serializedVersion: 2
-        x: 7514
-        y: 29
-        width: 233
-        height: 115
+        x: 7200
+        y: 0
+        width: 800
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -383,12 +383,12 @@ TextureImporter:
       name: gargoylethrust_10
       rect:
         serializedVersion: 2
-        x: 8324
-        y: 29
-        width: 225
-        height: 127
+        x: 8000
+        y: 0
+        width: 800
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -405,12 +405,12 @@ TextureImporter:
       name: gargoylethrust_11
       rect:
         serializedVersion: 2
-        x: 9124
-        y: 29
-        width: 225
-        height: 127
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 8800
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -427,12 +427,12 @@ TextureImporter:
       name: gargoylethrust_12
       rect:
         serializedVersion: 2
-        x: 9746
-        y: 29
-        width: 401
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 9600
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -449,12 +449,12 @@ TextureImporter:
       name: gargoylethrust_13
       rect:
         serializedVersion: 2
-        x: 10541
-        y: 29
-        width: 406
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 10400
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -471,12 +471,12 @@ TextureImporter:
       name: gargoylethrust_14
       rect:
         serializedVersion: 2
-        x: 11342
-        y: 35
-        width: 72
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 11200
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -493,12 +493,12 @@ TextureImporter:
       name: gargoylethrust_15
       rect:
         serializedVersion: 2
-        x: 11354
-        y: 29
-        width: 393
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 12000
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -511,121 +511,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: gargoylethrust_16
-      rect:
-        serializedVersion: 2
-        x: 12159
-        y: 36
-        width: 23
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 66526d10bc7661ec0800000000000000
-      internalID: -3596573130801928858
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gargoylethrust_17
-      rect:
-        serializedVersion: 2
-        x: 12178
-        y: 80
-        width: 20
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e19c75f13b54473f0800000000000000
-      internalID: -904020989567317730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gargoylethrust_18
-      rect:
-        serializedVersion: 2
-        x: 12217
-        y: 29
-        width: 330
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e169cec0ba8b3b0c0800000000000000
-      internalID: -4561098952800430562
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gargoylethrust_19
-      rect:
-        serializedVersion: 2
-        x: 12141
-        y: 55
-        width: 11
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 20c9ea423270fbd00800000000000000
-      internalID: 990518290565471234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gargoylethrust_20
-      rect:
-        serializedVersion: 2
-        x: 12176
-        y: 29
-        width: 23
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 529ba95484bc00b00800000000000000
-      internalID: 792857045683058981
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c6657c0e3ccecb04c9af8c2730c0ac0c
     internalID: 0
     vertices: []
     indices: 
@@ -633,7 +523,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":16.0,"y":1.0},"gridSpriteSize":{"x":800.0,"y":320.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       gargoylethrust_0: 4210294241994413796
       gargoylethrust_1: 1706290480561516
@@ -643,12 +535,7 @@ TextureImporter:
       gargoylethrust_13: -1107100350354132983
       gargoylethrust_14: -3980286466276710104
       gargoylethrust_15: -8052902293950229457
-      gargoylethrust_16: -3596573130801928858
-      gargoylethrust_17: -904020989567317730
-      gargoylethrust_18: -4561098952800430562
-      gargoylethrust_19: 990518290565471234
       gargoylethrust_2: 2747618613646066280
-      gargoylethrust_20: 792857045683058981
       gargoylethrust_3: 8427896625399943419
       gargoylethrust_4: -3644534994475915057
       gargoylethrust_5: -1310052073736619116

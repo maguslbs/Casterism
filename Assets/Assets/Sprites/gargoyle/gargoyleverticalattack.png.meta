@@ -114,7 +114,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -145,12 +145,12 @@ TextureImporter:
       name: gargoyleverticalattack_0
       rect:
         serializedVersion: 2
-        x: 306
-        y: 29
-        width: 244
-        height: 116
+        x: 0
+        y: 0
+        width: 800
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -167,12 +167,12 @@ TextureImporter:
       name: gargoyleverticalattack_1
       rect:
         serializedVersion: 2
-        x: 1106
-        y: 29
-        width: 244
-        height: 116
+        x: 800
+        y: 0
+        width: 800
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -189,12 +189,12 @@ TextureImporter:
       name: gargoyleverticalattack_2
       rect:
         serializedVersion: 2
-        x: 1910
-        y: 29
-        width: 241
-        height: 114
+        x: 1600
+        y: 0
+        width: 800
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -211,12 +211,12 @@ TextureImporter:
       name: gargoyleverticalattack_3
       rect:
         serializedVersion: 2
-        x: 2714
-        y: 33
-        width: 237
-        height: 109
+        x: 2400
+        y: 0
+        width: 800
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -233,12 +233,12 @@ TextureImporter:
       name: gargoyleverticalattack_4
       rect:
         serializedVersion: 2
-        x: 3514
-        y: 31
-        width: 233
-        height: 113
+        x: 3200
+        y: 0
+        width: 800
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -255,12 +255,12 @@ TextureImporter:
       name: gargoyleverticalattack_5
       rect:
         serializedVersion: 2
-        x: 4314
-        y: 29
-        width: 233
-        height: 115
+        x: 4000
+        y: 0
+        width: 800
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -277,12 +277,12 @@ TextureImporter:
       name: gargoyleverticalattack_6
       rect:
         serializedVersion: 2
-        x: 5114
-        y: 29
-        width: 233
-        height: 115
+        x: 4800
+        y: 0
+        width: 800
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -299,12 +299,12 @@ TextureImporter:
       name: gargoyleverticalattack_7
       rect:
         serializedVersion: 2
-        x: 5914
-        y: 29
-        width: 233
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5600
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -321,12 +321,12 @@ TextureImporter:
       name: gargoyleverticalattack_8
       rect:
         serializedVersion: 2
-        x: 6674
-        y: 21
-        width: 247
-        height: 161
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6400
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -343,12 +343,12 @@ TextureImporter:
       name: gargoyleverticalattack_9
       rect:
         serializedVersion: 2
-        x: 7474
-        y: 19
-        width: 251
-        height: 162
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 7200
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -365,12 +365,12 @@ TextureImporter:
       name: gargoyleverticalattack_10
       rect:
         serializedVersion: 2
-        x: 8143
-        y: 28
-        width: 400
-        height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 8000
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -387,12 +387,12 @@ TextureImporter:
       name: gargoyleverticalattack_11
       rect:
         serializedVersion: 2
-        x: 8943
-        y: 29
-        width: 400
-        height: 267
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 8800
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -409,12 +409,12 @@ TextureImporter:
       name: gargoyleverticalattack_12
       rect:
         serializedVersion: 2
-        x: 9743
-        y: 62
-        width: 38
-        height: 148
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 9600
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -431,12 +431,12 @@ TextureImporter:
       name: gargoyleverticalattack_13
       rect:
         serializedVersion: 2
-        x: 9829
-        y: 29
-        width: 314
-        height: 267
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 10400
+        y: 0
+        width: 800
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -449,33 +449,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: gargoyleverticalattack_14
-      rect:
-        serializedVersion: 2
-        x: 10719
-        y: 29
-        width: 224
-        height: 212
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 02973c12fb0451220800000000000000
-      internalID: 2455940361449863456
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ac0f7dbe6d5d39d4c964b126a22b7600
     internalID: 0
     vertices: []
     indices: 
@@ -483,7 +461,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":14.0,"y":1.0},"gridSpriteSize":{"x":800.0,"y":320.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       gargoyleverticalattack_0: 4913829445528798663
       gargoyleverticalattack_1: 8296215409193226770
@@ -491,7 +471,6 @@ TextureImporter:
       gargoyleverticalattack_11: -2509583885040774656
       gargoyleverticalattack_12: 2076378687344076340
       gargoyleverticalattack_13: -8718811191167091877
-      gargoyleverticalattack_14: 2455940361449863456
       gargoyleverticalattack_2: 4256193744677115753
       gargoyleverticalattack_3: 3472312600924123041
       gargoyleverticalattack_4: -5195544374621447764

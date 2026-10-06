@@ -32,8 +32,6 @@ public class SkeletonKing : Enemy
         {
             PlayerEvents.CurseRemoved();
         }
-
-        SkeletonKingEvents.SkeletonKingDeath();
     }
 
     private IEnumerator CastCurse()

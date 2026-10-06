@@ -18,7 +18,9 @@ public class TurnSystem : Singleton<TurnSystem>
     [SerializeField] private TextMeshProUGUI displayTurnState;
 
     private int actionsRemaining;
-    private string currentEnemyName = "Name";   // sementara, lihat catatan di bawah
+
+    private int pendingCardResolutions = 0;
+    private bool playerTurnEnding = false;
 
     private void Start()
     {
@@ -31,9 +33,8 @@ public class TurnSystem : Singleton<TurnSystem>
         PlayerEvents.OnDrawCardRequested += DrawRequested;
         PlayerEvents.OnReshuffleRequested += ReshuffleRequested;
         PlayerEvents.OnCardPlayed += CardPlayed;
-        BossEvents.OnBossDeath += ClearTurnDisplay;
-        FallenSoldierEvents.OnFlSoldierDeath += ClearTurnDisplay;
-        PlayerEvents.OnPlayerDeath += ClearTurnDisplay;
+        GameEvents.OnGameOver += ClearTurnDisplay;
+        PlayerEvents.OnAttackComplete += HandleCardResolved;
     }
 
     private void OnDisable()
@@ -41,21 +42,23 @@ public class TurnSystem : Singleton<TurnSystem>
         PlayerEvents.OnDrawCardRequested -= DrawRequested;
         PlayerEvents.OnReshuffleRequested -= ReshuffleRequested;
         PlayerEvents.OnCardPlayed -= CardPlayed;
-        BossEvents.OnBossDeath -= ClearTurnDisplay;
-        FallenSoldierEvents.OnFlSoldierDeath -= ClearTurnDisplay;
-        PlayerEvents.OnPlayerDeath -= ClearTurnDisplay;
+        GameEvents.OnGameOver -= ClearTurnDisplay;
+        PlayerEvents.OnAttackComplete -= HandleCardResolved;
     }
 
     private void StartPlayerTurn()
     {
         currentTurn = TurnState.PlayerTurn;
         actionsRemaining = maxActionsPerTurn;
+        pendingCardResolutions = 0;   // BARU
+        playerTurnEnding = false;     // BARU
         UpdateActionsUI();
         TurnEvents.PlayerTurnStart();
     }
 
     private void EndPlayerTurn()
     {
+        playerTurnEnding = true;
         TurnEvents.PlayerTurnEnd();
         StartCoroutine(WaitBetweenTurns());
     }
@@ -98,11 +101,6 @@ public class TurnSystem : Singleton<TurnSystem>
         StartCoroutine(WaitBetweenTurns());
     }
 
-    public void SetCurrentEnemy(string enemyName)   // sementara, lihat catatan di bawah
-    {
-        currentEnemyName = enemyName;
-    }
-
     private void ClearTurnDisplay()
     {
         displayTurnState.text = "";
@@ -132,7 +130,14 @@ public class TurnSystem : Singleton<TurnSystem>
 
     private void CardPlayed(CardData cardData)
     {
+        pendingCardResolutions++;
         ConsumeAction(cardData.actionCost);
+    }
+
+    private void HandleCardResolved()
+    {
+        pendingCardResolutions--;
+        TryEndPlayerTurn();
     }
 
     private void DrawRequested()
@@ -154,11 +159,17 @@ public class TurnSystem : Singleton<TurnSystem>
     {
         actionsRemaining -= amount;
         UpdateActionsUI();
+        TryEndPlayerTurn();
+    }
 
-        if (actionsRemaining <= 0)
-        {
-            EndPlayerTurn();
-        }
+    private void TryEndPlayerTurn()
+    {
+        if (currentTurn != TurnState.PlayerTurn) return;
+        if (playerTurnEnding) return;
+        if (actionsRemaining > 0) return;
+        if (pendingCardResolutions > 0) return;
+
+        EndPlayerTurn();
     }
 
     private void UpdateActionsUI()

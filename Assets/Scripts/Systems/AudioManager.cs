@@ -7,7 +7,7 @@ public class AudioManager : Singleton<AudioManager>
     [SerializeField] private AudioClip swingStaffSFX;
     [SerializeField] private AudioClip swordSliceSFX;
     [SerializeField] private AudioClip playerDeathSFX;
-    [SerializeField] private AudioClip bossDeathSFX;
+    [SerializeField] private AudioClip enemyDeathSFX;
     [SerializeField] private AudioClip healSFX;
     [SerializeField] private AudioClip reshuffleSFX;
 
@@ -23,9 +23,9 @@ public class AudioManager : Singleton<AudioManager>
     {
         PlayerEvents.OnCardPlayed += CardPlayed;
         PlayerEvents.OnDrawCardRequested += CardDrawn;
-        BossEvents.OnBossHit += SwordSlice;
+        EnemyEvents.OnEnemyHit += SwordSlice;
+        EnemyEvents.OnEnemyDeath += EnemyDeath;
         PlayerEvents.OnPlayerHit += SwingStaff;
-        BossEvents.OnBossDeath += BossDeath;
         PlayerEvents.OnPlayerDeath += PlayerDeath;
         PlayerEvents.OnPlayerHealed += PlayerHealed;
         PlayerEvents.OnReshuffleRequested += Reshuffle;
@@ -35,9 +35,9 @@ public class AudioManager : Singleton<AudioManager>
     {
         PlayerEvents.OnCardPlayed -= CardPlayed;
         PlayerEvents.OnDrawCardRequested -= CardDrawn;
-        BossEvents.OnBossHit -= SwordSlice;
+        EnemyEvents.OnEnemyHit += SwordSlice;
+        EnemyEvents.OnEnemyDeath += EnemyDeath;
         PlayerEvents.OnPlayerHit -= SwingStaff;
-        BossEvents.OnBossDeath -= BossDeath;
         PlayerEvents.OnPlayerDeath -= PlayerDeath;
         PlayerEvents.OnPlayerHealed -= PlayerHealed;
         PlayerEvents.OnReshuffleRequested -= Reshuffle;
@@ -53,7 +53,7 @@ public class AudioManager : Singleton<AudioManager>
         PlaySFX(cardDrawSFX);
     }
 
-    private void SwordSlice(CardData _)
+    private void SwordSlice(Enemy _)
     {
         PlaySFX(swordSliceSFX);
     }
@@ -63,9 +63,9 @@ public class AudioManager : Singleton<AudioManager>
         PlaySFX(swingStaffSFX);
     }
 
-    private void BossDeath()
+    private void EnemyDeath(Enemy _)
     {
-        PlaySFX(bossDeathSFX);
+        PlaySFX(enemyDeathSFX);
     }
 
     private void PlayerDeath()

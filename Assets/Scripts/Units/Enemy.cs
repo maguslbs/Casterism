@@ -80,6 +80,7 @@ public abstract class Enemy : MonoBehaviour
 
         animationController.Play("Hurt");
         health.TakeDamage(cardData.attackPower);
+        EnemyEvents.EnemyHit(this);
 
         if (!health.IsAlive())
         {
@@ -92,6 +93,7 @@ public abstract class Enemy : MonoBehaviour
     protected virtual void Die()
     {
         animationController.Play("Death");
+        EnemyEvents.EnemyDeath(this);
     }
 
     protected virtual IEnumerator TakeTurn()
