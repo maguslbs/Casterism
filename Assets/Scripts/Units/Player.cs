@@ -4,15 +4,17 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private GameObject playerSprite;
+    [SerializeField] private float attackStopDistance = 1.5f;   // BARU
+    [SerializeField] private Transform enemyAttackPoint;
     private Vector3 originalPosition;
     private Animator animationController;
     private ParticleSystem healVFX;
 
     private Health health;
 
-    [Header("Curse")]                                               
-    [SerializeField] private GameObject curseVFXPrefab;             
-    [SerializeField] private Vector3 curseVFXOffset = Vector3.zero; 
+    [Header("Curse")]
+    [SerializeField] private GameObject curseVFXPrefab;
+    [SerializeField] private Vector3 curseVFXOffset = Vector3.zero;
     private GameObject activeCurseVFX;
 
     private void OnEnable()
@@ -43,6 +45,16 @@ public class Player : MonoBehaviour
         originalPosition = playerSprite.transform.position;
     }
 
+    public Vector3 GetEnemyAttackPosition()
+    {
+        if (enemyAttackPoint != null)
+        {
+            return enemyAttackPoint.position;
+        }
+
+        return originalPosition + new Vector3(attackStopDistance, 0f, 0f);
+    }
+
     private void PlayerHit(int damage)
     {
         animationController.Play("Hurt");
@@ -55,10 +67,10 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void HandleCursed(int amount)
+    private void HandleCursed(float percent)
     {
         animationController.Play("Hurt");
-        health.ReduceMaxHealth(amount);
+        health.ReduceMaxHealthByPercent(percent);
 
         if (curseVFXPrefab != null && activeCurseVFX == null)
         {
@@ -72,7 +84,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void HandleCurseRemoved()   
+    private void HandleCurseRemoved()
     {
         health.RestoreMaxHealth();
 
@@ -91,20 +103,33 @@ public class Player : MonoBehaviour
 
     private void HandleCardPlayed(CardData cardData)
     {
+        bool startedAttack = false;
+
         if (cardData.attackPower > 0)
         {
-            Attack(cardData);
+            Enemy target = TargetSelector.Instance.CurrentTarget;
+
+            if (target != null)
+            {
+                Attack(cardData, target);
+                startedAttack = true;
+            }
         }
 
         if (cardData.healPower > 0)
         {
             Heal(cardData);
         }
+
+        if (!startedAttack)
+        {
+            PlayerEvents.AttackComplete();
+        }
     }
-     
-    private void Attack(CardData cardData)
+
+    private void Attack(CardData cardData, Enemy target)   // UBAH: menerima target
     {
-        StartCoroutine(PlayerAttackAnimation(cardData));
+        StartCoroutine(PlayerAttackAnimation(cardData, target));
     }
 
     private void Heal(CardData cardData)
@@ -114,10 +139,12 @@ public class Player : MonoBehaviour
         PlayerEvents.PlayerHealed();
     }
 
-    private IEnumerator PlayerAttackAnimation(CardData cardData)
+    private IEnumerator PlayerAttackAnimation(CardData cardData, Enemy target)   // UBAH
     {
         animationController.Play("Run");
-        Vector3 targetPosition = originalPosition + new Vector3(4f, 0, 0);
+
+        Vector3 attackPosition = target.GetAttackPosition(attackStopDistance);
+        Vector3 targetPosition = new Vector3(attackPosition.x, attackPosition.y, originalPosition.z);
 
         float duration = .5f;
         float timeElapsed = 0f;
@@ -131,10 +158,11 @@ public class Player : MonoBehaviour
         }
 
         animationController.Play("Attack");
-        BossEvents.BossHit(cardData);
-        FallenSoldierEvents.FlSoldierHit(cardData);
-        GoblinEvents.GoblinHit(cardData);
-        SkeletonKingEvents.SkeletonKingHit(cardData);
+
+        if (target != null && target.IsAlive())   // UBAH: hanya target yang kena
+        {
+            target.TakeHit(cardData);
+        }
 
         yield return new WaitForSeconds(.5f);
 
@@ -148,7 +176,7 @@ public class Player : MonoBehaviour
             yield return null;
         }
 
+        playerSprite.transform.position = originalPosition;   // UBAH
         PlayerEvents.AttackComplete();
-        yield return null;
     }
 }

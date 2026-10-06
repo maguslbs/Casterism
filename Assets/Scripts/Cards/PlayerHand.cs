@@ -107,7 +107,25 @@ public class PlayerHand : MonoBehaviour
 
     public void PlayCard(Card card)
     {
+        if (!CanPlay(card))
+        {
+            Debug.Log("Choose enemy first to attack.");
+            return;
+        }
+
         StartCoroutine(PlayCardWithDelay(card));
+    }
+
+    private bool CanPlay(Card card)
+    {
+        CardData data = card.GetCardData();
+
+        if (data.requiresTarget && TargetSelector.Instance.CurrentTarget == null)
+        {
+            return false;
+        }
+
+        return true;
     }
 
     private void RepositionCards()

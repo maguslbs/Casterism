@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 343922cb5e363c84191a8af4c16d970a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4210294241994413796
+    second: gargoylethrust_0
+  - first:
+      213: 1706290480561516
+    second: gargoylethrust_1
+  - first:
+      213: 2747618613646066280
+    second: gargoylethrust_2
+  - first:
+      213: 8427896625399943419
+    second: gargoylethrust_3
+  - first:
+      213: -3644534994475915057
+    second: gargoylethrust_4
+  - first:
+      213: -1310052073736619116
+    second: gargoylethrust_5
+  - first:
+      213: 2546576017367121526
+    second: gargoylethrust_6
+  - first:
+      213: 2796825737326119455
+    second: gargoylethrust_7
+  - first:
+      213: -4849925364308552982
+    second: gargoylethrust_8
+  - first:
+      213: 8230722651325058395
+    second: gargoylethrust_9
+  - first:
+      213: -4528185883339162355
+    second: gargoylethrust_10
+  - first:
+      213: 3314477457635943278
+    second: gargoylethrust_11
+  - first:
+      213: 383720306468776382
+    second: gargoylethrust_12
+  - first:
+      213: -1107100350354132983
+    second: gargoylethrust_13
+  - first:
+      213: -3980286466276710104
+    second: gargoylethrust_14
+  - first:
+      213: -8052902293950229457
+    second: gargoylethrust_15
+  - first:
+      213: -3596573130801928858
+    second: gargoylethrust_16
+  - first:
+      213: -904020989567317730
+    second: gargoylethrust_17
+  - first:
+      213: -4561098952800430562
+    second: gargoylethrust_18
+  - first:
+      213: 990518290565471234
+    second: gargoylethrust_19
+  - first:
+      213: 792857045683058981
+    second: gargoylethrust_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gargoylethrust_0
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 29
+        width: 244
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e613f55e48fd6a30800000000000000
+      internalID: 4210294241994413796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_1
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 29
+        width: 244
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6d3af5bcdf060000800000000000000
+      internalID: 1706290480561516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_2
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 29
+        width: 241
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86200a45290812620800000000000000
+      internalID: 2747618613646066280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_3
+      rect:
+        serializedVersion: 2
+        x: 2714
+        y: 33
+        width: 237
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf05da0f357e5f470800000000000000
+      internalID: 8427896625399943419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_4
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 31
+        width: 233
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc868ca6bb20c6dc0800000000000000
+      internalID: -3644534994475915057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_5
+      rect:
+        serializedVersion: 2
+        x: 4314
+        y: 29
+        width: 233
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b3aa37492c1dde0800000000000000
+      internalID: -1310052073736619116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_6
+      rect:
+        serializedVersion: 2
+        x: 5114
+        y: 29
+        width: 233
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67e32bc3561475320800000000000000
+      internalID: 2546576017367121526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_7
+      rect:
+        serializedVersion: 2
+        x: 5914
+        y: 29
+        width: 233
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a4efb903250d620800000000000000
+      internalID: 2796825737326119455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_8
+      rect:
+        serializedVersion: 2
+        x: 6714
+        y: 29
+        width: 233
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae25b31c39a91bcb0800000000000000
+      internalID: -4849925364308552982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_9
+      rect:
+        serializedVersion: 2
+        x: 7514
+        y: 29
+        width: 233
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5dcdf4a4a6693270800000000000000
+      internalID: 8230722651325058395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_10
+      rect:
+        serializedVersion: 2
+        x: 8324
+        y: 29
+        width: 225
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0d71a23ee6a821c0800000000000000
+      internalID: -4528185883339162355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_11
+      rect:
+        serializedVersion: 2
+        x: 9124
+        y: 29
+        width: 225
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e632e66dfa36ffd20800000000000000
+      internalID: 3314477457635943278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_12
+      rect:
+        serializedVersion: 2
+        x: 9746
+        y: 29
+        width: 401
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9ec20f59f335500800000000000000
+      internalID: 383720306468776382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_13
+      rect:
+        serializedVersion: 2
+        x: 10541
+        y: 29
+        width: 406
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9007e66d81ac2a0f0800000000000000
+      internalID: -1107100350354132983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_14
+      rect:
+        serializedVersion: 2
+        x: 11342
+        y: 35
+        width: 72
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82928412c8e23c8c0800000000000000
+      internalID: -3980286466276710104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_15
+      rect:
+        serializedVersion: 2
+        x: 11354
+        y: 29
+        width: 393
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f241b2e97085e3090800000000000000
+      internalID: -8052902293950229457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_16
+      rect:
+        serializedVersion: 2
+        x: 12159
+        y: 36
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66526d10bc7661ec0800000000000000
+      internalID: -3596573130801928858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_17
+      rect:
+        serializedVersion: 2
+        x: 12178
+        y: 80
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e19c75f13b54473f0800000000000000
+      internalID: -904020989567317730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_18
+      rect:
+        serializedVersion: 2
+        x: 12217
+        y: 29
+        width: 330
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e169cec0ba8b3b0c0800000000000000
+      internalID: -4561098952800430562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_19
+      rect:
+        serializedVersion: 2
+        x: 12141
+        y: 55
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c9ea423270fbd00800000000000000
+      internalID: 990518290565471234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoylethrust_20
+      rect:
+        serializedVersion: 2
+        x: 12176
+        y: 29
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 529ba95484bc00b00800000000000000
+      internalID: 792857045683058981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      gargoylethrust_0: 4210294241994413796
+      gargoylethrust_1: 1706290480561516
+      gargoylethrust_10: -4528185883339162355
+      gargoylethrust_11: 3314477457635943278
+      gargoylethrust_12: 383720306468776382
+      gargoylethrust_13: -1107100350354132983
+      gargoylethrust_14: -3980286466276710104
+      gargoylethrust_15: -8052902293950229457
+      gargoylethrust_16: -3596573130801928858
+      gargoylethrust_17: -904020989567317730
+      gargoylethrust_18: -4561098952800430562
+      gargoylethrust_19: 990518290565471234
+      gargoylethrust_2: 2747618613646066280
+      gargoylethrust_20: 792857045683058981
+      gargoylethrust_3: 8427896625399943419
+      gargoylethrust_4: -3644534994475915057
+      gargoylethrust_5: -1310052073736619116
+      gargoylethrust_6: 2546576017367121526
+      gargoylethrust_7: 2796825737326119455
+      gargoylethrust_8: -4849925364308552982
+      gargoylethrust_9: 8230722651325058395
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

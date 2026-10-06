@@ -18,3 +18,4 @@ MonoBehaviour:
   illustration: {fileID: 3504339129578956549, guid: 86206460202f32543975fe3730195e1e, type: 3}
   attackPower: 5
   healPower: 0
+  requiresTarget: 1

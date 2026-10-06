@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: bf8812040fb543b42896e1db8cf93e4b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4913829445528798663
+    second: gargoyleverticalattack_0
+  - first:
+      213: 8296215409193226770
+    second: gargoyleverticalattack_1
+  - first:
+      213: 4256193744677115753
+    second: gargoyleverticalattack_2
+  - first:
+      213: 3472312600924123041
+    second: gargoyleverticalattack_3
+  - first:
+      213: -5195544374621447764
+    second: gargoyleverticalattack_4
+  - first:
+      213: 4564620175253233318
+    second: gargoyleverticalattack_5
+  - first:
+      213: 4943332566480459993
+    second: gargoyleverticalattack_6
+  - first:
+      213: 9142689280108274087
+    second: gargoyleverticalattack_7
+  - first:
+      213: -538908517707620248
+    second: gargoyleverticalattack_8
+  - first:
+      213: 1574899951514061506
+    second: gargoyleverticalattack_9
+  - first:
+      213: -4979519679535097295
+    second: gargoyleverticalattack_10
+  - first:
+      213: -2509583885040774656
+    second: gargoyleverticalattack_11
+  - first:
+      213: 2076378687344076340
+    second: gargoyleverticalattack_12
+  - first:
+      213: -8718811191167091877
+    second: gargoyleverticalattack_13
+  - first:
+      213: 2455940361449863456
+    second: gargoyleverticalattack_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gargoyleverticalattack_0
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 29
+        width: 244
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c5499b98dd613440800000000000000
+      internalID: 4913829445528798663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoyleverticalattack_1
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 29
+        width: 244
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 212951d95f3122370800000000000000
+      internalID: 8296215409193226770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoyleverticalattack_2
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 29
+        width: 241
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96718b619a9011b30800000000000000
+      internalID: 4256193744677115753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoyleverticalattack_3
+      rect:
+        serializedVersion: 2
+        x: 2714
+        y: 33
+        width: 237
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afe137d9e1203030800000000000000
+      internalID: 3472312600924123041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoyleverticalattack_4
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 31
+        width: 233
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9d8ef1be7b5e7b0800000000000000
+      internalID: -5195544374621447764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoyleverticalattack_5
+      rect:
+        serializedVersion: 2
+        x: 4314
+        y: 29
+        width: 233
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aedc807dd9c85f30800000000000000
+      internalID: 4564620175253233318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoyleverticalattack_6
+      rect:
+        serializedVersion: 2
+        x: 5114
+        y: 29
+        width: 233
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d810bf37ce3a9440800000000000000
+      internalID: 4943332566480459993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoyleverticalattack_7
+      rect:
+        serializedVersion: 2
+        x: 5914
+        y: 29
+        width: 233
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a120a0d57b51ee70800000000000000
+      internalID: 9142689280108274087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoyleverticalattack_8
+      rect:
+        serializedVersion: 2
+        x: 6674
+        y: 21
+        width: 247
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860ea93fe896588f0800000000000000
+      internalID: -538908517707620248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoyleverticalattack_9
+      rect:
+        serializedVersion: 2
+        x: 7474
+        y: 19
+        width: 251
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca86c6692b2bd510800000000000000
+      internalID: 1574899951514061506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoyleverticalattack_10
+      rect:
+        serializedVersion: 2
+        x: 8143
+        y: 28
+        width: 400
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a5e3deb3135eab0800000000000000
+      internalID: -4979519679535097295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoyleverticalattack_11
+      rect:
+        serializedVersion: 2
+        x: 8943
+        y: 29
+        width: 400
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 002991eb0ca2c2dd0800000000000000
+      internalID: -2509583885040774656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoyleverticalattack_12
+      rect:
+        serializedVersion: 2
+        x: 9743
+        y: 62
+        width: 38
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 436e55e3a67c0dc10800000000000000
+      internalID: 2076378687344076340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoyleverticalattack_13
+      rect:
+        serializedVersion: 2
+        x: 9829
+        y: 29
+        width: 314
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5bf8c67a6f800780800000000000000
+      internalID: -8718811191167091877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gargoyleverticalattack_14
+      rect:
+        serializedVersion: 2
+        x: 10719
+        y: 29
+        width: 224
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02973c12fb0451220800000000000000
+      internalID: 2455940361449863456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      gargoyleverticalattack_0: 4913829445528798663
+      gargoyleverticalattack_1: 8296215409193226770
+      gargoyleverticalattack_10: -4979519679535097295
+      gargoyleverticalattack_11: -2509583885040774656
+      gargoyleverticalattack_12: 2076378687344076340
+      gargoyleverticalattack_13: -8718811191167091877
+      gargoyleverticalattack_14: 2455940361449863456
+      gargoyleverticalattack_2: 4256193744677115753
+      gargoyleverticalattack_3: 3472312600924123041
+      gargoyleverticalattack_4: -5195544374621447764
+      gargoyleverticalattack_5: 4564620175253233318
+      gargoyleverticalattack_6: 4943332566480459993
+      gargoyleverticalattack_7: 9142689280108274087
+      gargoyleverticalattack_8: -538908517707620248
+      gargoyleverticalattack_9: 1574899951514061506
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

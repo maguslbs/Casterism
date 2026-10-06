@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5524856977509513054}
   - component: {fileID: 2953998229686722593}
   - component: {fileID: 467358932108608494}
+  - component: {fileID: 2754742252537526142}
   m_Layer: 0
   m_Name: SkeletonKingSprite
   m_TagString: Untagged
@@ -131,6 +132,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Flash
   flashColor: {r: 1, g: 0, b: 0, a: 1}
   flashDuration: 0.2
+--- !u!61 &2754742252537526142
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195016737412096830}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.014626175, y: -0.0064181983}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.32, y: 0.56}
+    oldSize: {x: 1.7, y: 1.25}
+    newSize: {x: 2.5, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.31676316, y: 0.51708347}
+  m_EdgeRadius: 0
 --- !u!1 &1375646497090213728
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,6 +210,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 446033362745717218}
+  - {fileID: 6516549955371148580}
+  - {fileID: 3639972248306638216}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6457859883902567677
@@ -177,6 +226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0487bfef31d5ab44f95c10400a7bd973, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkeletonKing
+  turnDisplayName: Skeleton King
+  sprite: {fileID: 1195016737412096830}
   attacks:
   - animationName: Attack1
     type: 0
@@ -191,11 +242,15 @@ MonoBehaviour:
   - animationName: Attack3
     type: 0
     damage: 30
-    weight: 1
+    weight: 2
     recoveryTime: 1.7
   maxRepeat: 2
-  skeletonKingSprite: {fileID: 1195016737412096830}
-  turnDisplayName: Skeleton King
+  moveAnimationName: Walk
+  meleeDistance: 4
+  moveDuration: 1
+  meleeOffset: {x: 0, y: 0.7, z: 0}
+  attackPoint: {fileID: 6516549955371148580}
+  indicatorPoint: {fileID: 3639972248306638216}
   castAnimationName: CastCurse
   curseAmount: 30
   castDelay: 0.5
@@ -215,6 +270,68 @@ MonoBehaviour:
   healthText: {fileID: 2665975774923210041}
   healthSlider: {fileID: 9087625575800401702}
   totalHealth: 30
+--- !u!1 &4254777264517803461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6516549955371148580}
+  m_Layer: 0
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6516549955371148580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4254777264517803461}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2, y: -0.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1675653463710938612}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6334286441323648539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3639972248306638216}
+  m_Layer: 0
+  m_Name: IndicatorPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3639972248306638216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6334286441323648539}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.45, y: 2.91, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1675653463710938612}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3851509668745630063
 PrefabInstance:
   m_ObjectHideFlags: 0

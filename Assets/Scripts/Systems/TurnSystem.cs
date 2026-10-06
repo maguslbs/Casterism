@@ -1,10 +1,11 @@
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class TurnSystem : Singleton<TurnSystem>
 {
-    private enum TurnState{PlayerTurn, EnemyTurn}
+    private enum TurnState { PlayerTurn, EnemyTurn }
     private TurnState currentTurn = TurnState.PlayerTurn;
 
     [SerializeField] private int maxActionsPerTurn = 1;
@@ -17,7 +18,7 @@ public class TurnSystem : Singleton<TurnSystem>
     [SerializeField] private TextMeshProUGUI displayTurnState;
 
     private int actionsRemaining;
-    private string currentEnemyName = "Name";
+    private string currentEnemyName = "Name";   // sementara, lihat catatan di bawah
 
     private void Start()
     {
@@ -59,11 +60,35 @@ public class TurnSystem : Singleton<TurnSystem>
         StartCoroutine(WaitBetweenTurns());
     }
 
-    private IEnumerator StartEnemyTurn()
+    private IEnumerator RunEnemyTurn()   // BARU: menggantikan StartEnemyTurn dan EnemeyTurn
     {
         currentTurn = TurnState.EnemyTurn;
-        yield return new WaitForSeconds(enemyDelayTime);
-        EnemeyTurn();
+        TurnEvents.EnemyTurnStart();
+
+        List<Enemy> turnOrder = GameManager.Instance.lvl1.GetAliveEnemies();
+        ApplyTurnOrder(turnOrder);
+
+        foreach (Enemy enemy in turnOrder)
+        {
+            if (!GameManager.Instance.IsGameActive()) yield break;
+            if (!enemy.IsAlive()) continue;
+
+            displayTurnState.text = enemy.TurnDisplayName + "'s Turn";
+            yield return new WaitForSeconds(enemyDelayTime);
+
+            yield return enemy.PlayTurn();
+        }
+
+        StartCoroutine(EndEnemyTurn());
+    }
+
+    private void ApplyTurnOrder(List<Enemy> enemies)   // BARU: acak urutan musuh
+    {
+        for (int i = enemies.Count - 1; i > 0; i--)
+        {
+            int j = Random.Range(0, i + 1);
+            (enemies[i], enemies[j]) = (enemies[j], enemies[i]);
+        }
     }
 
     private IEnumerator EndEnemyTurn()
@@ -73,7 +98,7 @@ public class TurnSystem : Singleton<TurnSystem>
         StartCoroutine(WaitBetweenTurns());
     }
 
-    public void SetCurrentEnemy(string enemyName)
+    public void SetCurrentEnemy(string enemyName)   // sementara, lihat catatan di bawah
     {
         currentEnemyName = enemyName;
     }
@@ -100,11 +125,9 @@ public class TurnSystem : Singleton<TurnSystem>
             }
             else
             {
-                displayTurnState.text = currentEnemyName + "'s Turn";
-                StartCoroutine(StartEnemyTurn());
+                StartCoroutine(RunEnemyTurn());   // UBAH
             }
         }
-
     }
 
     private void CardPlayed(CardData cardData)
@@ -136,12 +159,6 @@ public class TurnSystem : Singleton<TurnSystem>
         {
             EndPlayerTurn();
         }
-    }
-
-    private void EnemeyTurn()
-    {
-        TurnEvents.EnemyTurnStart();
-        StartCoroutine(EndEnemyTurn());
     }
 
     private void UpdateActionsUI()

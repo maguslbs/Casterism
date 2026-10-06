@@ -60,6 +60,14 @@ public class Health : MonoBehaviour
         UpdateHealthUI();
     }
 
+    public void ReduceMaxHealthByPercent(float percent)
+    {
+        if (percent <= 0f) return;
+
+        int amount = Mathf.RoundToInt(totalHealth * percent / 100f);
+        ReduceMaxHealth(amount);
+    }
+
     public void RestoreMaxHealth() //upon cursed cleansed to restore hp
     {
         if (maxHealthReduction <= 0) return;

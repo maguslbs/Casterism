@@ -9,22 +9,15 @@ public class GameManager : Singleton<GameManager>
 
     [SerializeField] private float transitionTime;
     [SerializeField] private TextMeshProUGUI winLoseDisplay;
+    public LevelController lvl1;
 
     private void OnEnable()
     {
-        BossEvents.OnBossDeath += PlayerWin;
-        FallenSoldierEvents.OnFlSoldierDeath += PlayerWin;
-        GoblinEvents.OnGoblinDeath += PlayerWin;
-        SkeletonKingEvents.OnSkeletonKingDeath += PlayerWin;
         PlayerEvents.OnPlayerDeath += PlayerLose;
     }
 
     private void OnDisable()
     {
-        BossEvents.OnBossDeath -= PlayerWin;
-        FallenSoldierEvents.OnFlSoldierDeath -= PlayerWin;
-        GoblinEvents.OnGoblinDeath -= PlayerWin;
-        SkeletonKingEvents.OnSkeletonKingDeath -= PlayerWin;
         PlayerEvents.OnPlayerDeath -= PlayerLose;
     }
 
@@ -33,7 +26,7 @@ public class GameManager : Singleton<GameManager>
         return isGameActive;
     }
 
-    private void PlayerWin()
+    public void PlayerWin()
     {
         isGameActive = false;
         winLoseDisplay.text = "VICTORY ACHIEVED";

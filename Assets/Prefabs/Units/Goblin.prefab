@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3034251674920628930}
   - component: {fileID: 1472904288593519248}
   - component: {fileID: 8734157230395857279}
+  - component: {fileID: 538988136957316202}
   m_Layer: 0
   m_Name: GoblinSprite
   m_TagString: Untagged
@@ -131,6 +132,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Flash
   flashColor: {r: 1, g: 0, b: 0, a: 1}
   flashDuration: 0.2
+--- !u!61 &538988136957316202
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986785261629841579}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.003358543, y: -0.07944389}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.5, y: 1.5}
+    newSize: {x: 2.5, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.3448866, y: 0.37836358}
+  m_EdgeRadius: 0
 --- !u!1 &2273203967927858406
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,6 +210,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2506677695005721464}
+  - {fileID: 1096357607935480827}
+  - {fileID: 126757345158316398}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8176550076297268402
@@ -177,6 +226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63efaa8564d0e1e4990775df948e7fcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Goblin
+  turnDisplayName: Goblin
+  sprite: {fileID: 986785261629841579}
   attacks:
   - animationName: Attack1
     type: 0
@@ -189,8 +240,12 @@ MonoBehaviour:
     weight: 1
     recoveryTime: 1
   maxRepeat: 2
-  goblinSprite: {fileID: 986785261629841579}
-  turnDisplayName: Goblin
+  moveAnimationName: Walk
+  meleeDistance: 4
+  moveDuration: 0.5
+  meleeOffset: {x: 0, y: 0, z: 0}
+  attackPoint: {fileID: 1096357607935480827}
+  indicatorPoint: {fileID: 126757345158316398}
 --- !u!114 &5858556745655146821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +261,68 @@ MonoBehaviour:
   healthText: {fileID: 4040025470666270687}
   healthSlider: {fileID: 7130258435888231872}
   totalHealth: 8
+--- !u!1 &4799041352613280658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1096357607935480827}
+  m_Layer: 0
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1096357607935480827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4799041352613280658}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2, y: -0.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6547715602988713699}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8518020441192722641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 126757345158316398}
+  m_Layer: 0
+  m_Name: IndicatorPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &126757345158316398
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8518020441192722641}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.61, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6547715602988713699}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2998606485746813833
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -308,7 +425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8264340568021948990, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.34000003
+      value: 0.193
       objectReference: {fileID: 0}
     - target: {fileID: 8264340568021948990, guid: f12b0e260aeadf14da49f464461aff47, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

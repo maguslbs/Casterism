@@ -14,4 +14,5 @@ public class CardData : ScriptableObject
     public int attackPower;
 
     public int healPower;
+    public bool requiresTarget;
 }
