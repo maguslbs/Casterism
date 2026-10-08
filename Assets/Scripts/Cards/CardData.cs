@@ -15,4 +15,5 @@ public class CardData : ScriptableObject
 
     public int healPower;
     public bool requiresTarget;
+    public bool cleanse;
 }

@@ -15,8 +15,8 @@ public static class PlayerEvents
     public static event Action OnPlayerHealed;
 
     public static event Action OnAttackComplete;
-    public static event Action<float> OnPlayerCursed;
-    public static event Action OnCurseRemoved;
+    public static event Action<Debuff> OnDebuffApplied;
+    public static event Action<DebuffType> OnDebuffRemoved;
 
     public static void CardPlayed(CardData cardData)
     {
@@ -53,13 +53,13 @@ public static class PlayerEvents
         OnAttackComplete?.Invoke();
     }
 
-    public static void PlayerCursed(float percent) //upon cursed by skeleton king
+    public static void ApplyDebuff(Debuff debuff)
     {
-        OnPlayerCursed?.Invoke(percent);
+        OnDebuffApplied?.Invoke(debuff);
     }
 
-    public static void CurseRemoved()
+    public static void RemoveDebuff(DebuffType type)
     {
-        OnCurseRemoved?.Invoke();
+        OnDebuffRemoved?.Invoke(type);
     }
 }

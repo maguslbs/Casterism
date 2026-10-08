@@ -30,7 +30,7 @@ public class SkeletonKing : Enemy
 
         if (hasCursed)
         {
-            PlayerEvents.CurseRemoved();
+            PlayerEvents.RemoveDebuff(DebuffType.Curse);
         }
     }
 
@@ -39,7 +39,7 @@ public class SkeletonKing : Enemy
         animationController.Play(castAnimationName);
         yield return new WaitForSeconds(castDelay);
 
-        PlayerEvents.PlayerCursed(cursePercent);
+        PlayerEvents.ApplyDebuff(new CurseDebuff(cursePercent));
 
         yield return new WaitForSeconds(curseRecoveryTime);
         animationController.Play("Idle");

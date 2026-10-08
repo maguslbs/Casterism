@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 3805296089480788685}
   - component: {fileID: 7138102237642928168}
   - component: {fileID: 4082332766151848142}
+  - component: {fileID: 3391339690740115833}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -200,6 +201,23 @@ MonoBehaviour:
   healthText: {fileID: 4239661774734673475}
   healthSlider: {fileID: 6932311327424812124}
   totalHealth: 200
+--- !u!114 &3391339690740115833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6372237775047432148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02ef023fa1737340bd7a8380529e4b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerDebuffs
+  vfxParent: {fileID: 7025511002494337193}
+  vfxList:
+  - type: 0
+    prefab: {fileID: 1303016060835765936, guid: 8349112caf1020f459e1b03b6d6299af, type: 3}
+    offset: {x: 0, y: 0, z: 0}
 --- !u!1 &8156846638290642699
 GameObject:
   m_ObjectHideFlags: 0

@@ -158,10 +158,19 @@ public abstract class Enemy : MonoBehaviour
 
         animationController.Play(attack.animationName);
         PlayerEvents.PlayerHit(attack.damage);
+        ApplyOnHitEffects(attack);
         yield return new WaitForSeconds(attack.recoveryTime);
 
         yield return MoveSprite(targetPosition, originalPosition);
         animationController.Play("Idle");
+    }
+
+    protected void ApplyOnHitEffects(EnemyAttack attack)
+    {
+        if (attack.stunOnHit)
+        {
+            PlayerEvents.ApplyDebuff(new StunDebuff(attack.stunTurns));
+        }
     }
 
     private Vector3 GetMeleeTargetPosition()

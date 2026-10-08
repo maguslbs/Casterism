@@ -11,6 +11,7 @@ public class PlayerHand : MonoBehaviour
     [SerializeField] private DiscardPile discardPile;
     [SerializeField] private float cardHoldTime = .3f;
     [SerializeField] private ParticleSystem cardPlayVFXPrefab;
+    [SerializeField] private PlayerDebuffs playerDebuffs;
 
     private List<Card> cardsInHand = new List<Card>();
 
@@ -107,11 +108,7 @@ public class PlayerHand : MonoBehaviour
 
     public void PlayCard(Card card)
     {
-        if (!CanPlay(card))
-        {
-            Debug.Log("Choose enemy first to attack.");
-            return;
-        }
+        if (!CanPlay(card)) return;
 
         StartCoroutine(PlayCardWithDelay(card));
     }
@@ -122,6 +119,13 @@ public class PlayerHand : MonoBehaviour
 
         if (data.requiresTarget && TargetSelector.Instance.CurrentTarget == null)
         {
+            Debug.Log("Pilih target dulu: klik kanan musuh yang ingin diserang.");
+            return false;
+        }
+
+        if (data.attackPower > 0 && playerDebuffs != null && playerDebuffs.IsStunned)
+        {
+            Debug.Log("Sedang stun: kartu attack tidak bisa dimainkan.");
             return false;
         }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private GameObject playerSprite;
-    [SerializeField] private float attackStopDistance = 1.5f;   // BARU
+    [SerializeField] private float attackStopDistance = 1.5f;
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private Transform enemyAttackPoint;
     private Vector3 originalPosition;
@@ -12,32 +12,31 @@ public class Player : MonoBehaviour
     private ParticleSystem healVFX;
 
     private Health health;
+    private PlayerDebuffs debuffs;   // BARU
 
-    [Header("Curse")]
-    [SerializeField] private GameObject curseVFXPrefab;
-    [SerializeField] private Vector3 curseVFXOffset = Vector3.zero;
-    private GameObject activeCurseVFX;
+    // DIHAPUS: [Header("Curse")], curseVFXPrefab, curseVFXOffset, activeCurseVFX
 
     private void OnEnable()
     {
         PlayerEvents.OnCardPlayed += HandleCardPlayed;
         PlayerEvents.OnPlayerHit += PlayerHit;
-        PlayerEvents.OnPlayerCursed += HandleCursed;
-        PlayerEvents.OnCurseRemoved += HandleCurseRemoved;
+        PlayerEvents.OnDebuffApplied += HandleDebuffApplied;   // UBAH
+        PlayerEvents.OnDebuffRemoved += HandleDebuffRemoved;   // UBAH
     }
 
     private void OnDisable()
     {
         PlayerEvents.OnCardPlayed -= HandleCardPlayed;
         PlayerEvents.OnPlayerHit -= PlayerHit;
-        PlayerEvents.OnPlayerCursed -= HandleCursed;
-        PlayerEvents.OnCurseRemoved -= HandleCurseRemoved;
+        PlayerEvents.OnDebuffApplied -= HandleDebuffApplied;   // UBAH
+        PlayerEvents.OnDebuffRemoved -= HandleDebuffRemoved;   // UBAH
     }
 
     private void Awake()
     {
         animationController = playerSprite.GetComponent<Animator>();
         health = GetComponent<Health>();
+        debuffs = GetComponent<PlayerDebuffs>();   // BARU
         healVFX = playerSprite.GetComponentInChildren<ParticleSystem>();
     }
 
@@ -68,16 +67,12 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void HandleCursed(float percent)
+    private void HandleDebuffApplied(Debuff debuff)   // BARU: menggantikan HandleCursed
     {
-        animationController.Play("Hurt");
-        health.ReduceMaxHealthByPercent(percent);
+        if (!health.IsAlive()) return;
 
-        if (curseVFXPrefab != null && activeCurseVFX == null)
-        {
-            activeCurseVFX = Instantiate(curseVFXPrefab, playerSprite.transform);
-            activeCurseVFX.transform.localPosition = curseVFXOffset;
-        }
+        animationController.Play("Hurt");
+        debuffs.Apply(debuff);
 
         if (!health.IsAlive())
         {
@@ -85,15 +80,9 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void HandleCurseRemoved()
+    private void HandleDebuffRemoved(DebuffType type)   // BARU: menggantikan HandleCurseRemoved
     {
-        health.RestoreMaxHealth();
-
-        if (activeCurseVFX != null)
-        {
-            Destroy(activeCurseVFX);
-            activeCurseVFX = null;
-        }
+        debuffs.Remove(type);
     }
 
     private void Die()
@@ -105,6 +94,11 @@ public class Player : MonoBehaviour
     private void HandleCardPlayed(CardData cardData)
     {
         bool startedAttack = false;
+
+        if (cardData.cleanse)
+        {
+            debuffs.CleanseAll();
+        }
 
         if (cardData.attackPower > 0)
         {
@@ -128,7 +122,8 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void Attack(CardData cardData, Enemy target)   // UBAH: menerima target
+
+    private void Attack(CardData cardData, Enemy target)
     {
         StartCoroutine(PlayerAttackAnimation(cardData, target));
     }

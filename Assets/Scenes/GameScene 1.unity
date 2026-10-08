@@ -1863,6 +1863,7 @@ MonoBehaviour:
   discardPile: {fileID: 494845802}
   cardHoldTime: 0.3
   cardPlayVFXPrefab: {fileID: 2879127014130173995, guid: a48d53da08171f545b710a59c313aafc, type: 3}
+  playerDebuffs: {fileID: 1699539251}
 --- !u!1001 &1657676471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2041,6 +2042,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661031413}
   m_CullTransparentMesh: 1
+--- !u!114 &1699539251 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3391339690740115833, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
+  m_PrefabInstance: {fileID: 4076981168500334131}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02ef023fa1737340bd7a8380529e4b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerDebuffs
 --- !u!1 &1798839041
 GameObject:
   m_ObjectHideFlags: 0
@@ -2147,7 +2159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36ab9c8218a43a4395ec885c612bdbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelController
-  encounter: {fileID: 11400000, guid: 770a373bce2f4fd47b7c2a4f64384353, type: 2}
+  encounter: {fileID: 11400000, guid: 59039128c436ba446a1ab069ae6003b6, type: 2}
   spawners:
   - {fileID: 63988424}
   - {fileID: 1323791255}
