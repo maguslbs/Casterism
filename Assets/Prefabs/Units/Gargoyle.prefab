@@ -85,13 +85,43 @@ MonoBehaviour:
   - animationName: Attack1
     type: 0
     damage: 25
-    weight: 2
+    weight: 3
     recoveryTime: 1
+    stunOnHit: 0
+    stunTurns: 1
+    burnOnHit: 0
+    burnDamagePerTurn: 5
+    burnDuration: 0
   - animationName: Attack3
     type: 0
     damage: 20
     weight: 3
     recoveryTime: 1
+    stunOnHit: 0
+    stunTurns: 1
+    burnOnHit: 0
+    burnDamagePerTurn: 5
+    burnDuration: 0
+  - animationName: Attack2
+    type: 0
+    damage: 20
+    weight: 2
+    recoveryTime: 1
+    stunOnHit: 1
+    stunTurns: 1
+    burnOnHit: 0
+    burnDamagePerTurn: 5
+    burnDuration: 0
+  - animationName: CastFirePrepare
+    type: 2
+    damage: 25
+    weight: 2
+    recoveryTime: 1
+    stunOnHit: 0
+    stunTurns: 1
+    burnOnHit: 1
+    burnDamagePerTurn: 5
+    burnDuration: 3
   maxRepeat: 2
   moveAnimationName: Walk
   meleeDistance: 4
@@ -99,6 +129,7 @@ MonoBehaviour:
   meleeOffset: {x: 4, y: 2, z: 0}
   attackPoint: {fileID: 489145419947867472}
   indicatorPoint: {fileID: 5587107099857906258}
+  fireHitDelay: 3
 --- !u!114 &5223981547353501769
 MonoBehaviour:
   m_ObjectHideFlags: 0

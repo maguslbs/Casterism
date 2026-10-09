@@ -1,0 +1,3461 @@
+fileFormatVersion: 2
+guid: 0b6a5fd4ea8b7da448fccddf7f36166d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5903320004767967126
+    second: mytronado_0
+  - first:
+      213: 6150979848574796552
+    second: mytronado_1
+  - first:
+      213: 1797234868952701218
+    second: mytronado_2
+  - first:
+      213: 5211815374485045716
+    second: mytronado_3
+  - first:
+      213: 4730311055740989733
+    second: mytronado_4
+  - first:
+      213: -7859238302729573829
+    second: mytronado_5
+  - first:
+      213: 3152385300568268360
+    second: mytronado_6
+  - first:
+      213: -6906529455123918126
+    second: mytronado_7
+  - first:
+      213: -8139340155021029024
+    second: mytronado_8
+  - first:
+      213: -6035704547692261142
+    second: mytronado_9
+  - first:
+      213: -485755898373558483
+    second: mytronado_10
+  - first:
+      213: -2176779889077053046
+    second: mytronado_11
+  - first:
+      213: -5177160891406060563
+    second: mytronado_12
+  - first:
+      213: 5316896916669131087
+    second: mytronado_13
+  - first:
+      213: -7768394404294130742
+    second: mytronado_14
+  - first:
+      213: -7944789030805658166
+    second: mytronado_15
+  - first:
+      213: -3049392737574513347
+    second: mytronado_16
+  - first:
+      213: 8772704963000466327
+    second: mytronado_17
+  - first:
+      213: -8868360914979044280
+    second: mytronado_18
+  - first:
+      213: 5365242754027479728
+    second: mytronado_19
+  - first:
+      213: -4848523208647539377
+    second: mytronado_20
+  - first:
+      213: 4861244462048906819
+    second: mytronado_21
+  - first:
+      213: -2447391483220971457
+    second: mytronado_22
+  - first:
+      213: -7412408550121962788
+    second: mytronado_23
+  - first:
+      213: 1383124044570838027
+    second: mytronado_24
+  - first:
+      213: -1769602831250547513
+    second: mytronado_25
+  - first:
+      213: 8955824499171436715
+    second: mytronado_26
+  - first:
+      213: 2837768785627603647
+    second: mytronado_27
+  - first:
+      213: 6899844497363919471
+    second: mytronado_28
+  - first:
+      213: 3935357879942938418
+    second: mytronado_29
+  - first:
+      213: 4851386928504273601
+    second: mytronado_30
+  - first:
+      213: 1925828697674178325
+    second: mytronado_31
+  - first:
+      213: 1610991459936174697
+    second: mytronado_32
+  - first:
+      213: 8436093334753941995
+    second: mytronado_33
+  - first:
+      213: 4235709038877210392
+    second: mytronado_34
+  - first:
+      213: -1250049181239523770
+    second: mytronado_35
+  - first:
+      213: 3048407972230566510
+    second: mytronado_36
+  - first:
+      213: 1831581687510813695
+    second: mytronado_37
+  - first:
+      213: -4131334753932606548
+    second: mytronado_38
+  - first:
+      213: -3686381597923463111
+    second: mytronado_39
+  - first:
+      213: -6556508507232531732
+    second: mytronado_40
+  - first:
+      213: -751703884470172044
+    second: mytronado_41
+  - first:
+      213: 6696499428162786988
+    second: mytronado_42
+  - first:
+      213: 2656710007727760023
+    second: mytronado_43
+  - first:
+      213: 5497665752538655549
+    second: mytronado_44
+  - first:
+      213: 9089066808773974340
+    second: mytronado_45
+  - first:
+      213: 734887793744266547
+    second: mytronado_46
+  - first:
+      213: -7506189084976150775
+    second: mytronado_47
+  - first:
+      213: -3858934232233916110
+    second: mytronado_48
+  - first:
+      213: -7714602395090314766
+    second: mytronado_49
+  - first:
+      213: 6736469787289622326
+    second: mytronado_50
+  - first:
+      213: 8143091682542791768
+    second: mytronado_51
+  - first:
+      213: 6339503026772128665
+    second: mytronado_52
+  - first:
+      213: -8892835900787360344
+    second: mytronado_53
+  - first:
+      213: 205027932655933597
+    second: mytronado_54
+  - first:
+      213: -4261250975316736211
+    second: mytronado_55
+  - first:
+      213: 5681752241708687309
+    second: mytronado_56
+  - first:
+      213: 1818326813381926584
+    second: mytronado_57
+  - first:
+      213: -8761330901810317212
+    second: mytronado_58
+  - first:
+      213: -6072301061432128703
+    second: mytronado_59
+  - first:
+      213: 3281745427251051341
+    second: mytronado_60
+  - first:
+      213: -5135299623228722497
+    second: mytronado_61
+  - first:
+      213: -6816925183387817950
+    second: mytronado_62
+  - first:
+      213: -1201918417282205228
+    second: mytronado_63
+  - first:
+      213: -7764525659961556113
+    second: mytronado_64
+  - first:
+      213: -7652913927699074983
+    second: mytronado_65
+  - first:
+      213: -775595782736553570
+    second: mytronado_66
+  - first:
+      213: -2495963763749402060
+    second: mytronado_67
+  - first:
+      213: 138985428983656999
+    second: mytronado_68
+  - first:
+      213: -7536867872216806039
+    second: mytronado_69
+  - first:
+      213: -4397488053205388162
+    second: mytronado_70
+  - first:
+      213: 8382567563740852257
+    second: mytronado_71
+  - first:
+      213: 3655535005347187411
+    second: mytronado_72
+  - first:
+      213: -1636405533533401451
+    second: mytronado_73
+  - first:
+      213: -7158444766317674212
+    second: mytronado_74
+  - first:
+      213: 6820131301434757387
+    second: mytronado_75
+  - first:
+      213: 3673617154211196887
+    second: mytronado_76
+  - first:
+      213: -2100776790864648421
+    second: mytronado_77
+  - first:
+      213: 2264210267916562876
+    second: mytronado_78
+  - first:
+      213: -5657391304879858990
+    second: mytronado_79
+  - first:
+      213: 6047969382411270857
+    second: mytronado_80
+  - first:
+      213: 4698775165641140078
+    second: mytronado_81
+  - first:
+      213: 3028096966767500816
+    second: mytronado_82
+  - first:
+      213: -3375068839307338737
+    second: mytronado_83
+  - first:
+      213: 8481437553909960549
+    second: mytronado_84
+  - first:
+      213: -6890709448714248567
+    second: mytronado_85
+  - first:
+      213: -1239959937229362715
+    second: mytronado_86
+  - first:
+      213: 8082844614941459970
+    second: mytronado_87
+  - first:
+      213: -6157563484777549230
+    second: mytronado_88
+  - first:
+      213: 4470050759394195206
+    second: mytronado_89
+  - first:
+      213: -6162185553157248426
+    second: mytronado_90
+  - first:
+      213: -3650124648972693137
+    second: mytronado_91
+  - first:
+      213: -6309610331544446224
+    second: mytronado_92
+  - first:
+      213: 8611019268381887926
+    second: mytronado_93
+  - first:
+      213: -1780530303697780177
+    second: mytronado_94
+  - first:
+      213: -3612229741590946323
+    second: mytronado_95
+  - first:
+      213: 2873101949619552871
+    second: mytronado_96
+  - first:
+      213: 7969852716211330248
+    second: mytronado_97
+  - first:
+      213: 3315498720566390586
+    second: mytronado_98
+  - first:
+      213: 109347906073417146
+    second: mytronado_99
+  - first:
+      213: 3521667228468789158
+    second: mytronado_100
+  - first:
+      213: -535886255575140183
+    second: mytronado_101
+  - first:
+      213: -6535396128445944410
+    second: mytronado_102
+  - first:
+      213: -5903388850051324938
+    second: mytronado_103
+  - first:
+      213: 2672005783024737087
+    second: mytronado_104
+  - first:
+      213: 3345503560026660464
+    second: mytronado_105
+  - first:
+      213: 5654714752094931547
+    second: mytronado_106
+  - first:
+      213: -8307038958362280097
+    second: mytronado_107
+  - first:
+      213: 6093420460804542141
+    second: mytronado_108
+  - first:
+      213: -7147949048521065716
+    second: mytronado_109
+  - first:
+      213: -2755863114410845054
+    second: mytronado_110
+  - first:
+      213: -6393985010272677046
+    second: mytronado_111
+  - first:
+      213: -3016468766927402358
+    second: mytronado_112
+  - first:
+      213: -4344012983222367104
+    second: mytronado_113
+  - first:
+      213: -7867608688636433383
+    second: mytronado_114
+  - first:
+      213: 7425728032603731333
+    second: mytronado_115
+  - first:
+      213: 4172073124732938793
+    second: mytronado_116
+  - first:
+      213: -2756065623227148960
+    second: mytronado_117
+  - first:
+      213: 163359167612652975
+    second: mytronado_118
+  - first:
+      213: 957600655717044364
+    second: mytronado_119
+  - first:
+      213: -2723187421423149967
+    second: mytronado_120
+  - first:
+      213: 280454348580085711
+    second: mytronado_121
+  - first:
+      213: -9128676730969770488
+    second: mytronado_122
+  - first:
+      213: -6368565759400300400
+    second: mytronado_123
+  - first:
+      213: 2653733406445221519
+    second: mytronado_124
+  - first:
+      213: 3413287422318964368
+    second: mytronado_125
+  - first:
+      213: -4515806407709097154
+    second: mytronado_126
+  - first:
+      213: 8174796921900775618
+    second: mytronado_127
+  - first:
+      213: 3969585968784244357
+    second: mytronado_128
+  - first:
+      213: -808185959890745524
+    second: mytronado_129
+  - first:
+      213: 8616472372856833347
+    second: mytronado_130
+  - first:
+      213: 5880542008086819587
+    second: mytronado_131
+  - first:
+      213: -1313761700222110873
+    second: mytronado_132
+  - first:
+      213: 4173795955210931387
+    second: mytronado_133
+  - first:
+      213: 1674433988964416603
+    second: mytronado_134
+  - first:
+      213: -7169480099706573017
+    second: mytronado_135
+  - first:
+      213: -6054415907784659671
+    second: mytronado_136
+  - first:
+      213: 5741533791402063304
+    second: mytronado_137
+  - first:
+      213: -8213072503678421437
+    second: mytronado_138
+  - first:
+      213: 8747425392258271603
+    second: mytronado_139
+  - first:
+      213: -7221517943585514299
+    second: mytronado_140
+  - first:
+      213: -51904677234634872
+    second: mytronado_141
+  - first:
+      213: -6209967731235566487
+    second: mytronado_142
+  - first:
+      213: -7579161522194662444
+    second: mytronado_143
+  - first:
+      213: 6562890500939601941
+    second: mytronado_144
+  - first:
+      213: -1920501837636418821
+    second: mytronado_145
+  - first:
+      213: 90099519361513264
+    second: mytronado_146
+  - first:
+      213: 7364480988296231303
+    second: mytronado_147
+  - first:
+      213: 6941528905734102629
+    second: mytronado_148
+  - first:
+      213: 947531503276664421
+    second: mytronado_149
+  - first:
+      213: 4969036016826888716
+    second: mytronado_150
+  - first:
+      213: 4250533979606221618
+    second: mytronado_151
+  - first:
+      213: 2401180324414153641
+    second: mytronado_152
+  - first:
+      213: -5357427551650437202
+    second: mytronado_153
+  - first:
+      213: 7918863079456409088
+    second: mytronado_154
+  - first:
+      213: 568012169118784236
+    second: mytronado_155
+  - first:
+      213: 9191611278733639306
+    second: mytronado_156
+  - first:
+      213: -8327690706992509696
+    second: mytronado_157
+  - first:
+      213: 4859871523611350111
+    second: mytronado_158
+  - first:
+      213: 2666588262721998322
+    second: mytronado_159
+  - first:
+      213: -9177626928437157999
+    second: mytronado_160
+  - first:
+      213: 4584723465481019472
+    second: mytronado_161
+  - first:
+      213: -2505391756693209648
+    second: mytronado_162
+  - first:
+      213: -7614069163169466301
+    second: mytronado_163
+  - first:
+      213: 442989619068891492
+    second: mytronado_164
+  - first:
+      213: -7744347274860398045
+    second: mytronado_165
+  - first:
+      213: 2885374999343083473
+    second: mytronado_166
+  - first:
+      213: 6597838849189380401
+    second: mytronado_167
+  - first:
+      213: 3713675214105780659
+    second: mytronado_168
+  - first:
+      213: -5428037227652466100
+    second: mytronado_169
+  - first:
+      213: -1135447671723529276
+    second: mytronado_170
+  - first:
+      213: 4661726241019689824
+    second: mytronado_171
+  - first:
+      213: -3339585160423027749
+    second: mytronado_172
+  - first:
+      213: 1052565311252396655
+    second: mytronado_173
+  - first:
+      213: 2797880203220413925
+    second: mytronado_174
+  - first:
+      213: -5711222627136601214
+    second: mytronado_175
+  - first:
+      213: -5705439653877049514
+    second: mytronado_176
+  - first:
+      213: -4023085678200299949
+    second: mytronado_177
+  - first:
+      213: -1498000900597856923
+    second: mytronado_178
+  - first:
+      213: 2662666495431722751
+    second: mytronado_179
+  - first:
+      213: 3322005535939510691
+    second: mytronado_180
+  - first:
+      213: -6031763383759390040
+    second: mytronado_181
+  - first:
+      213: -5799251773765561645
+    second: mytronado_182
+  - first:
+      213: -3133289566528999190
+    second: mytronado_183
+  - first:
+      213: 3791059379465947556
+    second: mytronado_184
+  - first:
+      213: -3205497897071776926
+    second: mytronado_185
+  - first:
+      213: 754570875680029579
+    second: mytronado_186
+  - first:
+      213: -1669237449494441472
+    second: mytronado_187
+  - first:
+      213: 539659031215787577
+    second: mytronado_188
+  - first:
+      213: 2649473805243303681
+    second: mytronado_189
+  - first:
+      213: 6006736864839556256
+    second: mytronado_190
+  - first:
+      213: 5148829895306975028
+    second: mytronado_191
+  - first:
+      213: 7560187860448110465
+    second: mytronado_192
+  - first:
+      213: 9055087657602249245
+    second: mytronado_193
+  - first:
+      213: 6442517648552540057
+    second: mytronado_194
+  - first:
+      213: 6928311828322527647
+    second: mytronado_195
+  - first:
+      213: -6884198213925011361
+    second: mytronado_196
+  - first:
+      213: -3489913786332482220
+    second: mytronado_197
+  - first:
+      213: -8302538481192970651
+    second: mytronado_198
+  - first:
+      213: -8080491593483707190
+    second: mytronado_199
+  - first:
+      213: -3542281023521648223
+    second: mytronado_200
+  - first:
+      213: -6244648996221247290
+    second: mytronado_201
+  - first:
+      213: 937841415845638904
+    second: mytronado_202
+  - first:
+      213: -3503229230862418296
+    second: mytronado_203
+  - first:
+      213: 5134393436286613765
+    second: mytronado_204
+  - first:
+      213: -8366057099426037861
+    second: mytronado_205
+  - first:
+      213: 6924040931341112012
+    second: mytronado_206
+  - first:
+      213: -2728483280637546264
+    second: mytronado_207
+  - first:
+      213: 2322302591986954904
+    second: mytronado_208
+  - first:
+      213: -7006951462663207882
+    second: mytronado_209
+  - first:
+      213: -4944810251753215373
+    second: mytronado_210
+  - first:
+      213: -4859423575319641254
+    second: mytronado_211
+  - first:
+      213: -7542369472675045186
+    second: mytronado_212
+  - first:
+      213: -6644636951388188602
+    second: mytronado_213
+  - first:
+      213: 81867945921346675
+    second: mytronado_214
+  - first:
+      213: -6315275158703935027
+    second: mytronado_215
+  - first:
+      213: 8485270893010166181
+    second: mytronado_216
+  - first:
+      213: -3351604314651356105
+    second: mytronado_217
+  - first:
+      213: -811531557677178124
+    second: mytronado_218
+  - first:
+      213: 2177266366522407997
+    second: mytronado_219
+  - first:
+      213: -8009916372915398871
+    second: mytronado_220
+  - first:
+      213: 4401467842047708801
+    second: mytronado_221
+  - first:
+      213: 1398452092413660412
+    second: mytronado_222
+  - first:
+      213: 3303636715950218683
+    second: mytronado_223
+  - first:
+      213: 7598166347203797730
+    second: mytronado_224
+  - first:
+      213: 935714246834223156
+    second: mytronado_225
+  - first:
+      213: 6381436110404973652
+    second: mytronado_226
+  - first:
+      213: -6869325044620893737
+    second: mytronado_227
+  - first:
+      213: 9034122419948273726
+    second: mytronado_228
+  - first:
+      213: -7494419711055011937
+    second: mytronado_229
+  - first:
+      213: 2089293918733272482
+    second: mytronado_230
+  - first:
+      213: -3287075417213047045
+    second: mytronado_231
+  - first:
+      213: 8200123373451541730
+    second: mytronado_232
+  - first:
+      213: -8009338681902514372
+    second: mytronado_233
+  - first:
+      213: -4827277794466708810
+    second: mytronado_234
+  - first:
+      213: 3342817008178558973
+    second: mytronado_235
+  - first:
+      213: -8298478422715144365
+    second: mytronado_236
+  - first:
+      213: 9039726540038906751
+    second: mytronado_237
+  - first:
+      213: 5120575019466214387
+    second: mytronado_238
+  - first:
+      213: 6548649855978404795
+    second: mytronado_239
+  - first:
+      213: 388353179731373568
+    second: mytronado_240
+  - first:
+      213: -172298755311538569
+    second: mytronado_241
+  - first:
+      213: -657802079521478138
+    second: mytronado_242
+  - first:
+      213: 916298098370159180
+    second: mytronado_243
+  - first:
+      213: -5763046102924723994
+    second: mytronado_244
+  - first:
+      213: -7200807355351283027
+    second: mytronado_245
+  - first:
+      213: 8411695622564087930
+    second: mytronado_246
+  - first:
+      213: 5184293371360728917
+    second: mytronado_247
+  - first:
+      213: -6924250927632274898
+    second: mytronado_248
+  - first:
+      213: -569725221830589271
+    second: mytronado_249
+  - first:
+      213: 7805782987323091587
+    second: mytronado_250
+  - first:
+      213: 4738480008023099526
+    second: mytronado_251
+  - first:
+      213: -7682835284372483792
+    second: mytronado_252
+  - first:
+      213: 5609216268341818725
+    second: mytronado_253
+  - first:
+      213: 5832070150462598042
+    second: mytronado_254
+  - first:
+      213: -8521670413788269773
+    second: mytronado_255
+  - first:
+      213: -388151507080237941
+    second: mytronado_256
+  - first:
+      213: 77437609461056613
+    second: mytronado_257
+  - first:
+      213: -8475793458088098336
+    second: mytronado_258
+  - first:
+      213: -1295462611116672455
+    second: mytronado_259
+  - first:
+      213: -167883329549356141
+    second: mytronado_260
+  - first:
+      213: 614520736510262002
+    second: mytronado_261
+  - first:
+      213: 6287755690284361549
+    second: mytronado_262
+  - first:
+      213: 7005149594729645726
+    second: mytronado_263
+  - first:
+      213: 3377128904001409712
+    second: mytronado_264
+  - first:
+      213: 7453310925897311313
+    second: mytronado_265
+  - first:
+      213: 2689318637759493684
+    second: mytronado_266
+  - first:
+      213: -5023272197522445804
+    second: mytronado_267
+  - first:
+      213: -8465369974225418928
+    second: mytronado_268
+  - first:
+      213: 816017957439816469
+    second: mytronado_269
+  - first:
+      213: 3874558615770077975
+    second: mytronado_270
+  - first:
+      213: 4315684641476175527
+    second: mytronado_271
+  - first:
+      213: -3110400060085333275
+    second: mytronado_272
+  - first:
+      213: -3826763957195630180
+    second: mytronado_273
+  - first:
+      213: -4479028334556670913
+    second: mytronado_274
+  - first:
+      213: 5436290261964236766
+    second: mytronado_275
+  - first:
+      213: 7898402561248493648
+    second: mytronado_276
+  - first:
+      213: -7226138261211730098
+    second: mytronado_277
+  - first:
+      213: -1075250894555878757
+    second: mytronado_278
+  - first:
+      213: 3033798409707711119
+    second: mytronado_279
+  - first:
+      213: -2016918921835249810
+    second: mytronado_280
+  - first:
+      213: -3096179977740942020
+    second: mytronado_281
+  - first:
+      213: 9096809467035261997
+    second: mytronado_282
+  - first:
+      213: -686570830956369892
+    second: mytronado_283
+  - first:
+      213: 7827256468905074883
+    second: mytronado_284
+  - first:
+      213: -6716161809000482757
+    second: mytronado_285
+  - first:
+      213: 812192647735234797
+    second: mytronado_286
+  - first:
+      213: 2042117059252378543
+    second: mytronado_287
+  - first:
+      213: 6459091491373030169
+    second: mytronado_288
+  - first:
+      213: 3928711190343155143
+    second: mytronado_289
+  - first:
+      213: -1163935731092816168
+    second: mytronado_290
+  - first:
+      213: -3688375819175926165
+    second: mytronado_291
+  - first:
+      213: 6406530703928416956
+    second: mytronado_292
+  - first:
+      213: -5593405011656784962
+    second: mytronado_293
+  - first:
+      213: 7972393575684602644
+    second: mytronado_294
+  - first:
+      213: 1806093040360593299
+    second: mytronado_295
+  - first:
+      213: 5576987062559383287
+    second: mytronado_296
+  - first:
+      213: 4851598255363867316
+    second: mytronado_297
+  - first:
+      213: -265975148226136451
+    second: mytronado_298
+  - first:
+      213: 5421523667636549167
+    second: mytronado_299
+  - first:
+      213: 1264286921436701500
+    second: mytronado_300
+  - first:
+      213: 1214104776425589550
+    second: mytronado_301
+  - first:
+      213: -2411654410481997523
+    second: mytronado_302
+  - first:
+      213: 4385541814927068430
+    second: mytronado_303
+  - first:
+      213: 1724758022694815483
+    second: mytronado_304
+  - first:
+      213: 7815672495695703706
+    second: mytronado_305
+  - first:
+      213: -8475030854439281207
+    second: mytronado_306
+  - first:
+      213: -3396697246979041087
+    second: mytronado_307
+  - first:
+      213: 8059663090164562605
+    second: mytronado_308
+  - first:
+      213: 6125685143623093192
+    second: mytronado_309
+  - first:
+      213: -368821839672781603
+    second: mytronado_310
+  - first:
+      213: 6090043456980511368
+    second: mytronado_311
+  - first:
+      213: -6081166885720121564
+    second: mytronado_312
+  - first:
+      213: -840879452540790022
+    second: mytronado_313
+  - first:
+      213: -5742054111550290088
+    second: mytronado_314
+  - first:
+      213: -5610004276551383396
+    second: mytronado_315
+  - first:
+      213: -6795604228534578415
+    second: mytronado_316
+  - first:
+      213: -7973759370439600474
+    second: mytronado_317
+  - first:
+      213: 3367140962292832497
+    second: mytronado_318
+  - first:
+      213: -6348993977895059774
+    second: mytronado_319
+  - first:
+      213: -412665990226529536
+    second: mytronado_320
+  - first:
+      213: -8738415423767935711
+    second: mytronado_321
+  - first:
+      213: 1557944778534225550
+    second: mytronado_322
+  - first:
+      213: -6688368108522728841
+    second: mytronado_323
+  - first:
+      213: 7660132364277194415
+    second: mytronado_324
+  - first:
+      213: 1094465058666263
+    second: mytronado_325
+  - first:
+      213: 2396895021031026087
+    second: mytronado_326
+  - first:
+      213: 1576587281423818708
+    second: mytronado_327
+  - first:
+      213: -4161173630936015596
+    second: mytronado_328
+  - first:
+      213: -4587821567841987223
+    second: mytronado_329
+  - first:
+      213: -6298181982938056652
+    second: mytronado_330
+  - first:
+      213: 6535642924993395392
+    second: mytronado_331
+  - first:
+      213: 8131567197235059168
+    second: mytronado_332
+  - first:
+      213: 909623305990156693
+    second: mytronado_333
+  - first:
+      213: 6419233263579020665
+    second: mytronado_334
+  - first:
+      213: -2572266099115994032
+    second: mytronado_335
+  - first:
+      213: 1996299796137929303
+    second: mytronado_336
+  - first:
+      213: 3325435439060605347
+    second: mytronado_337
+  - first:
+      213: 6434134298612218396
+    second: mytronado_338
+  - first:
+      213: -4762516655390093716
+    second: mytronado_339
+  - first:
+      213: 756694035466443890
+    second: mytronado_340
+  - first:
+      213: -3032490809446057590
+    second: mytronado_341
+  - first:
+      213: 1609200178839512117
+    second: mytronado_342
+  - first:
+      213: -7857628033835604497
+    second: mytronado_343
+  - first:
+      213: 4674080551479920663
+    second: mytronado_344
+  - first:
+      213: 4425073126157049856
+    second: mytronado_345
+  - first:
+      213: 6490572414216107996
+    second: mytronado_346
+  - first:
+      213: -2645079860997411230
+    second: mytronado_347
+  - first:
+      213: -6194526612568235541
+    second: mytronado_348
+  - first:
+      213: 1445933220016648943
+    second: mytronado_349
+  - first:
+      213: -2215647975755110951
+    second: mytronado_350
+  - first:
+      213: 606995464606507402
+    second: mytronado_351
+  - first:
+      213: -4890230931542490806
+    second: mytronado_352
+  - first:
+      213: 3547989043810283831
+    second: mytronado_353
+  - first:
+      213: 1937119989852819469
+    second: mytronado_354
+  - first:
+      213: 1090316962103880646
+    second: mytronado_355
+  - first:
+      213: 3571368396690788613
+    second: mytronado_356
+  - first:
+      213: -8499153859097253877
+    second: mytronado_357
+  - first:
+      213: -6628435423702362134
+    second: mytronado_358
+  - first:
+      213: 5713265838135269227
+    second: mytronado_359
+  - first:
+      213: 54480702625250590
+    second: mytronado_360
+  - first:
+      213: 1654512586684539249
+    second: mytronado_361
+  - first:
+      213: -8588948506879849865
+    second: mytronado_362
+  - first:
+      213: -7606090262977340163
+    second: mytronado_363
+  - first:
+      213: 2043650409286723166
+    second: mytronado_364
+  - first:
+      213: 3864639114936486054
+    second: mytronado_365
+  - first:
+      213: 4362761257300874499
+    second: mytronado_366
+  - first:
+      213: -4845026845885419873
+    second: mytronado_367
+  - first:
+      213: -948245701750502889
+    second: mytronado_368
+  - first:
+      213: 2060487705214919538
+    second: mytronado_369
+  - first:
+      213: -2304665618527839415
+    second: mytronado_370
+  - first:
+      213: -1022761401410066743
+    second: mytronado_371
+  - first:
+      213: 6991671067648474629
+    second: mytronado_372
+  - first:
+      213: -1192701410011950768
+    second: mytronado_373
+  - first:
+      213: 445451101388943295
+    second: mytronado_374
+  - first:
+      213: 4497858135291303879
+    second: mytronado_375
+  - first:
+      213: 7354147784305850858
+    second: mytronado_376
+  - first:
+      213: 6393762247948739483
+    second: mytronado_377
+  - first:
+      213: 3260498088836715771
+    second: mytronado_378
+  - first:
+      213: 502093791379003159
+    second: mytronado_379
+  - first:
+      213: -3808591225503240795
+    second: mytronado_380
+  - first:
+      213: 447424714108210264
+    second: mytronado_381
+  - first:
+      213: -941312062026981400
+    second: mytronado_382
+  - first:
+      213: -8052580760103033099
+    second: mytronado_383
+  - first:
+      213: 5879834033221723524
+    second: mytronado_384
+  - first:
+      213: -1661396756856794427
+    second: mytronado_385
+  - first:
+      213: -4695860259818142397
+    second: mytronado_386
+  - first:
+      213: 1000879673915948635
+    second: mytronado_387
+  - first:
+      213: -6617439290820181931
+    second: mytronado_388
+  - first:
+      213: 7893883697228258042
+    second: mytronado_389
+  - first:
+      213: -1291581450889994542
+    second: mytronado_390
+  - first:
+      213: 8419331048996082576
+    second: mytronado_391
+  - first:
+      213: 5566923122958909260
+    second: mytronado_392
+  - first:
+      213: 5712427166061481241
+    second: mytronado_393
+  - first:
+      213: 4470055795435057792
+    second: mytronado_394
+  - first:
+      213: 6605042110056909525
+    second: mytronado_395
+  - first:
+      213: -1181748816271897252
+    second: mytronado_396
+  - first:
+      213: 7192861385119771023
+    second: mytronado_397
+  - first:
+      213: 3753605475635956456
+    second: mytronado_398
+  - first:
+      213: -7182072465222060797
+    second: mytronado_399
+  - first:
+      213: 7235316214977424789
+    second: mytronado_400
+  - first:
+      213: 8228446023739379983
+    second: mytronado_401
+  - first:
+      213: -4162601855889094576
+    second: mytronado_402
+  - first:
+      213: 5655317831023447441
+    second: mytronado_403
+  - first:
+      213: -185268919898881450
+    second: mytronado_404
+  - first:
+      213: 978429453851217058
+    second: mytronado_405
+  - first:
+      213: -150787928562153604
+    second: mytronado_406
+  - first:
+      213: 8871392472773922819
+    second: mytronado_407
+  - first:
+      213: 4717516198411042613
+    second: mytronado_408
+  - first:
+      213: -5591433257782380176
+    second: mytronado_409
+  - first:
+      213: -1280245196197370898
+    second: mytronado_410
+  - first:
+      213: -6826989276050771478
+    second: mytronado_411
+  - first:
+      213: 4289819160553943264
+    second: mytronado_412
+  - first:
+      213: 3812693333614691203
+    second: mytronado_413
+  - first:
+      213: 3867064524166571885
+    second: mytronado_414
+  - first:
+      213: 4736333011750968827
+    second: mytronado_415
+  - first:
+      213: -6128013278290623819
+    second: mytronado_416
+  - first:
+      213: 5042958306994058437
+    second: mytronado_417
+  - first:
+      213: -8680364552079136644
+    second: mytronado_418
+  - first:
+      213: 5711656638918588061
+    second: mytronado_419
+  - first:
+      213: -2725748332217303081
+    second: mytronado_420
+  - first:
+      213: -2194702350632641476
+    second: mytronado_421
+  - first:
+      213: -4688567989774464371
+    second: mytronado_422
+  - first:
+      213: -8259609572040339266
+    second: mytronado_423
+  - first:
+      213: -7047497542750607629
+    second: mytronado_424
+  - first:
+      213: -8209555850039283374
+    second: mytronado_425
+  - first:
+      213: -8291168462709779158
+    second: mytronado_426
+  - first:
+      213: 3609427452703941222
+    second: mytronado_427
+  - first:
+      213: 912697480570699584
+    second: mytronado_428
+  - first:
+      213: -7762322497520488269
+    second: mytronado_429
+  - first:
+      213: 8046413663644596112
+    second: mytronado_430
+  - first:
+      213: -8280181521515595605
+    second: mytronado_431
+  - first:
+      213: 7749262021149367738
+    second: mytronado_432
+  - first:
+      213: -9041437232742101461
+    second: mytronado_433
+  - first:
+      213: -8524442629130228624
+    second: mytronado_434
+  - first:
+      213: 7305800009740134617
+    second: mytronado_435
+  - first:
+      213: -2730383110688225229
+    second: mytronado_436
+  - first:
+      213: 3509720004370076968
+    second: mytronado_437
+  - first:
+      213: 3522768266968345262
+    second: mytronado_438
+  - first:
+      213: -6530664077770052179
+    second: mytronado_439
+  - first:
+      213: 5533850298247774963
+    second: mytronado_440
+  - first:
+      213: -7989288711799256723
+    second: mytronado_441
+  - first:
+      213: -6078875809053058309
+    second: mytronado_442
+  - first:
+      213: -1238448974125967866
+    second: mytronado_443
+  - first:
+      213: 2768980418888465035
+    second: mytronado_444
+  - first:
+      213: 873207263828207108
+    second: mytronado_445
+  - first:
+      213: 74320868089847650
+    second: mytronado_446
+  - first:
+      213: 7000931046542303022
+    second: mytronado_447
+  - first:
+      213: -5782454165132823406
+    second: mytronado_448
+  - first:
+      213: -5871533119048269686
+    second: mytronado_449
+  - first:
+      213: -3180375594404578295
+    second: mytronado_450
+  - first:
+      213: 4827762368401099121
+    second: mytronado_451
+  - first:
+      213: -868745313248724825
+    second: mytronado_452
+  - first:
+      213: 2439865326383127799
+    second: mytronado_453
+  - first:
+      213: 9149063685030635624
+    second: mytronado_454
+  - first:
+      213: -6656884389451790637
+    second: mytronado_455
+  - first:
+      213: -112506217005173307
+    second: mytronado_456
+  - first:
+      213: -8259298634778800234
+    second: mytronado_457
+  - first:
+      213: -1840159040969165424
+    second: mytronado_458
+  - first:
+      213: 7396123157364664960
+    second: mytronado_459
+  - first:
+      213: -7025689845824738427
+    second: mytronado_460
+  - first:
+      213: -9013102530892476357
+    second: mytronado_461
+  - first:
+      213: 8145248500834352366
+    second: mytronado_462
+  - first:
+      213: 7182543404470056507
+    second: mytronado_463
+  - first:
+      213: -414159975111895544
+    second: mytronado_464
+  - first:
+      213: 7038935719306357032
+    second: mytronado_465
+  - first:
+      213: -7315073828172470247
+    second: mytronado_466
+  - first:
+      213: 3190310958345373179
+    second: mytronado_467
+  - first:
+      213: 8889958604569809309
+    second: mytronado_468
+  - first:
+      213: -1701977864167787779
+    second: mytronado_469
+  - first:
+      213: -1120866812661936345
+    second: mytronado_470
+  - first:
+      213: -8035488331390341414
+    second: mytronado_471
+  - first:
+      213: -1124521253668547746
+    second: mytronado_472
+  - first:
+      213: -941289362389467056
+    second: mytronado_473
+  - first:
+      213: -7927493616859448107
+    second: mytronado_474
+  - first:
+      213: 3750575529541844470
+    second: mytronado_475
+  - first:
+      213: -2044161957626620284
+    second: mytronado_476
+  - first:
+      213: -8892852464220516933
+    second: mytronado_477
+  - first:
+      213: 4958999158581795145
+    second: mytronado_478
+  - first:
+      213: 7047565256223375233
+    second: mytronado_479
+  - first:
+      213: 1986916317283697330
+    second: mytronado_480
+  - first:
+      213: 4492886181458026746
+    second: mytronado_481
+  - first:
+      213: -402345131216611299
+    second: mytronado_482
+  - first:
+      213: -759034982708812184
+    second: mytronado_483
+  - first:
+      213: -8058292131862730655
+    second: mytronado_484
+  - first:
+      213: 173608175945507809
+    second: mytronado_485
+  - first:
+      213: -3881188741045015058
+    second: mytronado_486
+  - first:
+      213: -7335216189527493645
+    second: mytronado_487
+  - first:
+      213: -6491649780500725316
+    second: mytronado_488
+  - first:
+      213: -816008213268828233
+    second: mytronado_489
+  - first:
+      213: -8226974827333127595
+    second: mytronado_490
+  - first:
+      213: 5864642991171207474
+    second: mytronado_491
+  - first:
+      213: -818433854303021210
+    second: mytronado_492
+  - first:
+      213: 7963723577464649224
+    second: mytronado_493
+  - first:
+      213: 3939521367882225351
+    second: mytronado_494
+  - first:
+      213: 3403446623199865738
+    second: mytronado_495
+  - first:
+      213: -6767268809132124314
+    second: mytronado_496
+  - first:
+      213: -7896082106528954122
+    second: mytronado_497
+  - first:
+      213: 470880950961090078
+    second: mytronado_498
+  - first:
+      213: 281187418973805919
+    second: mytronado_499
+  - first:
+      213: -8031444650449902306
+    second: mytronado_500
+  - first:
+      213: -985296655552866497
+    second: mytronado_501
+  - first:
+      213: -3986806025599179281
+    second: mytronado_502
+  - first:
+      213: 2562607136658242856
+    second: mytronado_503
+  - first:
+      213: -1025149230615941808
+    second: mytronado_504
+  - first:
+      213: -4940521626994062169
+    second: mytronado_505
+  - first:
+      213: -1211287497907517322
+    second: mytronado_506
+  - first:
+      213: -5472932635379297009
+    second: mytronado_507
+  - first:
+      213: -5768428042011276250
+    second: mytronado_508
+  - first:
+      213: 5053742051366047162
+    second: mytronado_509
+  - first:
+      213: -1851709607552926234
+    second: mytronado_510
+  - first:
+      213: -6298786085994555990
+    second: mytronado_511
+  - first:
+      213: 35124803380341327
+    second: mytronado_512
+  - first:
+      213: -6389968534669832
+    second: mytronado_513
+  - first:
+      213: -7941523969390311685
+    second: mytronado_514
+  - first:
+      213: -3896381318087132276
+    second: mytronado_515
+  - first:
+      213: -6521139609102002302
+    second: mytronado_516
+  - first:
+      213: 5990530186910534234
+    second: mytronado_517
+  - first:
+      213: 5959661679808534416
+    second: mytronado_518
+  - first:
+      213: -5656569222792784338
+    second: mytronado_519
+  - first:
+      213: 2082128349277962309
+    second: mytronado_520
+  - first:
+      213: 6580209307125852060
+    second: mytronado_521
+  - first:
+      213: 834020937711041021
+    second: mytronado_522
+  - first:
+      213: -8137809253081486469
+    second: mytronado_523
+  - first:
+      213: 160349803404409920
+    second: mytronado_524
+  - first:
+      213: -6324647663437298182
+    second: mytronado_525
+  - first:
+      213: 8549250017861347267
+    second: mytronado_526
+  - first:
+      213: 4813556110938369225
+    second: mytronado_527
+  - first:
+      213: 7965917356437205469
+    second: mytronado_528
+  - first:
+      213: 7233250340513617301
+    second: mytronado_529
+  - first:
+      213: 1241026115589105687
+    second: mytronado_530
+  - first:
+      213: 4298089489701360962
+    second: mytronado_531
+  - first:
+      213: 8145631986699841718
+    second: mytronado_532
+  - first:
+      213: 3991224251424773652
+    second: mytronado_533
+  - first:
+      213: 5536944135802532556
+    second: mytronado_534
+  - first:
+      213: -3371851120631392444
+    second: mytronado_535
+  - first:
+      213: -3519754604223561450
+    second: mytronado_536
+  - first:
+      213: -451841490647575509
+    second: mytronado_537
+  - first:
+      213: 335742346100360195
+    second: mytronado_538
+  - first:
+      213: -5975302284130291747
+    second: mytronado_539
+  - first:
+      213: 5949763785103261238
+    second: mytronado_540
+  - first:
+      213: -5966504077939631526
+    second: mytronado_541
+  - first:
+      213: 4198120240065364215
+    second: mytronado_542
+  - first:
+      213: -1989819593247580100
+    second: mytronado_543
+  - first:
+      213: -7162520403233562951
+    second: mytronado_544
+  - first:
+      213: -157292898855209213
+    second: mytronado_545
+  - first:
+      213: -5153191302773189767
+    second: mytronado_546
+  - first:
+      213: 2256051584977255787
+    second: mytronado_547
+  - first:
+      213: -5578147690370563001
+    second: mytronado_548
+  - first:
+      213: -4140523358416364802
+    second: mytronado_549
+  - first:
+      213: 2549577223909809989
+    second: mytronado_550
+  - first:
+      213: 4156476910520390923
+    second: mytronado_551
+  - first:
+      213: 2126696731451919872
+    second: mytronado_552
+  - first:
+      213: 5175017276851355604
+    second: mytronado_553
+  - first:
+      213: -3964892623103300650
+    second: mytronado_554
+  - first:
+      213: -603484822084513259
+    second: mytronado_555
+  - first:
+      213: -5919635630385617485
+    second: mytronado_556
+  - first:
+      213: -2360829320397934547
+    second: mytronado_557
+  - first:
+      213: -7297984765753635618
+    second: mytronado_558
+  - first:
+      213: 4591008176068114081
+    second: mytronado_559
+  - first:
+      213: -5454447685796797314
+    second: mytronado_560
+  - first:
+      213: -4084463811029167449
+    second: mytronado_561
+  - first:
+      213: -1615265683465253532
+    second: mytronado_562
+  - first:
+      213: -7577575915489975369
+    second: mytronado_563
+  - first:
+      213: -7991206965388309122
+    second: mytronado_564
+  - first:
+      213: -496374215504158629
+    second: mytronado_565
+  - first:
+      213: -2076178915602179154
+    second: mytronado_566
+  - first:
+      213: -6435961755727377830
+    second: mytronado_567
+  - first:
+      213: 6709738359475045001
+    second: mytronado_568
+  - first:
+      213: 2130217974454270367
+    second: mytronado_569
+  - first:
+      213: 1350344544801355654
+    second: mytronado_570
+  - first:
+      213: 403801026068088660
+    second: mytronado_571
+  - first:
+      213: -4820309962783740429
+    second: mytronado_572
+  - first:
+      213: 6963322059685296795
+    second: mytronado_573
+  - first:
+      213: 565535800186355632
+    second: mytronado_574
+  - first:
+      213: -5031766280204918536
+    second: mytronado_575
+  - first:
+      213: -8147552220831239867
+    second: mytronado_576
+  - first:
+      213: -6320563013537874978
+    second: mytronado_577
+  - first:
+      213: 8603222223775739862
+    second: mytronado_578
+  - first:
+      213: -1561215801000578145
+    second: mytronado_579
+  - first:
+      213: -5769708177462236023
+    second: mytronado_580
+  - first:
+      213: -6276179863876221192
+    second: mytronado_581
+  - first:
+      213: 7751386900892340310
+    second: mytronado_582
+  - first:
+      213: 3151157551395672643
+    second: mytronado_583
+  - first:
+      213: 3968115244804116597
+    second: mytronado_584
+  - first:
+      213: 861041889492911861
+    second: mytronado_585
+  - first:
+      213: 8521211452379950234
+    second: mytronado_586
+  - first:
+      213: -6362873427278388136
+    second: mytronado_587
+  - first:
+      213: 6500309829168775028
+    second: mytronado_588
+  - first:
+      213: -486125901240449251
+    second: mytronado_589
+  - first:
+      213: 4207372873429763624
+    second: mytronado_590
+  - first:
+      213: -6153999112332837335
+    second: mytronado_591
+  - first:
+      213: 474137498085205374
+    second: mytronado_592
+  - first:
+      213: -8127526320724268300
+    second: mytronado_593
+  - first:
+      213: -6703278485892699032
+    second: mytronado_594
+  - first:
+      213: -2719410873711668422
+    second: mytronado_595
+  - first:
+      213: 1375136603768544299
+    second: mytronado_596
+  - first:
+      213: 5694360529467088333
+    second: mytronado_597
+  - first:
+      213: -6117594100766585477
+    second: mytronado_598
+  - first:
+      213: -3542554007457274836
+    second: mytronado_599
+  - first:
+      213: 7395988497977001780
+    second: mytronado_600
+  - first:
+      213: 6947597072399937095
+    second: mytronado_601
+  - first:
+      213: -7015477027783340859
+    second: mytronado_602
+  - first:
+      213: 2640028387025962488
+    second: mytronado_603
+  - first:
+      213: -8090564748384680417
+    second: mytronado_604
+  - first:
+      213: 4638476763446471094
+    second: mytronado_605
+  - first:
+      213: -1893238982664668646
+    second: mytronado_606
+  - first:
+      213: -8764967690759670533
+    second: mytronado_607
+  - first:
+      213: -3820932128715509730
+    second: mytronado_608
+  - first:
+      213: 8749073278459178097
+    second: mytronado_609
+  - first:
+      213: -7703139840691214793
+    second: mytronado_610
+  - first:
+      213: 7962634901772032885
+    second: mytronado_611
+  - first:
+      213: 8947744253976048210
+    second: mytronado_612
+  - first:
+      213: 5344966433025166274
+    second: mytronado_613
+  - first:
+      213: -101128649043237114
+    second: mytronado_614
+  - first:
+      213: 2090932772907861646
+    second: mytronado_615
+  - first:
+      213: 7153445936210281287
+    second: mytronado_616
+  - first:
+      213: -7092165100246547981
+    second: mytronado_617
+  - first:
+      213: 4434124825310161704
+    second: mytronado_618
+  - first:
+      213: 8704171240731342669
+    second: mytronado_619
+  - first:
+      213: -4826078021012330894
+    second: mytronado_620
+  - first:
+      213: -2261456496175185402
+    second: mytronado_621
+  - first:
+      213: -7879752979409946100
+    second: mytronado_622
+  - first:
+      213: -1602111655615024542
+    second: mytronado_623
+  - first:
+      213: 6889614886520663264
+    second: mytronado_624
+  - first:
+      213: 8847514218366805852
+    second: mytronado_625
+  - first:
+      213: -2798237004278035171
+    second: mytronado_626
+  - first:
+      213: 4376560816666058
+    second: mytronado_627
+  - first:
+      213: -8835444955407345147
+    second: mytronado_628
+  - first:
+      213: -5572498810441273688
+    second: mytronado_629
+  - first:
+      213: 8684928350003889063
+    second: mytronado_630
+  - first:
+      213: 7957447539741418027
+    second: mytronado_631
+  - first:
+      213: 3470193655405203620
+    second: mytronado_632
+  - first:
+      213: -5804172168120424721
+    second: mytronado_633
+  - first:
+      213: -2928671662445787534
+    second: mytronado_634
+  - first:
+      213: 5420961320321673055
+    second: mytronado_635
+  - first:
+      213: 1392421150849933152
+    second: mytronado_636
+  - first:
+      213: -3311334142208330680
+    second: mytronado_637
+  - first:
+      213: 5553208451696076279
+    second: mytronado_638
+  - first:
+      213: -4982541270167459423
+    second: mytronado_639
+  - first:
+      213: -3065843147215840936
+    second: mytronado_640
+  - first:
+      213: 8266568009297275195
+    second: mytronado_641
+  - first:
+      213: -5392630678819508391
+    second: mytronado_642
+  - first:
+      213: -2978869395812201962
+    second: mytronado_643
+  - first:
+      213: -5393293512792267214
+    second: mytronado_644
+  - first:
+      213: -7520266195810312281
+    second: mytronado_645
+  - first:
+      213: 1538892390568919291
+    second: mytronado_646
+  - first:
+      213: -1479074898313831371
+    second: mytronado_647
+  - first:
+      213: 4684709061456144585
+    second: mytronado_648
+  - first:
+      213: -1290314738690591674
+    second: mytronado_649
+  - first:
+      213: -2091761731473249426
+    second: mytronado_650
+  - first:
+      213: -5652249166947804867
+    second: mytronado_651
+  - first:
+      213: -7295684229085771205
+    second: mytronado_652
+  - first:
+      213: -6508805617010579701
+    second: mytronado_653
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mytronado_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11528
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697e6a7644ecce150800000000000000
+      internalID: 5903320004767967126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_1
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 11528
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80303ee359bac5550800000000000000
+      internalID: 6150979848574796552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_2
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 11528
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2291fd5579f01f810800000000000000
+      internalID: 1797234868952701218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_3
+      rect:
+        serializedVersion: 2
+        x: 3144
+        y: 11528
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1c91f3876145840800000000000000
+      internalID: 5211815374485045716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_4
+      rect:
+        serializedVersion: 2
+        x: 4192
+        y: 11528
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5217b8ac7d075a140800000000000000
+      internalID: 4730311055740989733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10480
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3ae8a857606ee290800000000000000
+      internalID: -7859238302729573829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_6
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 10480
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ed8839ab58fbb20800000000000000
+      internalID: 3152385300568268360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_7
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 10480
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2119c8d041720a0800000000000000
+      internalID: -6906529455123918126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_8
+      rect:
+        serializedVersion: 2
+        x: 3144
+        y: 10480
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06116e9c0414b0f80800000000000000
+      internalID: -8139340155021029024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_9
+      rect:
+        serializedVersion: 2
+        x: 4192
+        y: 10480
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0d79141bedc3ca0800000000000000
+      internalID: -6035704547692261142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9432
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2fa4e5859f3249f0800000000000000
+      internalID: -485755898373558483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_11
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 9432
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a89195559368ac1e0800000000000000
+      internalID: -2176779889077053046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_12
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 9432
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de372ba59970728b0800000000000000
+      internalID: -5177160891406060563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_13
+      rect:
+        serializedVersion: 2
+        x: 3144
+        y: 9432
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f49ee69539969c940800000000000000
+      internalID: 5316896916669131087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_14
+      rect:
+        serializedVersion: 2
+        x: 4192
+        y: 9432
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac38ae0b27e113490800000000000000
+      internalID: -7768394404294130742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8384
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5a86348707eb190800000000000000
+      internalID: -7944789030805658166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_16
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 8384
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35173826716ea5d0800000000000000
+      internalID: -3049392737574513347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_17
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 8384
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79bf2fe1fa8eeb970800000000000000
+      internalID: 8772704963000466327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_18
+      rect:
+        serializedVersion: 2
+        x: 3144
+        y: 8384
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84447b20cb04de480800000000000000
+      internalID: -8868360914979044280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_19
+      rect:
+        serializedVersion: 2
+        x: 4192
+        y: 8384
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b2eb87cbdb257a40800000000000000
+      internalID: 5365242754027479728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7336
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f45835f84d596bcb0800000000000000
+      internalID: -4848523208647539377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_21
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 7336
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e82ce051c967340800000000000000
+      internalID: 4861244462048906819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_22
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 7336
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f303c40b96e190ed0800000000000000
+      internalID: -2447391483220971457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_23
+      rect:
+        serializedVersion: 2
+        x: 3144
+        y: 7336
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd289ef32b5d12990800000000000000
+      internalID: -7412408550121962788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_24
+      rect:
+        serializedVersion: 2
+        x: 4192
+        y: 7336
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0442fc8df7d13310800000000000000
+      internalID: 1383124044570838027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6288
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc19c9c99b1177e0800000000000000
+      internalID: -1769602831250547513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_26
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 6288
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba8aad79eea794c70800000000000000
+      internalID: 8955824499171436715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_27
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 6288
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb26606eca7c16720800000000000000
+      internalID: 2837768785627603647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_28
+      rect:
+        serializedVersion: 2
+        x: 3144
+        y: 6288
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f626fce630c21cf50800000000000000
+      internalID: 6899844497363919471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_29
+      rect:
+        serializedVersion: 2
+        x: 4192
+        y: 6288
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f780234233d9630800000000000000
+      internalID: 3935357879942938418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5240
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca787d25b6935340800000000000000
+      internalID: 4851386928504273601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_31
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 5240
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f5f1f3ffae9ba10800000000000000
+      internalID: 1925828697674178325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_32
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 5240
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9620fa982346b5610800000000000000
+      internalID: 1610991459936174697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_33
+      rect:
+        serializedVersion: 2
+        x: 3144
+        y: 5240
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be99c0e0136031570800000000000000
+      internalID: 8436093334753941995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_34
+      rect:
+        serializedVersion: 2
+        x: 4192
+        y: 5240
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 817ff2adde248ca30800000000000000
+      internalID: 4235709038877210392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4192
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 646437884eee6aee0800000000000000
+      internalID: -1250049181239523770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_36
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 4192
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e62954b46ee1e4a20800000000000000
+      internalID: 3048407972230566510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_37
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 4192
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb413537d51b6910800000000000000
+      internalID: 1831581687510813695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_38
+      rect:
+        serializedVersion: 2
+        x: 3144
+        y: 4192
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca30f971eec8aa6c0800000000000000
+      internalID: -4131334753932606548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_39
+      rect:
+        serializedVersion: 2
+        x: 4192
+        y: 4192
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9303c3dc77757dcc0800000000000000
+      internalID: -3686381597923463111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3144
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea0493204a9205a0800000000000000
+      internalID: -6556508507232531732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_41
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 3144
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 476cfddbc496195f0800000000000000
+      internalID: -751703884470172044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_42
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 3144
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca6df3610cebeec50800000000000000
+      internalID: 6696499428162786988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_43
+      rect:
+        serializedVersion: 2
+        x: 3144
+        y: 3144
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 792a6d91da78ed420800000000000000
+      internalID: 2656710007727760023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_44
+      rect:
+        serializedVersion: 2
+        x: 4192
+        y: 3144
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3ba5e1cfd1ab4c40800000000000000
+      internalID: 5497665752538655549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2096
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44914cc4b1ad22e70800000000000000
+      internalID: 9089066808773974340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_46
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 2096
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 335c5e70e88d23a00800000000000000
+      internalID: 734887793744266547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_47
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 2096
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9070515fbc8a4d790800000000000000
+      internalID: -7506189084976150775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_48
+      rect:
+        serializedVersion: 2
+        x: 3144
+        y: 2096
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2394a14e2cf427ac0800000000000000
+      internalID: -3858934232233916110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_49
+      rect:
+        serializedVersion: 2
+        x: 4192
+        y: 2096
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f99341def930f490800000000000000
+      internalID: -7714602395090314766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1048
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6379c87849fbc7d50800000000000000
+      internalID: 6736469787289622326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_51
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1048
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ca667cdb2120170800000000000000
+      internalID: 8143091682542791768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_52
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 1048
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993344b2a607af750800000000000000
+      internalID: 6339503026772128665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_53
+      rect:
+        serializedVersion: 2
+        x: 3144
+        y: 1048
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad7abf4ddc469480800000000000000
+      internalID: -8892835900787360344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_54
+      rect:
+        serializedVersion: 2
+        x: 4192
+        y: 1048
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d985df681d768d200800000000000000
+      internalID: 205027932655933597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d278575a0defcd4c0800000000000000
+      internalID: -4261250975316736211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_56
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 0
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcf53d48f83a9de40800000000000000
+      internalID: 5681752241708687309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_57
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 0
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be92355a9efb3910800000000000000
+      internalID: 1818326813381926584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_58
+      rect:
+        serializedVersion: 2
+        x: 3144
+        y: 0
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46871fdd6ff796680800000000000000
+      internalID: -8761330901810317212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mytronado_59
+      rect:
+        serializedVersion: 2
+        x: 4192
+        y: 0
+        width: 1048
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b4c186b5adabba0800000000000000
+      internalID: -6072301061432128703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7ed3db409e079e14fa4b7730af02a257
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":12.0},"gridSpriteSize":{"x":1048.0,"y":1048.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      mytronado_0: 5903320004767967126
+      mytronado_1: 6150979848574796552
+      mytronado_10: -485755898373558483
+      mytronado_11: -2176779889077053046
+      mytronado_12: -5177160891406060563
+      mytronado_13: 5316896916669131087
+      mytronado_14: -7768394404294130742
+      mytronado_15: -7944789030805658166
+      mytronado_16: -3049392737574513347
+      mytronado_17: 8772704963000466327
+      mytronado_18: -8868360914979044280
+      mytronado_19: 5365242754027479728
+      mytronado_2: 1797234868952701218
+      mytronado_20: -4848523208647539377
+      mytronado_21: 4861244462048906819
+      mytronado_22: -2447391483220971457
+      mytronado_23: -7412408550121962788
+      mytronado_24: 1383124044570838027
+      mytronado_25: -1769602831250547513
+      mytronado_26: 8955824499171436715
+      mytronado_27: 2837768785627603647
+      mytronado_28: 6899844497363919471
+      mytronado_29: 3935357879942938418
+      mytronado_3: 5211815374485045716
+      mytronado_30: 4851386928504273601
+      mytronado_31: 1925828697674178325
+      mytronado_32: 1610991459936174697
+      mytronado_33: 8436093334753941995
+      mytronado_34: 4235709038877210392
+      mytronado_35: -1250049181239523770
+      mytronado_36: 3048407972230566510
+      mytronado_37: 1831581687510813695
+      mytronado_38: -4131334753932606548
+      mytronado_39: -3686381597923463111
+      mytronado_4: 4730311055740989733
+      mytronado_40: -6556508507232531732
+      mytronado_41: -751703884470172044
+      mytronado_42: 6696499428162786988
+      mytronado_43: 2656710007727760023
+      mytronado_44: 5497665752538655549
+      mytronado_45: 9089066808773974340
+      mytronado_46: 734887793744266547
+      mytronado_47: -7506189084976150775
+      mytronado_48: -3858934232233916110
+      mytronado_49: -7714602395090314766
+      mytronado_5: -7859238302729573829
+      mytronado_50: 6736469787289622326
+      mytronado_51: 8143091682542791768
+      mytronado_52: 6339503026772128665
+      mytronado_53: -8892835900787360344
+      mytronado_54: 205027932655933597
+      mytronado_55: -4261250975316736211
+      mytronado_56: 5681752241708687309
+      mytronado_57: 1818326813381926584
+      mytronado_58: -8761330901810317212
+      mytronado_59: -6072301061432128703
+      mytronado_6: 3152385300568268360
+      mytronado_7: -6906529455123918126
+      mytronado_8: -8139340155021029024
+      mytronado_9: -6035704547692261142
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

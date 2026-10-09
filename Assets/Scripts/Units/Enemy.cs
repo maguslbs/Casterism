@@ -171,6 +171,11 @@ public abstract class Enemy : MonoBehaviour
         {
             PlayerEvents.ApplyDebuff(new StunDebuff(attack.stunTurns));
         }
+
+        if (attack.burnOnHit)   // BARU
+        {
+            PlayerEvents.ApplyDebuff(new BurnDebuff(attack.burnDamagePerTurn, attack.burnDuration));
+        }
     }
 
     private Vector3 GetMeleeTargetPosition()

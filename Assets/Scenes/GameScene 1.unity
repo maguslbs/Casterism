@@ -2159,7 +2159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36ab9c8218a43a4395ec885c612bdbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelController
-  encounter: {fileID: 11400000, guid: 59039128c436ba446a1ab069ae6003b6, type: 2}
+  encounter: {fileID: 11400000, guid: 57f479e9c9645bc45b257ff7f44972a8, type: 2}
   spawners:
   - {fileID: 63988424}
   - {fileID: 1323791255}
@@ -2563,6 +2563,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3391339690740115833, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
+      propertyPath: vfxList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391339690740115833, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
+      propertyPath: vfxList.Array.data[1].type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391339690740115833, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
+      propertyPath: vfxList.Array.data[1].prefab
+      value: 
+      objectReference: {fileID: 3884943992241364986, guid: 63e6cb29139c8f94bae19dc34fd45222, type: 3}
+    - target: {fileID: 3391339690740115833, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
+      propertyPath: vfxList.Array.data[1].offset.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3805296089480788685, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.33
@@ -2642,7 +2658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6228337338144934358, guid: 740f0acc41738d24a97dcb467d1deea8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7608190824992473573, guid: 740f0acc41738d24a97dcb467d1deea8, type: 3}
       propertyPath: m_LocalPosition.x
