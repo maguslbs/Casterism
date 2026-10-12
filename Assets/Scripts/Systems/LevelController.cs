@@ -3,17 +3,20 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
-    [SerializeField] private EncounterData encounter;                                   // BARU
-    [SerializeField] private List<EnemySpawner> spawners = new List<EnemySpawner>();    // BARU
+    [SerializeField] private EncounterData encounter;
+    [SerializeField] private List<EnemySpawner> spawners = new List<EnemySpawner>();
 
-    private readonly List<Enemy> enemies = new List<Enemy>();                           // UBAH: diisi oleh kode
+    [Tooltip("Titik spawn khusus untuk musuh bertanda Spawn At Back (misalnya boss).")]
+    [SerializeField] private EnemySpawner backSpawner;   // BARU
 
-    private void Start()   // BARU
+    private readonly List<Enemy> enemies = new List<Enemy>();
+
+    private void Start()
     {
         SpawnEncounter();
     }
 
-    private void SpawnEncounter()   // BARU
+    private void SpawnEncounter()
     {
         if (encounter == null)
         {
@@ -43,20 +46,82 @@ public class LevelController : MonoBehaviour
                              $"tapi titik spawn hanya {availableSpawners.Count}. Sisanya tidak di-spawn.", this);
         }
 
-        int spawnCount = Mathf.Min(composition.enemies.Count, availableSpawners.Count);
+        List<Enemy> backEnemies = new List<Enemy>();
+        List<Enemy> otherEnemies = new List<Enemy>();
 
-        for (int i = 0; i < spawnCount; i++)
+        foreach (Enemy prefab in composition.enemies)
         {
-            Enemy spawned = availableSpawners[i].Spawn(composition.enemies[i], transform);
+            if (prefab == null) continue;
 
-            if (spawned != null)
+            if (prefab.SpawnAtBack)
             {
-                enemies.Add(spawned);
+                backEnemies.Add(prefab);
             }
+            else
+            {
+                otherEnemies.Add(prefab);
+            }
+        }
+
+        foreach (Enemy prefab in backEnemies)
+        {
+            EnemySpawner spawner = TakeBackSpawner(availableSpawners);
+            if (spawner == null) break;
+
+            SpawnAt(spawner, prefab);
+        }
+
+        foreach (Enemy prefab in otherEnemies)
+        {
+            if (availableSpawners.Count == 0) break;
+
+            EnemySpawner spawner = availableSpawners[0];
+            availableSpawners.RemoveAt(0);
+
+            SpawnAt(spawner, prefab);
         }
     }
 
-    private void ShuffleSpawners(List<EnemySpawner> list)   // BARU
+    private EnemySpawner TakeBackSpawner(List<EnemySpawner> list)   // BARU
+    {
+        if (backSpawner != null && list.Contains(backSpawner))
+        {
+            list.Remove(backSpawner);
+            return backSpawner;
+        }
+
+        return TakeBackmostSpawner(list);
+    }
+
+    private EnemySpawner TakeBackmostSpawner(List<EnemySpawner> list)
+    {
+        if (list.Count == 0) return null;
+
+        EnemySpawner backmost = list[0];
+
+        foreach (EnemySpawner spawner in list)
+        {
+            if (spawner.transform.position.x > backmost.transform.position.x)
+            {
+                backmost = spawner;
+            }
+        }
+
+        list.Remove(backmost);
+        return backmost;
+    }
+
+    private void SpawnAt(EnemySpawner spawner, Enemy prefab)
+    {
+        Enemy spawned = spawner.Spawn(prefab, transform);
+
+        if (spawned != null)
+        {
+            enemies.Add(spawned);
+        }
+    }
+
+    private void ShuffleSpawners(List<EnemySpawner> list)
     {
         for (int i = list.Count - 1; i > 0; i--)
         {

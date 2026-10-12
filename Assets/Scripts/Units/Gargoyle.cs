@@ -5,6 +5,15 @@ public class Gargoyle : Enemy
 {
     [Header("Fire Breath")]
     [SerializeField] private float fireHitDelay = 1f;
+    [SerializeField] private int fireSortingBoost = 20;   // BARU
+
+    private SpriteRenderer spriteRenderer;   // BARU
+
+    protected override void Awake()   // BARU
+    {
+        base.Awake();
+        spriteRenderer = sprite.GetComponent<SpriteRenderer>();
+    }
 
     protected override IEnumerator PerformAttack(EnemyAttack attack)
     {
@@ -26,6 +35,9 @@ public class Gargoyle : Enemy
 
     private IEnumerator FireBreath(EnemyAttack attack)
     {
+        int originalOrder = spriteRenderer.sortingOrder;              // BARU
+        spriteRenderer.sortingOrder = originalOrder + fireSortingBoost; // BARU
+
         animationController.Play(attack.animationName);
         yield return new WaitForSeconds(fireHitDelay);
 
@@ -34,5 +46,7 @@ public class Gargoyle : Enemy
 
         yield return new WaitForSeconds(attack.recoveryTime);
         animationController.Play("Idle");
+
+        spriteRenderer.sortingOrder = originalOrder;                  // BARU
     }
 }

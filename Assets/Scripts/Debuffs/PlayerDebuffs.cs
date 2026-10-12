@@ -9,6 +9,10 @@ public class PlayerDebuffs : MonoBehaviour
         public DebuffType type;
         public GameObject prefab;
         public Vector3 offset;
+
+        public GameObject tickPrefab;
+        public Vector3 tickOffset;
+        public float tickDuration = 1f;
     }
 
     [SerializeField] private Transform vfxParent;
@@ -82,6 +86,11 @@ public class PlayerDebuffs : MonoBehaviour
         foreach (Debuff debuff in new List<Debuff>(activeDebuffs.Values))
         {
             debuff.OnPlayerTurnStart(health);
+
+            if (debuff.HasTurnStartEffect)
+            {
+                SpawnTickVFX(debuff.Type);
+            }
         }
 
         RemoveExpired();
@@ -120,6 +129,16 @@ public class PlayerDebuffs : MonoBehaviour
         GameObject vfx = Instantiate(entry.prefab, vfxParent);
         vfx.transform.localPosition = entry.offset;
         activeVFX[type] = vfx;
+    }
+
+    private void SpawnTickVFX(DebuffType type)
+    {
+        DebuffVFX entry = vfxList.Find(v => v.type == type);
+        if (entry == null || entry.tickPrefab == null || vfxParent == null) return;
+
+        GameObject vfx = Instantiate(entry.tickPrefab, vfxParent);
+        vfx.transform.localPosition = entry.tickOffset;
+        Destroy(vfx, entry.tickDuration);
     }
 
     private void DestroyVFX(DebuffType type)

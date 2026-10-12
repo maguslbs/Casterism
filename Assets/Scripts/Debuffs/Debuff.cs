@@ -10,6 +10,7 @@ public abstract class Debuff
     public abstract DebuffType Type { get; }
 
     public virtual bool IsExpired => false;
+    public virtual bool HasTurnStartEffect => false;
 
     public virtual void OnApply(Health health) { }
     public virtual void OnPlayerTurnStart(Health health) { }

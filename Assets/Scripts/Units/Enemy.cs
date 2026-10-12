@@ -19,6 +19,11 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField] private Transform attackPoint;
     [SerializeField] private Transform indicatorPoint;
 
+    [Header("Spawn")]
+    [SerializeField] private bool spawnAtBack = false;
+
+    public bool SpawnAtBack => spawnAtBack;
+
     protected Health health;
     protected Animator animationController;
     protected Vector3 originalPosition;

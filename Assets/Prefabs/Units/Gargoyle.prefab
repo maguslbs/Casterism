@@ -129,6 +129,7 @@ MonoBehaviour:
   meleeOffset: {x: 4, y: 2, z: 0}
   attackPoint: {fileID: 489145419947867472}
   indicatorPoint: {fileID: 5587107099857906258}
+  spawnAtBack: 1
   fireHitDelay: 3
 --- !u!114 &5223981547353501769
 MonoBehaviour:

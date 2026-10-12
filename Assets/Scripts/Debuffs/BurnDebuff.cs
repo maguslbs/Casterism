@@ -17,6 +17,8 @@ public class BurnDebuff : Debuff
 
     public override bool IsExpired => duration > 0 && turnsRemaining <= 0;
 
+    public override bool HasTurnStartEffect => damagePerTurn > 0;
+
     public override void OnPlayerTurnStart(Health health)
     {
         PlayerEvents.PlayerHit(damagePerTurn);
