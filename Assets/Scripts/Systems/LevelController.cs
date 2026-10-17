@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelController : MonoBehaviour
+public class LevelController : Singleton<LevelController>
 {
     [SerializeField] private EncounterData encounter;
     [SerializeField] private List<EnemySpawner> spawners = new List<EnemySpawner>();
@@ -18,17 +18,25 @@ public class LevelController : MonoBehaviour
 
     private void SpawnEncounter()
     {
-        if (encounter == null)
+
+        EncounterData encounterToUse = encounter;                                    // BARU
+
+        if (RunManager.Instance != null && RunManager.Instance.CurrentEncounter != null)   // BARU
+        {
+            encounterToUse = RunManager.Instance.CurrentEncounter;
+        }
+
+        if (encounterToUse == null)                                                  // UBAH
         {
             Debug.LogWarning("LevelController: Encounter belum diisi!", this);
             return;
         }
 
-        EnemyComposition composition = encounter.PickRandomComposition();
+        EnemyComposition composition = encounterToUse.PickRandomComposition();       // UBAH
 
         if (composition == null || composition.enemies.Count == 0)
         {
-            Debug.LogWarning($"LevelController: {encounter.name} tidak punya komposisi musuh!", this);
+            Debug.LogWarning($"LevelController: {encounterToUse.name} tidak punya komposisi musuh!", this);   // UBAH
             return;
         }
 

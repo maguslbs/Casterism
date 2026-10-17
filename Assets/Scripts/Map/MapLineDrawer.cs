@@ -13,8 +13,13 @@ public class MapLineDrawer : MonoBehaviour
         DrawLines();
     }
 
-    private void DrawLines()
+    public void DrawLines()
     {
+        for (int i = linesParent.childCount - 1; i >= 0; i--)
+        {
+            Destroy(linesParent.GetChild(i).gameObject);
+        }
+
         MapNode[] nodes = nodesParent.GetComponentsInChildren<MapNode>();
 
         foreach (MapNode node in nodes)

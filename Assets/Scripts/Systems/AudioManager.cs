@@ -35,8 +35,8 @@ public class AudioManager : Singleton<AudioManager>
     {
         PlayerEvents.OnCardPlayed -= CardPlayed;
         PlayerEvents.OnDrawCardRequested -= CardDrawn;
-        EnemyEvents.OnEnemyHit += SwordSlice;
-        EnemyEvents.OnEnemyDeath += EnemyDeath;
+        EnemyEvents.OnEnemyHit -= SwordSlice;
+        EnemyEvents.OnEnemyDeath -= EnemyDeath;
         PlayerEvents.OnPlayerHit -= SwingStaff;
         PlayerEvents.OnPlayerDeath -= PlayerDeath;
         PlayerEvents.OnPlayerHealed -= PlayerHealed;

@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
         PlayerEvents.OnPlayerHit += PlayerHit;
         PlayerEvents.OnDebuffApplied += HandleDebuffApplied;   // UBAH
         PlayerEvents.OnDebuffRemoved += HandleDebuffRemoved;   // UBAH
+        GameEvents.OnGameOver += SaveHealthToRun;
     }
 
     private void OnDisable()
@@ -30,6 +31,7 @@ public class Player : MonoBehaviour
         PlayerEvents.OnPlayerHit -= PlayerHit;
         PlayerEvents.OnDebuffApplied -= HandleDebuffApplied;   // UBAH
         PlayerEvents.OnDebuffRemoved -= HandleDebuffRemoved;   // UBAH
+        GameEvents.OnGameOver -= SaveHealthToRun;
     }
 
     private void Awake()
@@ -43,6 +45,18 @@ public class Player : MonoBehaviour
     private void Start()
     {
         originalPosition = playerSprite.transform.position;
+
+        if (RunManager.Instance != null && RunManager.Instance.HasPlayerHealth)
+        {
+            health.SetHealth(RunManager.Instance.PlayerHealth, RunManager.Instance.PlayerMaxHealth);
+        }
+    }
+
+    private void SaveHealthToRun()
+    {
+        if (RunManager.Instance == null || !health.IsAlive()) return;
+
+        RunManager.Instance.SavePlayerHealth(health.CurrentHealth, health.BaseMaxHealth);
     }
 
     public Vector3 GetEnemyAttackPosition()

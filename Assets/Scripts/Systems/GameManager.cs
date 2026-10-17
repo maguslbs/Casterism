@@ -10,6 +10,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private float transitionTime;
     [SerializeField] private TextMeshProUGUI winLoseDisplay;
     public LevelController lvl1;
+    [SerializeField] private RewardScreen rewardScreen;
 
     private void OnEnable()
     {
@@ -30,8 +31,11 @@ public class GameManager : Singleton<GameManager>
     {
         isGameActive = false;
         GameEvents.GameOver();
-        winLoseDisplay.text = "VICTORY ACHIEVED";
-        StartCoroutine(RestartGame());
+
+        bool isBoss = RunManager.Instance != null && RunManager.Instance.CurrentNodeTier == MapTier.Boss;
+        winLoseDisplay.text = isBoss ? "RUN COMPLETE" : "VICTORY ACHIEVED";
+
+        StartCoroutine(FinishBattle(true));
     }
 
     private void PlayerLose()
@@ -39,12 +43,39 @@ public class GameManager : Singleton<GameManager>
         isGameActive = false;
         GameEvents.GameOver();
         winLoseDisplay.text = "YOU DEATH";
-        StartCoroutine(RestartGame());
+        StartCoroutine(FinishBattle(false));
     }
 
-    private IEnumerator RestartGame()
+    private IEnumerator FinishBattle(bool playerWon)
     {
         yield return new WaitForSeconds(transitionTime);
-        SceneManager.LoadScene("GameScene");
+
+        if (RunManager.Instance == null)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            yield break;
+        }
+
+        if (playerWon)
+        {
+            bool isBoss = RunManager.Instance.CurrentNodeTier == MapTier.Boss;
+
+            if (isBoss)
+            {
+                RunManager.Instance.EndRun();
+            }
+            else if (rewardScreen != null)
+            {
+                rewardScreen.Show(RunManager.Instance.CurrentNodeTier);
+            }
+            else
+            {
+                RunManager.Instance.CompleteCurrentNode();
+            }
+        }
+        else
+        {
+            RunManager.Instance.EndRun();
+        }
     }
 }

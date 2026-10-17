@@ -9,6 +9,7 @@ public class TurnSystem : Singleton<TurnSystem>
     private TurnState currentTurn = TurnState.PlayerTurn;
 
     [SerializeField] private int maxActionsPerTurn = 1;
+    [SerializeField] private int actionsCap = 6;
     [SerializeField] private int drawCost = 1;
     [SerializeField] private int reshuffleCost = 3;
     [SerializeField] private TextMeshProUGUI remainingActionsText;
@@ -49,7 +50,7 @@ public class TurnSystem : Singleton<TurnSystem>
     private void StartPlayerTurn()
     {
         currentTurn = TurnState.PlayerTurn;
-        actionsRemaining = maxActionsPerTurn;
+        actionsRemaining = GetMaxActions();
         pendingCardResolutions = 0;   // BARU
         playerTurnEnding = false;     // BARU
         UpdateActionsUI();
@@ -153,6 +154,17 @@ public class TurnSystem : Singleton<TurnSystem>
     public bool HasActionsRemaining()
     {
         return actionsRemaining > 0;
+    }
+
+    private int GetMaxActions()
+    {
+        int bonus = RunManager.Instance != null ? RunManager.Instance.BonusActions : 0;
+        return Mathf.Min(maxActionsPerTurn + bonus, actionsCap);
+    }
+
+    public bool CanGainAction()
+    {
+        return GetMaxActions() < actionsCap;
     }
 
     private void ConsumeAction(int amount)

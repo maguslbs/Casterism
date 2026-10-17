@@ -1,24 +1,43 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum MapNodeType
+public enum MapTier
 {
     Start,
-    Combat,
-    Elite,
+    Easy,
+    Normal,
     Rest,
+    Elite,
     Boss
 }
 
 public class MapNode : MonoBehaviour
 {
     [SerializeField] private string nodeId;
-    [SerializeField] private MapNodeType nodeType = MapNodeType.Combat;
-    [SerializeField] private EncounterData encounter;
-    [SerializeField] private List<MapNode> nextNodes = new List<MapNode>();
+    [SerializeField] private MapTier tier = MapTier.Easy;
+
+    private readonly List<MapNode> nextNodes = new List<MapNode>();
 
     public string NodeId => string.IsNullOrEmpty(nodeId) ? name : nodeId;
-    public MapNodeType NodeType => nodeType;
-    public EncounterData Encounter => encounter;
+    public MapTier Tier => tier;
+    public EncounterData Encounter { get; private set; }
     public IReadOnlyList<MapNode> NextNodes => nextNodes;
+
+    public void SetEncounter(EncounterData encounter)
+    {
+        Encounter = encounter;
+    }
+
+    public void AddNextNode(MapNode node)
+    {
+        if (node != null && !nextNodes.Contains(node))
+        {
+            nextNodes.Add(node);
+        }
+    }
+
+    public void ClearNextNodes()
+    {
+        nextNodes.Clear();
+    }
 }

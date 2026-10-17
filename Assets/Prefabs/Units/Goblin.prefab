@@ -234,11 +234,21 @@ MonoBehaviour:
     damage: 10
     weight: 1
     recoveryTime: 1
+    stunOnHit: 0
+    stunTurns: 1
+    burnOnHit: 0
+    burnDamagePerTurn: 5
+    burnDuration: 0
   - animationName: Attack2
     type: 0
     damage: 15
     weight: 1
     recoveryTime: 1
+    stunOnHit: 0
+    stunTurns: 1
+    burnOnHit: 0
+    burnDamagePerTurn: 5
+    burnDuration: 0
   maxRepeat: 2
   moveAnimationName: Walk
   meleeDistance: 4
@@ -246,6 +256,7 @@ MonoBehaviour:
   meleeOffset: {x: 0, y: 0, z: 0}
   attackPoint: {fileID: 1096357607935480827}
   indicatorPoint: {fileID: 126757345158316398}
+  spawnAtBack: 0
 --- !u!114 &5858556745655146821
 MonoBehaviour:
   m_ObjectHideFlags: 0

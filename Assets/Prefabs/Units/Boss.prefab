@@ -118,16 +118,31 @@ MonoBehaviour:
     damage: 20
     weight: 3
     recoveryTime: 1
+    stunOnHit: 0
+    stunTurns: 1
+    burnOnHit: 0
+    burnDamagePerTurn: 5
+    burnDuration: 0
   - animationName: Attack2
     type: 0
     damage: 25
     weight: 2
     recoveryTime: 1
+    stunOnHit: 0
+    stunTurns: 1
+    burnOnHit: 0
+    burnDamagePerTurn: 5
+    burnDuration: 0
   - animationName: CastMeteor
     type: 1
     damage: 50
     weight: 1
     recoveryTime: 1
+    stunOnHit: 0
+    stunTurns: 1
+    burnOnHit: 0
+    burnDamagePerTurn: 5
+    burnDuration: 0
   maxRepeat: 2
   moveAnimationName: Walk
   meleeDistance: 4
@@ -135,6 +150,7 @@ MonoBehaviour:
   meleeOffset: {x: 0, y: 0.7, z: 0}
   attackPoint: {fileID: 7112194745814732841}
   indicatorPoint: {fileID: 570871127901788133}
+  spawnAtBack: 0
   playerTarget: {fileID: 0}
   meteorPrefab: {fileID: 2878532324393371571, guid: 5d4d0a049285d604584bacc50ca2f522, type: 3}
   impactVFXPrefab: {fileID: 5244354155945194624, guid: 787f330a9f561a049aab472cef8618dc, type: 3}

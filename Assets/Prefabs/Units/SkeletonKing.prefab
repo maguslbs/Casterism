@@ -234,16 +234,31 @@ MonoBehaviour:
     damage: 20
     weight: 2
     recoveryTime: 1
+    stunOnHit: 0
+    stunTurns: 1
+    burnOnHit: 0
+    burnDamagePerTurn: 5
+    burnDuration: 0
   - animationName: Attack2
     type: 0
     damage: 20
     weight: 2
     recoveryTime: 1
+    stunOnHit: 0
+    stunTurns: 1
+    burnOnHit: 0
+    burnDamagePerTurn: 5
+    burnDuration: 0
   - animationName: Attack3
     type: 0
     damage: 30
     weight: 2
     recoveryTime: 1.7
+    stunOnHit: 0
+    stunTurns: 1
+    burnOnHit: 0
+    burnDamagePerTurn: 5
+    burnDuration: 0
   maxRepeat: 2
   moveAnimationName: Walk
   meleeDistance: 4
@@ -251,8 +266,9 @@ MonoBehaviour:
   meleeOffset: {x: 0, y: 0.7, z: 0}
   attackPoint: {fileID: 6516549955371148580}
   indicatorPoint: {fileID: 3639972248306638216}
+  spawnAtBack: 0
   castAnimationName: CastCurse
-  curseAmount: 30
+  cursePercent: 30
   castDelay: 0.5
   curseRecoveryTime: 0.5
 --- !u!114 &465224848250323367

@@ -8,19 +8,37 @@ public class Health : MonoBehaviour
     [SerializeField] private Slider healthSlider;
     [SerializeField] private int totalHealth = 100;
 
+    private int currentHealth;
+    private int maxHealthReduction = 0; //taking notes how many hp taken by curse
+    private bool initialized = false;   // BARU
+
     private Flash flash;
+
+    public int CurrentHealth => currentHealth;                          // BARU
+    public int BaseMaxHealth => totalHealth + maxHealthReduction;       // BARU
 
     private void Awake()
     {
         flash = GetComponentInChildren<Flash>();
     }
 
-    private int currentHealth;
-    private int maxHealthReduction = 0; //taking notes how many hp taken by curse
-
     private void Start()
     {
-        currentHealth = totalHealth;
+        if (!initialized)   // UBAH
+        {
+            currentHealth = totalHealth;
+            initialized = true;
+        }
+
+        UpdateHealthUI();
+    }
+
+    public void SetHealth(int current, int max)   // BARU
+    {
+        totalHealth = Mathf.Max(1, max);
+        currentHealth = Mathf.Clamp(current, 1, totalHealth);
+        maxHealthReduction = 0;
+        initialized = true;
         UpdateHealthUI();
     }
 
@@ -52,9 +70,9 @@ public class Health : MonoBehaviour
     {
         if (amount <= 0) return;
 
-        int oldTotal = totalHealth;                         
+        int oldTotal = totalHealth;
         totalHealth = Mathf.Max(1, totalHealth - amount);
-        maxHealthReduction += oldTotal - totalHealth;       
+        maxHealthReduction += oldTotal - totalHealth;
 
         currentHealth = Mathf.Clamp(currentHealth - amount, 1, totalHealth);
         UpdateHealthUI();
@@ -99,5 +117,4 @@ public class Health : MonoBehaviour
     {
         return currentHealth > 0;
     }
-
 }

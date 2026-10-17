@@ -131,6 +131,7 @@ MonoBehaviour:
   indicatorPoint: {fileID: 5587107099857906258}
   spawnAtBack: 1
   fireHitDelay: 3
+  fireSortingBoost: 20
 --- !u!114 &5223981547353501769
 MonoBehaviour:
   m_ObjectHideFlags: 0

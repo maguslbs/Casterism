@@ -9,16 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenuScene.unity
     guid: 2f21e3b4984a3c9439088b364a5020a5
   - enabled: 1
+    path: Assets/Scenes/MapScene.unity
+    guid: fd529b3ca80e68e4eb8d8ed2508d2880
+  - enabled: 1
     path: Assets/Scenes/DeckBuilderScene.unity
     guid: 0c73ecc4b051c8048b1482193f41c8c9
   - enabled: 1
-    path: Assets/Scenes/GameScene 1.unity
+    path: Assets/Scenes/GameScene1.unity
     guid: b9d8e3cbe88b24f49a0b06f17cfa65da
-  - enabled: 1
-    path: Assets/Scenes/MapScene.unity
-    guid: fd529b3ca80e68e4eb8d8ed2508d2880
-  - enabled: 0
-    path: Assets/Scenes/GameScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

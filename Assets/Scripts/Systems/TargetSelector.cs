@@ -34,11 +34,8 @@ public class TargetSelector : Singleton<TargetSelector>
         List<Collider2D> hits = new List<Collider2D>();
         Physics2D.OverlapPoint(worldPoint, filter, hits);
 
-        Debug.Log($"[Target] klik kanan di {worldPoint}, kena {hits.Count} collider");   // LOG 1
-
         foreach (Collider2D hit in hits)
-        {
-            Debug.Log($"[Target] kena: {hit.name}", hit);                                // LOG 2
+        {                            
 
             Enemy enemy = hit.GetComponentInParent<Enemy>();
 
