@@ -98,6 +98,11 @@ public class RunManager : Singleton<RunManager>
 
     public void EndRun()
     {
+        if (DeckManager.Instance != null)
+        {
+            DeckManager.Instance.ResetForNewRun();
+        }
+
         SceneManager.LoadScene(mainMenuSceneName);
         Destroy(gameObject);
     }

@@ -1,26 +1,83 @@
-using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CardCollection : MonoBehaviour
 {
     [SerializeField] private List<CardData> availableCards;
     [SerializeField] private Transform[] cardSlots;
     [SerializeField] private GameObject cardPrefab;
+    [SerializeField] private float cardScale = 1f;
+
+    [Header("Paging")]
+    [SerializeField] private Button nextButton;
+    [SerializeField] private Button previousButton;
+
+    private readonly List<GameObject> spawnedCards = new List<GameObject>();
+    private int currentPage = 0;
+
+    private int CardsPerPage => cardSlots.Length;
+    private int PageCount => Mathf.Max(1, Mathf.CeilToInt((float)availableCards.Count / CardsPerPage));
 
     private void Start()
     {
-        for (int i = 0; i < availableCards.Count; i++)
+        if (nextButton != null) nextButton.onClick.AddListener(NextPage);
+        if (previousButton != null) previousButton.onClick.AddListener(PreviousPage);
+
+        if (DeckManager.Instance != null)
         {
-            AddCardToColection(i);
+            availableCards = DeckManager.Instance.GetCollection();
         }
+
+        ShowPage(0);
     }
 
-    private void AddCardToColection(int cardIndex)
+    public void NextPage()
     {
-        GameObject card = Instantiate(cardPrefab, cardSlots[cardIndex].position, Quaternion.identity);
-        Card cardComponent = card.GetComponent<Card>();
-        cardComponent.LoadCardData(availableCards[cardIndex]);
-        card.transform.SetParent(cardSlots[cardIndex].transform);
+        ShowPage(currentPage + 1);
+    }
+
+    public void PreviousPage()
+    {
+        ShowPage(currentPage - 1);
+    }
+
+    private void ShowPage(int page)
+    {
+        currentPage = Mathf.Clamp(page, 0, PageCount - 1);
+        ClearCards();
+
+        int startIndex = currentPage * CardsPerPage;
+
+        for (int slot = 0; slot < CardsPerPage; slot++)
+        {
+            int cardIndex = startIndex + slot;
+            if (cardIndex >= availableCards.Count) break;
+
+            SpawnCard(availableCards[cardIndex], cardSlots[slot]);
+        }
+
+        if (previousButton != null) previousButton.interactable = currentPage > 0;
+        if (nextButton != null) nextButton.interactable = currentPage < PageCount - 1;
+    }
+
+    private void SpawnCard(CardData data, Transform slot)
+    {
+        GameObject card = Instantiate(cardPrefab, slot.position, Quaternion.identity);
+        card.transform.localScale = cardPrefab.transform.localScale * cardScale;
+        card.transform.SetParent(slot);
+        card.GetComponent<Card>().LoadCardData(data);
+
+        spawnedCards.Add(card);
+    }
+
+    private void ClearCards()
+    {
+        foreach (GameObject card in spawnedCards)
+        {
+            if (card != null) Destroy(card);
+        }
+
+        spawnedCards.Clear();
     }
 }

@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Deck : MonoBehaviour
 {
+    [SerializeField] private PlayerHand playerHand;
     [SerializeField] private List<CardData> drawPile = new List<CardData>();
     [SerializeField] private GameObject cardBack;
     [SerializeField] private DiscardPile discardPile;
@@ -65,10 +66,17 @@ public class Deck : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (drawPile.Count <= 0)
+        if (drawPile.Count <= 0) return;
+
+        if (playerHand != null && playerHand.IsFull)
+        {
+            MessageDisplay.Show("Hand Full: play card first before taking another.");
             return;
+        }
 
         if (TurnSystem.Instance.HasActionsRemaining())
+        {
             PlayerEvents.DrawCardRequested();
+        }
     }
 }

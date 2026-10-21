@@ -14,6 +14,7 @@ public class PlayerHand : MonoBehaviour
     [SerializeField] private PlayerDebuffs playerDebuffs;
 
     private List<Card> cardsInHand = new List<Card>();
+    public bool IsFull => cardSlots == null || cardsInHand.Count >= cardSlots.Length;
 
     private void Start()
     {
@@ -117,15 +118,21 @@ public class PlayerHand : MonoBehaviour
     {
         CardData data = card.GetCardData();
 
+        if (data.actionCost > TurnSystem.Instance.ActionsRemaining)
+        {
+            MessageDisplay.Show($"Not enough actions: needs {data.actionCost}, {TurnSystem.Instance.ActionsRemaining} left.");
+            return false;
+        }
+
         if (data.requiresTarget && TargetSelector.Instance.CurrentTarget == null)
         {
-            Debug.Log("Pilih target dulu: klik kanan musuh yang ingin diserang.");
+            MessageDisplay.Show("Choose target first: use right click.");
             return false;
         }
 
         if (data.attackPower > 0 && playerDebuffs != null && playerDebuffs.IsStunned)
         {
-            Debug.Log("Sedang stun: kartu attack tidak bisa dimainkan.");
+            MessageDisplay.Show("Stunned: attack cards can't be used.");
             return false;
         }
 

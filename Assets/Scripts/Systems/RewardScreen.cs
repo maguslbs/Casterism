@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +11,7 @@ public class RewardScreen : MonoBehaviour
         public Button button;
         public TextMeshProUGUI titleText;
         public TextMeshProUGUI descriptionText;
+        public Image icon;
     }
 
     [SerializeField] private GameObject panel;
@@ -22,7 +24,11 @@ public class RewardScreen : MonoBehaviour
     [SerializeField] private int normalHpReward = 70;
     [SerializeField] private int eliteHpReward = 100;
 
+    [Header("Card Reward")]
+    [SerializeField] private List<CardData> cardRewardPool = new List<CardData>();
+
     private int hpReward;
+    private CardData offeredCard;
 
     private void Awake()
     {
@@ -30,19 +36,42 @@ public class RewardScreen : MonoBehaviour
 
         if (hpOption.button != null) hpOption.button.onClick.AddListener(ChooseHp);
         if (actionOption.button != null) actionOption.button.onClick.AddListener(ChooseAction);
+        if (cardOption.button != null) cardOption.button.onClick.AddListener(ChooseCard);
     }
 
     public void Show(MapTier tier)
     {
         hpReward = GetHpReward(tier);
-
         SetTexts(hpOption, "Vitality", $"+{hpReward} Max HP");
         SetTexts(actionOption, "Focus", "+1 Action");
-
         SetOptionVisible(actionOption, TurnSystem.Instance.CanGainAction());
-        SetOptionVisible(cardOption, false);   // hadiah kartu belum dibuat
+
+        offeredCard = PickCardReward();
+        if (offeredCard != null)
+        {
+            SetTexts(cardOption, offeredCard.cardName, offeredCard.description);
+            if (cardOption.icon != null) cardOption.icon.sprite = offeredCard.illustration;
+        }
+        SetOptionVisible(cardOption, offeredCard != null);
 
         panel.SetActive(true);
+    }
+
+    private CardData PickCardReward()
+    {
+        List<CardData> candidates = new List<CardData>();
+
+        foreach (CardData card in cardRewardPool)
+        {
+            if (card == null) continue;
+            if (DeckManager.Instance != null && DeckManager.Instance.IsUnlocked(card)) continue;
+
+            candidates.Add(card);
+        }
+
+        if (candidates.Count == 0) return null;
+
+        return candidates[Random.Range(0, candidates.Count)];
     }
 
     private int GetHpReward(MapTier tier)
@@ -75,6 +104,16 @@ public class RewardScreen : MonoBehaviour
     private void ChooseAction()
     {
         RunManager.Instance.AddBonusAction();
+        Finish();
+    }
+
+    private void ChooseCard()
+    {
+        if (offeredCard != null && DeckManager.Instance != null)
+        {
+            DeckManager.Instance.UnlockCard(offeredCard);
+        }
+
         Finish();
     }
 

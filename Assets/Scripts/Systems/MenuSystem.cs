@@ -18,6 +18,12 @@ public class MenuSystem : MonoBehaviour
         SceneManager.LoadScene("DeckBuilderScene");
     }
 
+    public void BackFromDeckBuilder()
+    {
+        string targetScene = RunManager.Instance != null ? "MapScene" : "MainMenuScene";
+        SceneManager.LoadScene(targetScene);
+    }
+
     public void QuitGame()
     {
         #if UNITY_EDITOR

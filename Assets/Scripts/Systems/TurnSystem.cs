@@ -15,6 +15,7 @@ public class TurnSystem : Singleton<TurnSystem>
     [SerializeField] private TextMeshProUGUI remainingActionsText;
     [SerializeField] private int turnWaitTime = 3;
     [SerializeField] private float enemyDelayTime = 2f;
+    public int ActionsRemaining => actionsRemaining;
 
     [SerializeField] private TextMeshProUGUI displayTurnState;
 
@@ -154,6 +155,16 @@ public class TurnSystem : Singleton<TurnSystem>
     public bool HasActionsRemaining()
     {
         return actionsRemaining > 0;
+    }
+
+    public void EndTurnPressed()
+    {
+        if (currentTurn != TurnState.PlayerTurn) return;
+        if (playerTurnEnding) return;
+        if (pendingCardResolutions > 0) return;
+        if (!GameManager.Instance.IsGameActive()) return;
+
+        EndPlayerTurn();
     }
 
     private int GetMaxActions()
