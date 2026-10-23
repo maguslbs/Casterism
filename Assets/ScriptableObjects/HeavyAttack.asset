@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: HeavyAttack
   m_EditorClassIdentifier: Assembly-CSharp::CardData
   cardName: Heavy Attack
-  description: Deals 5 damage
+  description: Deals 10 damage
   actionCost: 3
   illustration: {fileID: 3504339129578956549, guid: 86206460202f32543975fe3730195e1e, type: 3}
-  attackPower: 5
+  attackPower: 10
   healPower: 0
   requiresTarget: 1
+  cleanse: 0

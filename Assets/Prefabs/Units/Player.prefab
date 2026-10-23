@@ -184,8 +184,22 @@ MonoBehaviour:
   attackStopDistance: 2
   moveSpeed: 8
   enemyAttackPoint: {fileID: 573146343018465699}
-  curseVFXPrefab: {fileID: 1303016060835765936, guid: 8349112caf1020f459e1b03b6d6299af, type: 3}
-  curseVFXOffset: {x: 0, y: 0, z: 0}
+  castAnimationName: Cast
+  executeSwordPrefab: {fileID: 6401482366212167095, guid: a6f9b37c1e13cf44abde3770c55ebf43, type: 3}
+  swordImpactOffset: {x: 0, y: 2, z: 0}
+  swordDropHeight: 12
+  swordHoverTime: 0.3
+  swordFallDuration: 1
+  swordLingerTime: 0.5
+  rainSwordPrefab: {fileID: 849173132447678534, guid: f07407d442b270a46a35f83444ac493b, type: 3}
+  minRainSwords: 10
+  maxRainSwords: 12
+  rainSpreadX: 1.5
+  rainSpreadY: 0.8
+  rainSwordInterval: 0.08
+  rainDropHeight: 12
+  rainFallDuration: 0.5
+  rainLingerTime: 0.5
 --- !u!114 &4082332766151848142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,6 +232,21 @@ MonoBehaviour:
   - type: 0
     prefab: {fileID: 1303016060835765936, guid: 8349112caf1020f459e1b03b6d6299af, type: 3}
     offset: {x: 0, y: 0, z: 0}
+    tickPrefab: {fileID: 0}
+    tickOffset: {x: 0, y: 0, z: 0}
+    tickDuration: 1
+  - type: 2
+    prefab: {fileID: 3884943992241364986, guid: 63e6cb29139c8f94bae19dc34fd45222, type: 3}
+    offset: {x: 0, y: 0.5, z: 0}
+    tickPrefab: {fileID: 0}
+    tickOffset: {x: 0, y: 0, z: 0}
+    tickDuration: 0
+  - type: 1
+    prefab: {fileID: 0}
+    offset: {x: 0, y: 0, z: 0}
+    tickPrefab: {fileID: 3105624288062539136, guid: 19ba7d46fe9f5ac42bd499246e3683f2, type: 3}
+    tickOffset: {x: 0, y: 0, z: 0}
+    tickDuration: 1
 --- !u!1 &8156846638290642699
 GameObject:
   m_ObjectHideFlags: 0

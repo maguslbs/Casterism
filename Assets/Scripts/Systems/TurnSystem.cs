@@ -16,6 +16,7 @@ public class TurnSystem : Singleton<TurnSystem>
     [SerializeField] private int turnWaitTime = 3;
     [SerializeField] private float enemyDelayTime = 2f;
     public int ActionsRemaining => actionsRemaining;
+    public int ReshuffleCost => reshuffleCost;
 
     [SerializeField] private TextMeshProUGUI displayTurnState;
 

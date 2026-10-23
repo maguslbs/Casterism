@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: 1b596f049d6a2984ca522931eddc372b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3005937669134774952
+    second: SlashFX 5A v2_4_0
+  - first:
+      213: 7823016160209793479
+    second: SlashFX 5A v2_4_1
+  - first:
+      213: -1933594766720321550
+    second: SlashFX 5A v2_4_2
+  - first:
+      213: -7159859042454008085
+    second: SlashFX 5A v2_4_3
+  - first:
+      213: 249320946981916181
+    second: SlashFX 5A v2_4_4
+  - first:
+      213: -192283136363818455
+    second: SlashFX 5A v2_4_5
+  - first:
+      213: -1520681638380605579
+    second: SlashFX 5A v2_4_6
+  - first:
+      213: 3385171557093647046
+    second: SlashFX 5A v2_4_7
+  - first:
+      213: -6417831487440661800
+    second: SlashFX 5A v2_4_8
+  - first:
+      213: -2365728009448563833
+    second: SlashFX 5A v2_4_9
+  - first:
+      213: 8670577219321022994
+    second: SlashFX 5A v2_4_10
+  - first:
+      213: 2820370632220496413
+    second: SlashFX 5A v2_4_11
+  - first:
+      213: 5256314428732016677
+    second: SlashFX 5A v2_4_12
+  - first:
+      213: -2523375485977360611
+    second: SlashFX 5A v2_4_13
+  - first:
+      213: -8965072547882434627
+    second: SlashFX 5A v2_4_14
+  - first:
+      213: -4385073164508490321
+    second: SlashFX 5A v2_4_15
+  - first:
+      213: -850842812859748518
+    second: SlashFX 5A v2_4_16
+  - first:
+      213: -229341463310521131
+    second: SlashFX 5A v2_4_17
+  - first:
+      213: -7045539089707881128
+    second: SlashFX 5A v2_4_18
+  - first:
+      213: 8418161436911036089
+    second: SlashFX 5A v2_4_19
+  - first:
+      213: -1451323551039745770
+    second: SlashFX 5A v2_4_20
+  - first:
+      213: 7729557457589333026
+    second: SlashFX 5A v2_4_21
+  - first:
+      213: -6588960181296095229
+    second: SlashFX 5A v2_4_22
+  - first:
+      213: 909648104088632216
+    second: SlashFX 5A v2_4_23
+  - first:
+      213: 8154418923834194246
+    second: SlashFX 5A v2_4_24
+  - first:
+      213: -2890004840729099692
+    second: SlashFX 5A v2_4_25
+  - first:
+      213: -5895026511481914325
+    second: SlashFX 5A v2_4_26
+  - first:
+      213: 7677551744818288487
+    second: SlashFX 5A v2_4_27
+  - first:
+      213: -5694852467705311095
+    second: SlashFX 5A v2_4_28
+  - first:
+      213: 657537032452619320
+    second: SlashFX 5A v2_4_29
+  - first:
+      213: -6707682370804625190
+    second: SlashFX 5A v2_4_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_0
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 121
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d8146bd93c846d0800000000000000
+      internalID: -3005937669134774952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_1
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 122
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1f175efbfe09c60800000000000000
+      internalID: 7823016160209793479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_2
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 123
+        width: 82
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f7b416edcd7a25e0800000000000000
+      internalID: -1933594766720321550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_3
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 120
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee09aca22213ac90800000000000000
+      internalID: -7159859042454008085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_4
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 104
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ecbef8414c57300800000000000000
+      internalID: 249320946981916181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_5
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 103
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9229cb8918fd45df0800000000000000
+      internalID: -192283136363818455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_6
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 57
+        width: 116
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f6dd75b1475eae0800000000000000
+      internalID: -1520681638380605579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_7
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 52
+        width: 100
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2a254889b8afe20800000000000000
+      internalID: 3385171557093647046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_8
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 70
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d258cae3484fe6a0800000000000000
+      internalID: -6417831487440661800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_9
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 51
+        width: 96
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b50a9d8ee3b2fd0800000000000000
+      internalID: -2365728009448563833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_10
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 67
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21a4933da04145870800000000000000
+      internalID: 8670577219321022994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_11
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 49
+        width: 123
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d125274a528f32720800000000000000
+      internalID: 2820370632220496413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_12
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 56
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5280550bf1e22f840800000000000000
+      internalID: 5256314428732016677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_13
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 66
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17046b6d5b2bfcd0800000000000000
+      internalID: -2523375485977360611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_14
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 61
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf7cd5440aa59380800000000000000
+      internalID: -8965072547882434627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_15
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 48
+        width: 54
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa59f53a0371523c0800000000000000
+      internalID: -4385073164508490321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_16
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 56
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5feccb38f23134f0800000000000000
+      internalID: -850842812859748518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_17
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 65
+        width: 26
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dcab1b772731dcf0800000000000000
+      internalID: -229341463310521131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_18
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 64
+        width: 21
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d25dad687393e90800000000000000
+      internalID: -7045539089707881128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_19
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 48
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b669fcb93153d470800000000000000
+      internalID: 8418161436911036089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_20
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 56
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6111e167becdbdbe0800000000000000
+      internalID: -1451323551039745770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_21
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 65
+        width: 27
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c65920e87e44b60800000000000000
+      internalID: 7729557457589333026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_22
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 86
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30027aaff9f4f84a0800000000000000
+      internalID: -6588960181296095229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_23
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 67
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b7fc29128bf9c00800000000000000
+      internalID: 909648104088632216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_24
+      rect:
+        serializedVersion: 2
+        x: 1784
+        y: 56
+        width: 96
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6493cd8aec05a2170800000000000000
+      internalID: 8154418923834194246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_25
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 48
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 452ce25c8e3a4e7d0800000000000000
+      internalID: -2890004840729099692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_26
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 73
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2c3c99fe98a03ea0800000000000000
+      internalID: -5895026511481914325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_27
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 88
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767139e62a42c8a60800000000000000
+      internalID: 7677551744818288487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_28
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 56
+        width: 88
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9801b2e6ad1d7f0b0800000000000000
+      internalID: -5694852467705311095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_29
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 54
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83cb00e727a002900800000000000000
+      internalID: 657537032452619320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX 5A v2_4_30
+      rect:
+        serializedVersion: 2
+        x: 2155
+        y: 57
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad05a0e2c6689e2a0800000000000000
+      internalID: -6707682370804625190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SlashFX 5A v2_4_0: -3005937669134774952
+      SlashFX 5A v2_4_1: 7823016160209793479
+      SlashFX 5A v2_4_10: 8670577219321022994
+      SlashFX 5A v2_4_11: 2820370632220496413
+      SlashFX 5A v2_4_12: 5256314428732016677
+      SlashFX 5A v2_4_13: -2523375485977360611
+      SlashFX 5A v2_4_14: -8965072547882434627
+      SlashFX 5A v2_4_15: -4385073164508490321
+      SlashFX 5A v2_4_16: -850842812859748518
+      SlashFX 5A v2_4_17: -229341463310521131
+      SlashFX 5A v2_4_18: -7045539089707881128
+      SlashFX 5A v2_4_19: 8418161436911036089
+      SlashFX 5A v2_4_2: -1933594766720321550
+      SlashFX 5A v2_4_20: -1451323551039745770
+      SlashFX 5A v2_4_21: 7729557457589333026
+      SlashFX 5A v2_4_22: -6588960181296095229
+      SlashFX 5A v2_4_23: 909648104088632216
+      SlashFX 5A v2_4_24: 8154418923834194246
+      SlashFX 5A v2_4_25: -2890004840729099692
+      SlashFX 5A v2_4_26: -5895026511481914325
+      SlashFX 5A v2_4_27: 7677551744818288487
+      SlashFX 5A v2_4_28: -5694852467705311095
+      SlashFX 5A v2_4_29: 657537032452619320
+      SlashFX 5A v2_4_3: -7159859042454008085
+      SlashFX 5A v2_4_30: -6707682370804625190
+      SlashFX 5A v2_4_4: 249320946981916181
+      SlashFX 5A v2_4_5: -192283136363818455
+      SlashFX 5A v2_4_6: -1520681638380605579
+      SlashFX 5A v2_4_7: 3385171557093647046
+      SlashFX 5A v2_4_8: -6417831487440661800
+      SlashFX 5A v2_4_9: -2365728009448563833
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -16,4 +16,8 @@ public class CardData : ScriptableObject
     public int healPower;
     public bool requiresTarget;
     public bool cleanse;
+    public bool execute;
+    [Range(0f, 1f)] public float executeThreshold = 0.3f;
+    public bool hitsAllEnemies;
+    public bool deflect;
 }

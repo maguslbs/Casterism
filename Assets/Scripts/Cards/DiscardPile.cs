@@ -48,8 +48,11 @@ public class DiscardPile : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (!TurnSystem.Instance.HasActionsRemaining() || discardPile.Count <= 0)
+        if (discardPile.Count <= 0) return;
+
+        if (TurnSystem.Instance.ActionsRemaining < TurnSystem.Instance.ReshuffleCost)
         {
+            MessageDisplay.Show($"Not enough actions: reshuffle needs {TurnSystem.Instance.ReshuffleCost}.");
             return;
         }
 

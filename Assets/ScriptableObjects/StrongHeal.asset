@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: StrongHeal
   m_EditorClassIdentifier: Assembly-CSharp::CardData
   cardName: Strong Heal
-  description: Restore 50 HP
+  description: Restore 70 HP
   actionCost: 3
   illustration: {fileID: 21300000, guid: bf2bcd9cb33c5ec4e9bb72bcd171d4bb, type: 3}
   attackPower: 0
-  healPower: 50
+  healPower: 70
+  requiresTarget: 0
+  cleanse: 0

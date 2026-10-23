@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -7,21 +8,40 @@ public class Player : MonoBehaviour
     [SerializeField] private float attackStopDistance = 1.5f;
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private Transform enemyAttackPoint;
+
+    [Header("Execute")]
+    [SerializeField] private string castAnimationName = "Cast";
+    [SerializeField] private GameObject executeSwordPrefab;
+    [SerializeField] private Vector3 swordImpactOffset = Vector3.zero;
+    [SerializeField] private float swordDropHeight = 6f;
+    [SerializeField] private float swordHoverTime = 0.3f;
+    [SerializeField] private float swordFallDuration = 0.25f;
+    [SerializeField] private float swordLingerTime = 0.4f;
+
+    [Header("Sword Rain")]
+    [SerializeField] private GameObject rainSwordPrefab;
+    [SerializeField] private int minRainSwords = 8;
+    [SerializeField] private int maxRainSwords = 10;
+    [SerializeField] private float rainSpreadX = 0.6f;
+    [SerializeField] private float rainSpreadY = 0.5f;
+    [SerializeField] private float rainSwordInterval = 0.06f;
+    [SerializeField] private float rainDropHeight = 6f;
+    [SerializeField] private float rainFallDuration = 0.2f;
+    [SerializeField] private float rainLingerTime = 0.3f;
+
     private Vector3 originalPosition;
     private Animator animationController;
     private ParticleSystem healVFX;
 
     private Health health;
-    private PlayerDebuffs debuffs;   // BARU
-
-    // DIHAPUS: [Header("Curse")], curseVFXPrefab, curseVFXOffset, activeCurseVFX
+    private PlayerDebuffs debuffs;
 
     private void OnEnable()
     {
         PlayerEvents.OnCardPlayed += HandleCardPlayed;
         PlayerEvents.OnPlayerHit += PlayerHit;
-        PlayerEvents.OnDebuffApplied += HandleDebuffApplied;   // UBAH
-        PlayerEvents.OnDebuffRemoved += HandleDebuffRemoved;   // UBAH
+        PlayerEvents.OnDebuffApplied += HandleDebuffApplied;   
+        PlayerEvents.OnDebuffRemoved += HandleDebuffRemoved;   
         GameEvents.OnGameOver += SaveHealthToRun;
     }
 
@@ -29,8 +49,8 @@ public class Player : MonoBehaviour
     {
         PlayerEvents.OnCardPlayed -= HandleCardPlayed;
         PlayerEvents.OnPlayerHit -= PlayerHit;
-        PlayerEvents.OnDebuffApplied -= HandleDebuffApplied;   // UBAH
-        PlayerEvents.OnDebuffRemoved -= HandleDebuffRemoved;   // UBAH
+        PlayerEvents.OnDebuffApplied -= HandleDebuffApplied;   
+        PlayerEvents.OnDebuffRemoved -= HandleDebuffRemoved;   
         GameEvents.OnGameOver -= SaveHealthToRun;
     }
 
@@ -38,7 +58,7 @@ public class Player : MonoBehaviour
     {
         animationController = playerSprite.GetComponent<Animator>();
         health = GetComponent<Health>();
-        debuffs = GetComponent<PlayerDebuffs>();   // BARU
+        debuffs = GetComponent<PlayerDebuffs>();   
         healVFX = playerSprite.GetComponentInChildren<ParticleSystem>();
     }
 
@@ -116,12 +136,28 @@ public class Player : MonoBehaviour
 
         if (cardData.attackPower > 0)
         {
-            Enemy target = TargetSelector.Instance.CurrentTarget;
-
-            if (target != null)
+            if (cardData.hitsAllEnemies)
             {
-                Attack(cardData, target);
+                StartCoroutine(PlayerSwordRainAnimation(cardData));
                 startedAttack = true;
+            }
+            else
+            {
+                Enemy target = TargetSelector.Instance.CurrentTarget;
+
+                if (target != null)
+                {
+                    if (cardData.execute)
+                    {
+                        StartCoroutine(PlayerExecuteAnimation(cardData, target));
+                    }
+                    else
+                    {
+                        Attack(cardData, target);
+                    }
+
+                    startedAttack = true;
+                }
             }
         }
 
@@ -165,6 +201,30 @@ public class Player : MonoBehaviour
         playerSprite.transform.position = to;
     }
 
+    private IEnumerator DropSword(GameObject prefab, Vector3 hitPosition, float dropHeight,
+                              float hoverTime, float fallDuration, float lingerTime)
+    {
+        Vector3 startPosition = hitPosition + Vector3.up * dropHeight;
+        GameObject sword = Instantiate(prefab, startPosition, prefab.transform.rotation);
+
+        if (hoverTime > 0f)
+        {
+            yield return new WaitForSeconds(hoverTime);
+        }
+
+        float timeElapsed = 0f;
+        while (timeElapsed < fallDuration)
+        {
+            float t = timeElapsed / fallDuration;
+            sword.transform.position = Vector3.Lerp(startPosition, hitPosition, t * t);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        sword.transform.position = hitPosition;
+        Destroy(sword, lingerTime);
+    }
+
     private IEnumerator PlayerAttackAnimation(CardData cardData, Enemy target)
     {
         animationController.Play("Run");
@@ -186,5 +246,98 @@ public class Player : MonoBehaviour
         yield return MoveSprite(targetPosition, originalPosition);
 
         PlayerEvents.AttackComplete();
+    }
+
+    private IEnumerator PlayerExecuteAnimation(CardData cardData, Enemy target)
+    {
+        animationController.Play(castAnimationName);
+
+        if (executeSwordPrefab != null)
+        {
+            Vector3 hitPosition = target.GetHitPosition() + swordImpactOffset;
+            yield return DropSword(executeSwordPrefab, hitPosition, swordDropHeight,
+                                   swordHoverTime, swordFallDuration, swordLingerTime);
+        }
+
+        if (target != null && target.IsAlive())
+        {
+            target.TakeHit(cardData);
+        }
+
+        yield return new WaitForSeconds(swordLingerTime);
+
+        animationController.Play("Idle");
+        PlayerEvents.AttackComplete();
+    }
+
+    private IEnumerator PlayerSwordRainAnimation(CardData cardData)
+    {
+        animationController.Play(castAnimationName);
+
+        List<Enemy> targets = LevelController.Instance.GetAliveEnemies();
+
+        if (targets.Count == 0)
+        {
+            animationController.Play("Idle");
+            PlayerEvents.AttackComplete();
+            yield break;
+        }
+
+        if (rainSwordPrefab != null)
+        {
+            GetRainArea(targets, out Vector2 areaMin, out Vector2 areaMax);
+            int swordCount = Random.Range(minRainSwords, maxRainSwords + 1);
+
+            for (int i = 0; i < swordCount; i++)
+            {
+                Vector3 hitPosition;
+
+                if (i < targets.Count)
+                {
+                    hitPosition = targets[i].GetHitPosition();
+                }
+                else
+                {
+                    hitPosition = new Vector3(Random.Range(areaMin.x, areaMax.x),
+                                              Random.Range(areaMin.y, areaMax.y), 0f);
+                }
+
+                StartCoroutine(DropSword(rainSwordPrefab, hitPosition, rainDropHeight,
+                                         0f, rainFallDuration, rainLingerTime));
+
+                yield return new WaitForSeconds(rainSwordInterval);
+            }
+
+            yield return new WaitForSeconds(rainFallDuration);
+        }
+
+        foreach (Enemy enemy in targets)
+        {
+            if (enemy != null && enemy.IsAlive())
+            {
+                enemy.TakeHit(cardData);
+            }
+        }
+
+        yield return new WaitForSeconds(rainLingerTime);
+
+        animationController.Play("Idle");
+        PlayerEvents.AttackComplete();
+    }
+
+    private void GetRainArea(List<Enemy> targets, out Vector2 min, out Vector2 max)
+    {
+        min = new Vector2(float.MaxValue, float.MaxValue);
+        max = new Vector2(float.MinValue, float.MinValue);
+
+        foreach (Enemy enemy in targets)
+        {
+            Vector3 position = enemy.GetHitPosition();
+            min = Vector2.Min(min, position);
+            max = Vector2.Max(max, position);
+        }
+
+        min -= new Vector2(rainSpreadX, rainSpreadY);
+        max += new Vector2(rainSpreadX, rainSpreadY);
     }
 }

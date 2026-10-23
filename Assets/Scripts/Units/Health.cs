@@ -10,12 +10,13 @@ public class Health : MonoBehaviour
 
     private int currentHealth;
     private int maxHealthReduction = 0; //taking notes how many hp taken by curse
-    private bool initialized = false;   // BARU
+    private bool initialized = false;   
 
     private Flash flash;
 
-    public int CurrentHealth => currentHealth;                          // BARU
-    public int BaseMaxHealth => totalHealth + maxHealthReduction;       // BARU
+    public int CurrentHealth => currentHealth;                         
+    public int BaseMaxHealth => totalHealth + maxHealthReduction;       
+    public float HealthPercent => totalHealth > 0 ? (float)currentHealth / totalHealth : 0f;
 
     private void Awake()
     {

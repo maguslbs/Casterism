@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 036797d66514f2947b4fc7b4efb42d09
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8540616112543931421
+    second: SlashFX SpriteSheet FX 3D_4_0
+  - first:
+      213: 2903132124580299072
+    second: SlashFX SpriteSheet FX 3D_4_1
+  - first:
+      213: 1532846828888031339
+    second: SlashFX SpriteSheet FX 3D_4_2
+  - first:
+      213: 7057511998523538040
+    second: SlashFX SpriteSheet FX 3D_4_3
+  - first:
+      213: 1210743429225394227
+    second: SlashFX SpriteSheet FX 3D_4_4
+  - first:
+      213: 6530783763766544332
+    second: SlashFX SpriteSheet FX 3D_4_5
+  - first:
+      213: 4568044202346301986
+    second: SlashFX SpriteSheet FX 3D_4_6
+  - first:
+      213: -1601045574345821477
+    second: SlashFX SpriteSheet FX 3D_4_7
+  - first:
+      213: 1812155528554268652
+    second: SlashFX SpriteSheet FX 3D_4_8
+  - first:
+      213: 3655787910861806328
+    second: SlashFX SpriteSheet FX 3D_4_9
+  - first:
+      213: -4180986025443479331
+    second: SlashFX SpriteSheet FX 3D_4_10
+  - first:
+      213: -7843989324164133176
+    second: SlashFX SpriteSheet FX 3D_4_11
+  - first:
+      213: -8734174373318092513
+    second: SlashFX SpriteSheet FX 3D_4_12
+  - first:
+      213: 736327296690428720
+    second: SlashFX SpriteSheet FX 3D_4_13
+  - first:
+      213: 2906512031810513701
+    second: SlashFX SpriteSheet FX 3D_4_14
+  - first:
+      213: -329131103469554450
+    second: SlashFX SpriteSheet FX 3D_4_15
+  - first:
+      213: 6464493471449023016
+    second: SlashFX SpriteSheet FX 3D_4_16
+  - first:
+      213: -4734553620126148684
+    second: SlashFX SpriteSheet FX 3D_4_17
+  - first:
+      213: -3897181466770513668
+    second: SlashFX SpriteSheet FX 3D_4_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_0
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 135
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e367d055e2a97980800000000000000
+      internalID: -8540616112543931421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_1
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 129
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04142ad294ff94820800000000000000
+      internalID: 2903132124580299072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_2
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 80
+        width: 106
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6084fac114c54510800000000000000
+      internalID: 1532846828888031339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_3
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 134
+        width: 88
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a7d0635c151f160800000000000000
+      internalID: 7057511998523538040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_4
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 138
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3303e1debbc6dc010800000000000000
+      internalID: 1210743429225394227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_5
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 135
+        width: 76
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc781384b3102aa50800000000000000
+      internalID: 6530783763766544332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_6
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 140
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a422fdff3f46f30800000000000000
+      internalID: 4568044202346301986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_7
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 133
+        width: 38
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2f7e76881f7c9e0800000000000000
+      internalID: -1601045574345821477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_8
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 122
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce7cc3d1ad1162910800000000000000
+      internalID: 1812155528554268652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_9
+      rect:
+        serializedVersion: 2
+        x: 2756
+        y: 80
+        width: 106
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fad5195cb7fbb230800000000000000
+      internalID: 3655787910861806328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_10
+      rect:
+        serializedVersion: 2
+        x: 2947
+        y: 134
+        width: 92
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0b1969c572af5c0800000000000000
+      internalID: -4180986025443479331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_11
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 92
+        width: 25
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce8d37d44d842390800000000000000
+      internalID: -7843989324164133176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_12
+      rect:
+        serializedVersion: 2
+        x: 3138
+        y: 135
+        width: 52
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f191e00eeaaf9c680800000000000000
+      internalID: -8734174373318092513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_13
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 135
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03b18ad66c5f73a00800000000000000
+      internalID: 736327296690428720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 102
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52be6772b41065820800000000000000
+      internalID: 2906512031810513701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_15
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 92
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee43a255101be6bf0800000000000000
+      internalID: -329131103469554450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_16
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 103
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8220d8adf8e76b950800000000000000
+      internalID: 6464493471449023016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_17
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 109
+        width: 9
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b75756319c7b4eb0800000000000000
+      internalID: -4734553620126148684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlashFX SpriteSheet FX 3D_4_18
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 97
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf068e7aa1e6ae9c0800000000000000
+      internalID: -3897181466770513668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SlashFX SpriteSheet FX 3D_4_0: -8540616112543931421
+      SlashFX SpriteSheet FX 3D_4_1: 2903132124580299072
+      SlashFX SpriteSheet FX 3D_4_10: -4180986025443479331
+      SlashFX SpriteSheet FX 3D_4_11: -7843989324164133176
+      SlashFX SpriteSheet FX 3D_4_12: -8734174373318092513
+      SlashFX SpriteSheet FX 3D_4_13: 736327296690428720
+      SlashFX SpriteSheet FX 3D_4_14: 2906512031810513701
+      SlashFX SpriteSheet FX 3D_4_15: -329131103469554450
+      SlashFX SpriteSheet FX 3D_4_16: 6464493471449023016
+      SlashFX SpriteSheet FX 3D_4_17: -4734553620126148684
+      SlashFX SpriteSheet FX 3D_4_18: -3897181466770513668
+      SlashFX SpriteSheet FX 3D_4_2: 1532846828888031339
+      SlashFX SpriteSheet FX 3D_4_3: 7057511998523538040
+      SlashFX SpriteSheet FX 3D_4_4: 1210743429225394227
+      SlashFX SpriteSheet FX 3D_4_5: 6530783763766544332
+      SlashFX SpriteSheet FX 3D_4_6: 4568044202346301986
+      SlashFX SpriteSheet FX 3D_4_7: -1601045574345821477
+      SlashFX SpriteSheet FX 3D_4_8: 1812155528554268652
+      SlashFX SpriteSheet FX 3D_4_9: 3655787910861806328
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

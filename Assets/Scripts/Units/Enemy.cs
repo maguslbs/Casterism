@@ -79,12 +79,26 @@ public abstract class Enemy : MonoBehaviour
         return transform.position + fallbackOffset;
     }
 
+    public Vector3 GetHitPosition()
+    {
+        return sprite.transform.position;
+    }
+
     public void TakeHit(CardData cardData)
     {
         if (!health.IsAlive()) return;
 
         animationController.Play("Hurt");
-        health.TakeDamage(cardData.attackPower);
+
+        int damage = cardData.attackPower;
+
+        if (cardData.execute && health.HealthPercent <= cardData.executeThreshold)
+        {
+            damage = health.CurrentHealth;
+        }
+
+        health.TakeDamage(damage);
+
         EnemyEvents.EnemyHit(this);
 
         if (!health.IsAlive())

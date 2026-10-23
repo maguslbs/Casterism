@@ -2508,6 +2508,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Deckmanager
       objectReference: {fileID: 0}
+    - target: {fileID: 6258021279798545567, guid: 160f883af8d2d62438c68b727f29d228, type: 3}
+      propertyPath: startingCollection.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8145611961483561987, guid: 160f883af8d2d62438c68b727f29d228, type: 3}
       propertyPath: m_LocalPosition.x
       value: 960
@@ -4783,42 +4787,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3391339690740115833, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
-      propertyPath: vfxList.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3391339690740115833, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
-      propertyPath: vfxList.Array.data[1].type
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3391339690740115833, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
-      propertyPath: vfxList.Array.data[2].type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3391339690740115833, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
-      propertyPath: vfxList.Array.data[1].prefab
-      value: 
-      objectReference: {fileID: 3884943992241364986, guid: 63e6cb29139c8f94bae19dc34fd45222, type: 3}
-    - target: {fileID: 3391339690740115833, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
-      propertyPath: vfxList.Array.data[2].prefab
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3391339690740115833, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
-      propertyPath: vfxList.Array.data[1].offset.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3391339690740115833, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
-      propertyPath: vfxList.Array.data[2].offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3391339690740115833, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
-      propertyPath: vfxList.Array.data[2].tickPrefab
-      value: 
-      objectReference: {fileID: 3105624288062539136, guid: 19ba7d46fe9f5ac42bd499246e3683f2, type: 3}
-    - target: {fileID: 3391339690740115833, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
-      propertyPath: vfxList.Array.data[2].tickDuration
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3805296089480788685, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.33
@@ -4871,18 +4839,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 8686746244274470606, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8686746244274470606, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8686746244274470606, guid: 48d4f2154e095f7419d97e1edea037ba, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
