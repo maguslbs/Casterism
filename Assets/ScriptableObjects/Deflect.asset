@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ede1e0801bc2fff4f9417e722c8518ab, type: 3}
   m_Name: Deflect
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: 
-  description: 
-  actionCost: 0
-  illustration: {fileID: 0}
+  cardName: Deflect
+  description: "Ignore all damage and debuffs from target enemy\u2019s next turn"
+  actionCost: 2
+  illustration: {fileID: 6089531656763966301, guid: 739034e7b6e98a94395ae7d8aa6a7035, type: 3}
   attackPower: 0
   healPower: 0
-  requiresTarget: 0
+  requiresTarget: 1
   cleanse: 0
   execute: 0
   executeThreshold: 0.3
   hitsAllEnemies: 0
-  deflect: 0
+  deflect: 1

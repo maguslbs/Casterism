@@ -22,6 +22,9 @@ public abstract class Enemy : MonoBehaviour
     [Header("Spawn")]
     [SerializeField] private bool spawnAtBack = false;
 
+    [Header("Deflect")]   // BARU
+    [SerializeField] private GameObject deflectMarker;   // BARU: tanda visual, boleh kosong dulu
+
     public bool SpawnAtBack => spawnAtBack;
 
     protected Health health;
@@ -31,8 +34,10 @@ public abstract class Enemy : MonoBehaviour
 
     private EnemyAttack lastAttack;
     private int repeatCount = 0;
+    private bool isDeflected = false;   // BARU
 
     public string TurnDisplayName => turnDisplayName;
+    public bool IsDeflected => isDeflected;   // BARU: dibaca PlayerHand.CanPlay
 
     protected virtual void Awake()
     {
@@ -44,6 +49,7 @@ public abstract class Enemy : MonoBehaviour
     {
         originalPosition = sprite.transform.position;
         player = FindAnyObjectByType<Player>();
+        SetDeflectMarker(false);   // BARU
     }
 
 
@@ -52,11 +58,59 @@ public abstract class Enemy : MonoBehaviour
         return health.IsAlive();
     }
 
-    public IEnumerator PlayTurn()   // BARU: dipanggil TurnSystem saat giliran musuh ini
+    public IEnumerator PlayTurn()   // UBAH
     {
         if (!health.IsAlive()) yield break;
 
+        if (isDeflected)   // BARU
+        {
+            MessageDisplay.Show($"{turnDisplayName}'s action is deflected!");
+        }
+
         yield return TakeTurn();
+
+        ClearDeflect();   // BARU: deflect hanya berlaku satu giliran musuh
+    }
+
+    // BARU: dipanggil Player saat kartu Deflect dimainkan ke musuh ini
+    public void ApplyDeflect()
+    {
+        isDeflected = true;
+        SetDeflectMarker(true);
+    }
+
+    // BARU
+    private void ClearDeflect()
+    {
+        isDeflected = false;
+        SetDeflectMarker(false);
+    }
+
+    // BARU
+    private void SetDeflectMarker(bool visible)
+    {
+        if (deflectMarker != null)
+        {
+            deflectMarker.SetActive(visible);
+        }
+    }
+
+    // BARU: satu-satunya pintu musuh memberi damage ke pemain
+    protected void HitPlayer(int damage)
+    {
+        if (isDeflected) return;
+
+        PlayerEvents.PlayerHit(damage);
+    }
+
+    // BARU: satu-satunya pintu musuh memberi debuff ke pemain.
+    // Mengembalikan false kalau ditangkis, supaya SkeletonKing tahu curse gagal.
+    protected bool ApplyDebuffToPlayer(Debuff debuff)
+    {
+        if (isDeflected) return false;
+
+        PlayerEvents.ApplyDebuff(debuff);
+        return true;
     }
 
     public Vector3 GetAttackPosition(float fallbackDistance)
@@ -90,7 +144,7 @@ public abstract class Enemy : MonoBehaviour
 
         animationController.Play("Hurt");
 
-        int damage = cardData.attackPower;
+        int damage = cardData.GetAttackPower();
 
         if (cardData.execute && health.HealthPercent <= cardData.executeThreshold)
         {
@@ -111,6 +165,7 @@ public abstract class Enemy : MonoBehaviour
 
     protected virtual void Die()
     {
+        SetDeflectMarker(false);   // BARU: tanda tidak tertinggal di mayat
         animationController.Play("Death");
         EnemyEvents.EnemyDeath(this);
     }
@@ -176,7 +231,7 @@ public abstract class Enemy : MonoBehaviour
         yield return MoveSprite(originalPosition, targetPosition);
 
         animationController.Play(attack.animationName);
-        PlayerEvents.PlayerHit(attack.damage);
+        HitPlayer(attack.damage);   // UBAH: sebelumnya PlayerEvents.PlayerHit(attack.damage)
         ApplyOnHitEffects(attack);
         yield return new WaitForSeconds(attack.recoveryTime);
 
@@ -188,12 +243,12 @@ public abstract class Enemy : MonoBehaviour
     {
         if (attack.stunOnHit)
         {
-            PlayerEvents.ApplyDebuff(new StunDebuff(attack.stunTurns));
+            ApplyDebuffToPlayer(new StunDebuff(attack.stunTurns));   // UBAH
         }
 
-        if (attack.burnOnHit)   // BARU
+        if (attack.burnOnHit)
         {
-            PlayerEvents.ApplyDebuff(new BurnDebuff(attack.burnDamagePerTurn, attack.burnDuration));
+            ApplyDebuffToPlayer(new BurnDebuff(attack.burnDamagePerTurn, attack.burnDuration));   // UBAH
         }
     }
 

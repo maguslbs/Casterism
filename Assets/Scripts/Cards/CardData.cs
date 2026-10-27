@@ -20,4 +20,23 @@ public class CardData : ScriptableObject
     [Range(0f, 1f)] public float executeThreshold = 0.3f;
     public bool hitsAllEnemies;
     public bool deflect;
+
+    public int GetAttackPower()   
+    {
+        if (attackPower <= 0 || RunManager.Instance == null) return attackPower;
+        return attackPower + RunManager.Instance.BonusAttack;
+    }
+
+    public int GetHealPower()     
+    {
+        if (healPower <= 0 || RunManager.Instance == null) return healPower;
+        return healPower + RunManager.Instance.BonusHeal;
+    }
+
+    public string GetDescription()   
+    {
+        return description
+            .Replace("{attack}", GetAttackPower().ToString())
+            .Replace("{heal}", GetHealPower().ToString());
+    }
 }

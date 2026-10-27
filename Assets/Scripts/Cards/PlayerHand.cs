@@ -11,7 +11,6 @@ public class PlayerHand : MonoBehaviour
     [SerializeField] private DiscardPile discardPile;
     [SerializeField] private float cardHoldTime = .3f;
     [SerializeField] private ParticleSystem cardPlayVFXPrefab;
-    [SerializeField] private PlayerDebuffs playerDebuffs;
 
     private List<Card> cardsInHand = new List<Card>();
     public bool IsFull => cardSlots == null || cardsInHand.Count >= cardSlots.Length;
@@ -30,6 +29,7 @@ public class PlayerHand : MonoBehaviour
         TurnEvents.OnPlayerTurnStart += EnableHand;
         PlayerEvents.OnDrawCardRequested += DrawNextCard;
         PlayerEvents.OnAttackComplete += EnableHand;
+        GameEvents.OnGameOver += DisableHand;
     }
 
     private void OnDisable()
@@ -38,6 +38,7 @@ public class PlayerHand : MonoBehaviour
         TurnEvents.OnPlayerTurnStart -= EnableHand;
         PlayerEvents.OnDrawCardRequested -= DrawNextCard;
         PlayerEvents.OnAttackComplete -= EnableHand;
+        GameEvents.OnGameOver -= DisableHand;
     }
 
     private void DisableHand()
@@ -50,6 +51,8 @@ public class PlayerHand : MonoBehaviour
 
     private void EnableHand()
     {
+        if (!GameManager.Instance.IsGameActive()) return;
+
         if (TurnSystem.Instance.HasActionsRemaining())
         {
             foreach (Card card in cardsInHand)
@@ -82,7 +85,7 @@ public class PlayerHand : MonoBehaviour
         cardsInHand.Add(cardComponent);
         cardsInHand[slotIndex].transform.SetParent(cardSlots[slotIndex]);
 
-        if (!TurnSystem.Instance.HasActionsRemaining())
+        if (!TurnSystem.Instance.HasActionsRemaining() || !GameManager.Instance.IsGameActive())
         {
             cardComponent.SetInteractable(false);
         }
@@ -130,9 +133,10 @@ public class PlayerHand : MonoBehaviour
             return false;
         }
 
-        if (data.attackPower > 0 && playerDebuffs != null && playerDebuffs.IsStunned)
+        if (data.deflect && TargetSelector.Instance.CurrentTarget != null
+            && TargetSelector.Instance.CurrentTarget.IsDeflected)   // BARU
         {
-            MessageDisplay.Show("Stunned: attack cards can't be used.");
+            MessageDisplay.Show("Enemy is already deflected.");
             return false;
         }
 

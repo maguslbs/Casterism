@@ -13,9 +13,14 @@ MonoBehaviour:
   m_Name: Attack
   m_EditorClassIdentifier: Assembly-CSharp::CardData
   cardName: Attack
-  description: Deals 3 damage
+  description: Deals {attack} damage
   actionCost: 1
   illustration: {fileID: -5388424960534825893, guid: 739034e7b6e98a94395ae7d8aa6a7035, type: 3}
   attackPower: 3
   healPower: 0
   requiresTarget: 1
+  cleanse: 0
+  execute: 0
+  executeThreshold: 0.3
+  hitsAllEnemies: 0
+  deflect: 0

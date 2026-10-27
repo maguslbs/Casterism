@@ -13,8 +13,14 @@ MonoBehaviour:
   m_Name: Heal
   m_EditorClassIdentifier: Assembly-CSharp::CardData
   cardName: Heal
-  description: Restore 20 HP
+  description: Restore {heal} HP
   actionCost: 1
   illustration: {fileID: -98272708732530083, guid: 739034e7b6e98a94395ae7d8aa6a7035, type: 3}
   attackPower: 0
-  healPower: 20
+  healPower: 25
+  requiresTarget: 0
+  cleanse: 0
+  execute: 0
+  executeThreshold: 0.3
+  hitsAllEnemies: 0
+  deflect: 0

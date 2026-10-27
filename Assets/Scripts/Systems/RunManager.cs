@@ -16,6 +16,21 @@ public class RunManager : Singleton<RunManager>
     public EncounterData CurrentEncounter { get; private set; }
     public MapTier CurrentNodeTier { get; private set; }
     public int BonusActions { get; private set; }
+    [SerializeField] private int maxUpgradesPerType = 2;      
+    [SerializeField] private int attackBonusPerUpgrade = 2;   
+    [SerializeField] private int healBonusPerUpgrade = 10;
+
+    public int AttackUpgrades { get; private set; }   
+    public int HealUpgrades { get; private set; }
+
+    public int BonusAttack => AttackUpgrades * attackBonusPerUpgrade;   
+    public int BonusHeal => HealUpgrades * healBonusPerUpgrade;         
+    public bool CanUpgradeAttack => AttackUpgrades < maxUpgradesPerType; 
+    public bool CanUpgradeHeal => HealUpgrades < maxUpgradesPerType;
+
+    public int AttackBonusPerUpgrade => attackBonusPerUpgrade;   
+    public int HealBonusPerUpgrade => healBonusPerUpgrade;
+
     public bool HasPlayerHealth { get; private set; }
     public int PlayerHealth { get; private set; }
     public int PlayerMaxHealth { get; private set; }
@@ -36,6 +51,8 @@ public class RunManager : Singleton<RunManager>
         CurrentNodeId = null;
         CurrentEncounter = null;
         BonusActions = 0;
+        AttackUpgrades = 0;   
+        HealUpgrades = 0;
         HasPlayerHealth = false;
         completedNodeIds.Clear();
     }
@@ -73,6 +90,16 @@ public class RunManager : Singleton<RunManager>
     public void AddBonusAction()
     {
         BonusActions++;
+    }
+
+    public void UpgradeAttack()   
+    {
+        if (CanUpgradeAttack) AttackUpgrades++;
+    }
+
+    public void UpgradeHeal()     
+    {
+        if (CanUpgradeHeal) HealUpgrades++;
     }
 
     public void EnterNode(MapNode node)

@@ -45,7 +45,7 @@ public class Card : MonoBehaviour
         this.cardData = cardData;
         illustrationRender.sprite = cardData.illustration;
         cardNameText.text = cardData.cardName;
-        descriptionText.text = cardData.description;
+        descriptionText.text = cardData.GetDescription();
         actionsText.text = cardData.actionCost.ToString();
     }
 
@@ -71,6 +71,9 @@ public class Card : MonoBehaviour
 
     private void OnMouseDrag()
     {
+        if (!isBeingDragged)                     
+            PlayerEvents.CardDragStarted();
+
         isBeingDragged = true;
         gameObject.transform.position = GetMousePosition();
     }
@@ -89,6 +92,9 @@ public class Card : MonoBehaviour
 
     private void OnMouseUp()
     {
+        if (isBeingDragged)                     
+            PlayerEvents.CardDragEnded();
+
         isBeingDragged = false;
 
         if (isPlaying)
@@ -103,6 +109,9 @@ public class Card : MonoBehaviour
 
     private void OnDestroy()
     {
+        if (isBeingDragged)                      
+            PlayerEvents.CardDragEnded();
+
         isBeingDragged = false;
     }
 

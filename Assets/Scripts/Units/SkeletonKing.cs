@@ -16,7 +16,6 @@ public class SkeletonKing : Enemy
     {
         if (!hasCursed)
         {
-            hasCursed = true;
             yield return CastCurse();
             yield break;
         }
@@ -39,7 +38,7 @@ public class SkeletonKing : Enemy
         animationController.Play(castAnimationName);
         yield return new WaitForSeconds(castDelay);
 
-        PlayerEvents.ApplyDebuff(new CurseDebuff(cursePercent));
+        hasCursed = ApplyDebuffToPlayer(new CurseDebuff(cursePercent));
 
         yield return new WaitForSeconds(curseRecoveryTime);
         animationController.Play("Idle");

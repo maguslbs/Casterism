@@ -17,6 +17,8 @@ public static class PlayerEvents
     public static event Action OnAttackComplete;
     public static event Action<Debuff> OnDebuffApplied;
     public static event Action<DebuffType> OnDebuffRemoved;
+    public static event Action OnCardDragStarted;   
+    public static event Action OnCardDragEnded;
 
     public static void CardPlayed(CardData cardData)
     {
@@ -61,5 +63,15 @@ public static class PlayerEvents
     public static void RemoveDebuff(DebuffType type)
     {
         OnDebuffRemoved?.Invoke(type);
+    }
+
+    public static void CardDragStarted()   
+    {
+        OnCardDragStarted?.Invoke();
+    }
+
+    public static void CardDragEnded()     
+    {
+        OnCardDragEnded?.Invoke();
     }
 }

@@ -161,6 +161,16 @@ public class Player : MonoBehaviour
             }
         }
 
+        if (cardData.deflect)   
+        {
+            Enemy target = TargetSelector.Instance.CurrentTarget;
+
+            if (target != null)
+            {
+                target.ApplyDeflect();
+            }
+        }
+
         if (cardData.healPower > 0)
         {
             Heal(cardData);
@@ -180,7 +190,7 @@ public class Player : MonoBehaviour
 
     private void Heal(CardData cardData)
     {
-        health.HealDamage(cardData.healPower);
+        health.HealDamage(cardData.GetHealPower());
         healVFX.Play();
         PlayerEvents.PlayerHealed();
     }

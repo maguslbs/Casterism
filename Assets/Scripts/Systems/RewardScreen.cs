@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;   // BARU
 using UnityEngine.UI;
 
 public class RewardScreen : MonoBehaviour
@@ -14,9 +15,12 @@ public class RewardScreen : MonoBehaviour
         public Image icon;
     }
 
+    private enum UpgradeType { Attack, Heal }   // BARU
+
     [SerializeField] private GameObject panel;
     [SerializeField] private RewardOption hpOption;
-    [SerializeField] private RewardOption actionOption;
+    [FormerlySerializedAs("actionOption")]                     // BARU
+    [SerializeField] private RewardOption upgradeOption;       // UBAH: dulu actionOption
     [SerializeField] private RewardOption cardOption;
 
     [Header("HP Reward per Tier")]
@@ -26,16 +30,20 @@ public class RewardScreen : MonoBehaviour
 
     [Header("Card Reward")]
     [SerializeField] private List<CardData> cardRewardPool = new List<CardData>();
+    [Header("Upgrade Icons")]                            // BARU
+    [SerializeField] private Sprite attackUpgradeIcon;   // BARU
+    [SerializeField] private Sprite healUpgradeIcon;     // BARU
 
     private int hpReward;
     private CardData offeredCard;
+    private UpgradeType offeredUpgrade;   // BARU
 
     private void Awake()
     {
         panel.SetActive(false);
 
         if (hpOption.button != null) hpOption.button.onClick.AddListener(ChooseHp);
-        if (actionOption.button != null) actionOption.button.onClick.AddListener(ChooseAction);
+        if (upgradeOption.button != null) upgradeOption.button.onClick.AddListener(ChooseUpgrade);   // UBAH
         if (cardOption.button != null) cardOption.button.onClick.AddListener(ChooseCard);
     }
 
@@ -43,18 +51,47 @@ public class RewardScreen : MonoBehaviour
     {
         hpReward = GetHpReward(tier);
         SetTexts(hpOption, "Vitality", $"+{hpReward} Max HP");
-        SetTexts(actionOption, "Focus", "+1 Action");
-        SetOptionVisible(actionOption, TurnSystem.Instance.CanGainAction());
+
+        bool hasUpgrade = PickUpgrade(out offeredUpgrade);   // BARU
+        if (hasUpgrade)
+        {
+            bool isAttack = offeredUpgrade == UpgradeType.Attack;   // BARU
+
+            if (isAttack)
+                SetTexts(upgradeOption, "Sharpen", $"All attack cards +{RunManager.Instance.AttackBonusPerUpgrade} damage");
+            else
+                SetTexts(upgradeOption, "Restoration", $"All heal cards +{RunManager.Instance.HealBonusPerUpgrade} HP");
+
+            if (upgradeOption.icon != null)   // BARU
+                upgradeOption.icon.sprite = isAttack ? attackUpgradeIcon : healUpgradeIcon;
+        }
+        SetOptionVisible(upgradeOption, hasUpgrade);         // UBAH
 
         offeredCard = PickCardReward();
         if (offeredCard != null)
         {
-            SetTexts(cardOption, offeredCard.cardName, offeredCard.description);
+            SetTexts(cardOption, offeredCard.cardName, offeredCard.GetDescription());   // UBAH: dulu .description
             if (cardOption.icon != null) cardOption.icon.sprite = offeredCard.illustration;
         }
         SetOptionVisible(cardOption, offeredCard != null);
 
         panel.SetActive(true);
+    }
+
+    // BARU: acak kalau dua-duanya masih bisa, kalau satu penuh pasti yang lain
+    private bool PickUpgrade(out UpgradeType type)
+    {
+        bool canAttack = RunManager.Instance.CanUpgradeAttack;
+        bool canHeal = RunManager.Instance.CanUpgradeHeal;
+
+        if (canAttack && canHeal)
+        {
+            type = Random.value < 0.5f ? UpgradeType.Attack : UpgradeType.Heal;
+            return true;
+        }
+
+        type = canHeal ? UpgradeType.Heal : UpgradeType.Attack;
+        return canAttack || canHeal;
     }
 
     private CardData PickCardReward()
@@ -101,9 +138,15 @@ public class RewardScreen : MonoBehaviour
         Finish();
     }
 
-    private void ChooseAction()
+    // DIHAPUS: ChooseAction()
+
+    private void ChooseUpgrade()   // BARU
     {
-        RunManager.Instance.AddBonusAction();
+        if (offeredUpgrade == UpgradeType.Attack)
+            RunManager.Instance.UpgradeAttack();
+        else
+            RunManager.Instance.UpgradeHeal();
+
         Finish();
     }
 

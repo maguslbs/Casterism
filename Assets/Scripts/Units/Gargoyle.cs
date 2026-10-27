@@ -5,11 +5,11 @@ public class Gargoyle : Enemy
 {
     [Header("Fire Breath")]
     [SerializeField] private float fireHitDelay = 1f;
-    [SerializeField] private int fireSortingBoost = 20;   // BARU
+    [SerializeField] private int fireSortingBoost = 20;   
 
-    private SpriteRenderer spriteRenderer;   // BARU
+    private SpriteRenderer spriteRenderer;   
 
-    protected override void Awake()   // BARU
+    protected override void Awake()   
     {
         base.Awake();
         spriteRenderer = sprite.GetComponent<SpriteRenderer>();
@@ -35,18 +35,18 @@ public class Gargoyle : Enemy
 
     private IEnumerator FireBreath(EnemyAttack attack)
     {
-        int originalOrder = spriteRenderer.sortingOrder;              // BARU
-        spriteRenderer.sortingOrder = originalOrder + fireSortingBoost; // BARU
+        int originalOrder = spriteRenderer.sortingOrder;              
+        spriteRenderer.sortingOrder = originalOrder + fireSortingBoost; 
 
         animationController.Play(attack.animationName);
         yield return new WaitForSeconds(fireHitDelay);
 
-        PlayerEvents.PlayerHit(attack.damage);
+        HitPlayer(attack.damage);
         ApplyOnHitEffects(attack);
 
         yield return new WaitForSeconds(attack.recoveryTime);
         animationController.Play("Idle");
 
-        spriteRenderer.sortingOrder = originalOrder;                  // BARU
+        spriteRenderer.sortingOrder = originalOrder;                  
     }
 }

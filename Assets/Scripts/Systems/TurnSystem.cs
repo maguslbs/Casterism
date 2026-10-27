@@ -13,12 +13,15 @@ public class TurnSystem : Singleton<TurnSystem>
     [SerializeField] private int drawCost = 1;
     [SerializeField] private int reshuffleCost = 3;
     [SerializeField] private TextMeshProUGUI remainingActionsText;
-    [SerializeField] private int turnWaitTime = 3;
+    [SerializeField] private float playerToEnemyDelay = 0.6f;
     [SerializeField] private float enemyDelayTime = 2f;
+    [SerializeField] private float enemyToPlayerDelay = 0.6f;   
     public int ActionsRemaining => actionsRemaining;
     public int ReshuffleCost => reshuffleCost;
 
     [SerializeField] private TextMeshProUGUI displayTurnState;
+    [SerializeField] private PlayerDebuffs playerDebuffs;   
+    [SerializeField] private float stunSkipDelay = 1f;
 
     private int actionsRemaining;
 
@@ -57,6 +60,9 @@ public class TurnSystem : Singleton<TurnSystem>
         playerTurnEnding = false;     // BARU
         UpdateActionsUI();
         TurnEvents.PlayerTurnStart();
+
+        if (playerDebuffs != null && playerDebuffs.IsStunned)   
+            StartCoroutine(SkipStunnedTurn());
     }
 
     private void EndPlayerTurn()
@@ -69,7 +75,6 @@ public class TurnSystem : Singleton<TurnSystem>
     private IEnumerator RunEnemyTurn()   // BARU: menggantikan StartEnemyTurn dan EnemeyTurn
     {
         currentTurn = TurnState.EnemyTurn;
-        TurnEvents.EnemyTurnStart();
 
         List<Enemy> turnOrder = GameManager.Instance.lvl1.GetAliveEnemies();
         ApplyTurnOrder(turnOrder);
@@ -99,9 +104,12 @@ public class TurnSystem : Singleton<TurnSystem>
 
     private IEnumerator EndEnemyTurn()
     {
-        TurnEvents.EnemyTurnEnd();
-        yield return new WaitForSeconds(enemyDelayTime);
-        StartCoroutine(WaitBetweenTurns());
+        yield return new WaitForSeconds(enemyToPlayerDelay);   // UBAH: dulu enemyDelayTime + hitung mundur 3 detik
+
+        if (!GameManager.Instance.IsGameActive()) yield break;   // BARU
+
+        displayTurnState.text = "Player's Turn";   // BARU
+        StartPlayerTurn();                          // BARU
     }
 
     private void ClearTurnDisplay()
@@ -111,24 +119,26 @@ public class TurnSystem : Singleton<TurnSystem>
 
     private IEnumerator WaitBetweenTurns()
     {
-        for (int i = turnWaitTime; i > 0; i--)
-        {
-            displayTurnState.text = i + "...";
-            yield return new WaitForSeconds(1f);
-        }
+        yield return new WaitForSeconds(playerToEnemyDelay);   
 
         if (GameManager.Instance.IsGameActive())
         {
-            if (currentTurn != TurnState.PlayerTurn)
-            {
-                displayTurnState.text = "Player's Turn";
-                StartPlayerTurn();
-            }
-            else
-            {
-                StartCoroutine(RunEnemyTurn());   // UBAH
-            }
+            StartCoroutine(RunEnemyTurn());
         }
+    }
+
+    private IEnumerator SkipStunnedTurn()   // BARU
+    {
+        playerTurnEnding = true;   // memblokir End Turn dan TryEndPlayerTurn selama jeda
+        actionsRemaining = 0;      // pemain tidak bisa draw atau main kartu
+        UpdateActionsUI();
+        displayTurnState.text = "Stunned!";
+
+        yield return new WaitForSeconds(stunSkipDelay);
+
+        if (!GameManager.Instance.IsGameActive()) yield break;
+
+        EndPlayerTurn();
     }
 
     private void CardPlayed(CardData cardData)

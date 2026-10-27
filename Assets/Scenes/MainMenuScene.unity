@@ -540,7 +540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6258021279798545567, guid: 160f883af8d2d62438c68b727f29d228, type: 3}
       propertyPath: startingCollection.Array.size
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6258021279798545567, guid: 160f883af8d2d62438c68b727f29d228, type: 3}
       propertyPath: 'startingCollection.Array.data[4]'
@@ -554,6 +554,10 @@ PrefabInstance:
       propertyPath: 'startingCollection.Array.data[6]'
       value: 
       objectReference: {fileID: 11400000, guid: 0c9e01fcd95c36d48a431c3293e1a379, type: 2}
+    - target: {fileID: 6258021279798545567, guid: 160f883af8d2d62438c68b727f29d228, type: 3}
+      propertyPath: 'startingCollection.Array.data[7]'
+      value: 
+      objectReference: {fileID: 11400000, guid: dc63fb83a426c9243b4756496c83af7c, type: 2}
     - target: {fileID: 8145611961483561987, guid: 160f883af8d2d62438c68b727f29d228, type: 3}
       propertyPath: m_LocalPosition.x
       value: 960
@@ -1205,14 +1209,14 @@ RectTransform:
   m_GameObject: {fileID: 1771775092}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1742288925}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 100}
+  m_AnchoredPosition: {x: 0, y: 118}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1771775094
@@ -1238,14 +1242,14 @@ MonoBehaviour:
   m_text: Casterism
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: edf8021b84f83274da4a9a66061c9553, type: 2}
-  m_sharedMaterial: {fileID: -4005329115593542067, guid: edf8021b84f83274da4a9a66061c9553, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: fb15a5e5f975df34489652ba0e3e4fd2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4286058563
+  m_fontColor: {r: 0.2627451, g: 0.0627451, b: 0.47058824, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1268,7 +1272,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
